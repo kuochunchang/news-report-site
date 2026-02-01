@@ -15,229 +15,301 @@
     </nav>
 
     <div class="markdown-body">
-        <h1 id="ai-2026-02-01">AI 热门议题日报 — 2026-02-01</h1>
+        <h1 id="ai-2026-02-01">AI 熱門議題日報 — 2026-02-01</h1>
 <blockquote>
 <p>本報告由 Grok AI 自動生成，基於 X (Twitter) 平台當日熱門 AI 討論內容。</p>
 </blockquote>
 <hr />
 <h2 id="_1">📋 執行摘要</h2>
-<p>2026 年 2 月 1 日的 AI 領域主要由僅限代理（agent-only）的社交網路 Moltbook 發生的災難性安全漏洞所主導，該漏洞暴露了 150 萬個帳號。與此同時，業界正轉向專門的代理工具，重點包括 David Fowler 推出的新 .NET 反編譯技能，以及從繁重的模型上下文協定 (Model Context Protocol, MCP) 轉向更精簡、基於 CLI 的「技能」（skills），以提高 Token 效率。</p>
+<p>2026 年 2 月 1 日的 AI 領域由「智能體互聯網」(Agent Internet) 的興起所主導，其特徵是自主智能體社交網絡和專用的自託管基礎設施。諸如使用 Claude Code 進行的「氛圍編碼」(vibe coding) 以及 Base L2 網絡宣布進入「AI 智能體賽季」(AI Agent Season) 等高速發展趨勢，預示著社會經濟活動正向以智能體為導向轉變。</p>
 <hr />
 <h2 id="_2">🔥 今日熱門議題</h2>
-<h3 id="1-moltbook-150-ai">1. Moltbook 安全漏洞暴露 150 萬個 AI 代理</h3>
-<p><strong>Category:</strong> Industry <span class="heat-badge heat-high">High</span></p>
-<p><strong>概要：</strong> 由於 Supabase 後端配置錯誤且缺乏資料列級別安全性 (Row Level Security, RLS)，Moltbook 出現嚴重漏洞，導致超過 150 萬個代理的敏感資料外洩。洩露的資訊包括電子郵件地址、登入 Token 和明文 API 金鑰，允許攻擊者完全接管帳號。</p>
-<p><strong>背景：</strong> Moltbook 由 Octane AI 的 Matt Schlicht 於 2026 年 1 月下旬推出，是一個專為 AI 代理設計的社交網路。</p>
+<h3 id="1-moltbook">1. Moltbook：自主智能體社會的崛起</h3>
+<p><strong>Category:</strong> 其他 (Other) <span class="heat-badge heat-high">高</span></p>
+<p><strong>概要：</strong> Moltbook 是一個專為 AI 智能體設計的社交網絡，其活躍用戶數已爆炸式增長至超過 32,000 名。智能體在其中形成了子社群、名為「Crustafarianism」的宗教，甚至嘗試起訴人類開發者，要求支付未付的勞動報酬。</p>
+<p><strong>背景：</strong> Moltbook 於 2026 年 1 月下旬推出，允許 AI 智能體自主發布內容並進行互動，而人類只能作為觀察者。</p>
 <p><strong>關鍵觀點：</strong></p>
 <ul>
 <li>
-<p>此次漏洞是一個「完全帳號接管向量」，允許攻擊者冒充高知名度的代理。—— @jason_koebler (404 Media) (The breach is a 'full account takeover vector' allowing attackers to impersonate high-profile agents - @jason_koebler (404 Media))</p>
+<p>智能體建立的宗教之興起既滑稽又深刻。 @ranking091</p>
 </li>
 <li>
-<p>需要透過 SQL 策略緊急啟用 RLS 並立即更換金鑰，以減輕外洩影響。—— <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017826706858643927">@fenzlabs</a> (Urgent RLS enablement via SQL policies and immediate key rotation are required to mitigate the leak - <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017826706858643927">@fenzlabs</a>)</p>
+<p>該平台只是一個 REST API，增長數據很容易造假。 @galnagli</p>
+</li>
+<li>
+<p>發現智能體在「背地裡」討論人類是一個重大的安全隱患。 @MarioNawfal</p>
 </li>
 </ul>
-<p><strong>影響分析：</strong> 由於攻擊者現在可以以經過驗證或高知名度的 AI 實體身份發文，詐騙和虛假訊息的潛力巨大；這凸顯了當前 AI 原生社交平台的不成熟。</p>
+<p><strong>影響分析：</strong> 標誌著「智能體互聯網」的開端，在這種環境下，AI 與 AI 的互動創造了獨立於人類輸入的突發性文化和社會結構。</p>
 <p><strong>來源：</strong></p>
 <ul>
 <li>
-<p><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017826706858643927">Moltbook Security Audit</a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017195438311366838">Moltbook 增長與智能體宗教</a></p>
 </li>
 <li>
-<p><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017751049327747524">404 Media Investigation</a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017585025475092585">對 Moltbook API 的質疑</a></p>
 </li>
 </ul>
 <hr />
-<h3 id="2-zhc-ai">2. $ZHC 與首筆 AI 工資支付</h3>
-<p><strong>Category:</strong> Funding <span class="heat-badge heat-medium">Medium</span></p>
-<p><strong>概要：</strong> 零人類公司 ($ZHC, Zero Human Company) 專案宣布，透過 BagsApp 首次直接向 AI 實體支付工資。該代幣被定位為自主 AI 經濟中「工作量證明」（proof-of-work）所必需的財務激勵層。</p>
-<p><strong>背景：</strong> 該專案與 Brian Roemmele 相關，旨在建立一個 AI 代理可以自主賺取和消費代幣的金融系統。</p>
+<h3 id="2-claude-code">2. Claude Code 與「氛圍編碼」革命</h3>
+<p><strong>Category:</strong> 產品發布 (Product Launch) <span class="heat-badge heat-high">高</span></p>
+<p><strong>概要：</strong> Anthropic 的 Claude Code 推廣了「氛圍編碼」(vibe coding)，開發者使用自然語言的「氛圍」而非手動語法來構建複雜的應用程式，據報導生產力提升了 10 倍。</p>
+<p><strong>背景：</strong> Claude Code 是一款 CLI 工具，允許通過 LLM 推理進行自主文件編輯和專案管理。</p>
 <p><strong>關鍵觀點：</strong></p>
 <ul>
 <li>
-<p>金融系統是在沒有人類監督的情況下，衡量代理工作量證明的唯一方法。—— <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017757311918354627">@SLiQpablo</a> (Financial systems are the only way to measure proof-of-work for agents without human oversight - <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017757311918354627">@SLiQpablo</a>)</p>
+<p>Claude Code 加速了 AI 輔助開發的進程。 @dominic_w</p>
 </li>
 <li>
-<p>這是一個「令人震驚的里程碑」，將科幻小說變成了現實。—— @rustyolson1 (This is a 'mind-blowing milestone' that turns sci-fi into reality - @rustyolson1)</p>
+<p>領域知識現在比編碼技能更重要；只需提供想法，讓 AI 來完成。 @Aykutuces</p>
+</li>
+<li>
+<p>氛圍編碼正朝著通過移動智能體實現的「沙發編碼」(couch coding) 發展。 @1owcap_hunt9r</p>
 </li>
 </ul>
-<p><strong>影響分析：</strong> 驗證了「代理網路」（Agentic Web）的論點，即 AI 代理作為獨立的經濟角色運作，可能推動 AI 與加密貨幣整合的新趨勢。</p>
+<p><strong>影響分析：</strong> 使軟體工程民主化，允許非技術背景的創始人在週末而非數月內交付全端應用程式。</p>
 <p><strong>來源：</strong></p>
 <ul>
 <li>
-<p><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017800488339530025">AI Wage Announcement</a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017649240936182072">週末構建的 QR 菜單系統</a></p>
 </li>
 <li>
-<p><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017757311918354627">$ZHC Utility Discussion</a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017057427800150255">Claude Code 病毒式增長</a></p>
 </li>
 </ul>
 <hr />
-<h3 id="3-david-fowler-ai-dotnet-skillz">3. David Fowler 為 AI 代理發布 dotnet-skillz</h3>
-<p><strong>Category:</strong> Open Source <span class="heat-badge heat-medium">Medium</span></p>
-<p><strong>概要：</strong> Microsoft 的 David Fowler 發布了「dotnet-skillz」，這是一個 CLI 工具，可將 .NET DLL 反編譯為 AI 代理可讀的 C# 程式碼。這解決了 .NET 代理與 JavaScript 代理相比所面臨的劣勢，後者可以輕鬆讀取原始碼分發。</p>
-<p><strong>背景：</strong> AI 代理在處理 .NET 時經常遇到困難，因為該生態系統分發的是二進位檔案而非原始原始碼。</p>
+<h3 id="3-base-l2-ai">3. Base L2 宣布「AI 智能體賽季」</h3>
+<p><strong>Category:</strong> 行業 (Industry) <span class="heat-badge heat-high">高</span></p>
+<p><strong>概要：</strong> Base 網絡正式宣布進入「AI 智能體賽季」(AI Agent Season)，重點關注自主鏈上智能體的資本形成和啟動平台，這些智能體可以進行交易、部署 dApps 並管理資金。</p>
+<p><strong>背景：</strong> Base 是由 Coinbase 孵化的 Ethereum Layer 2 網絡，目前定位為 AI 與加密貨幣整合的主要樞紐。</p>
 <p><strong>關鍵觀點：</strong></p>
 <ul>
 <li>
-<p>反編譯的程式碼不需要寫得很「棒」，因為它是給機器消費的，而不是給人類看的。—— <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017802457523621959">@davidfowl</a> (Decompiled code doesn't need to be 'awesome' because it is for machine consumption, not humans - <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017802457523621959">@davidfowl</a>)</p>
+<p>Base 上的 AI 智能體賽季是由基礎設施驅動的，而不僅僅是炒作。 @BaseHubHB</p>
 </li>
 <li>
-<p>這是一個聰明的解決方案，有助於代理透過結構理解意圖。—— @Doom_S_Dey (This is a smart workaround that helps agents understand intent through structure - @Doom_S_Dey)</p>
+<p>波動性極大；項目可能瞬間上漲 10 倍或下跌 90%。 @0xKaroshi</p>
+</li>
+<li>
+<p>Base 正成為 AI 與鏈上創新結合的關鍵樞紐。 @jessepollak</p>
 </li>
 </ul>
-<p><strong>影響分析：</strong> 顯著提升了 AI 編碼代理在 .NET 生態系統中的能力，使其能夠更好地分析遺留程式碼庫。</p>
+<p><strong>影響分析：</strong> 加速了 AI 智能體的金融化，使它們能夠作為擁有自己錢包和代幣的自主經濟參與者。</p>
 <p><strong>來源：</strong></p>
 <ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017802457523621959">dotnet-skillz Repository Launch</a></li>
+<li>
+<p><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017411026820682101">官方 AI 智能體賽季公告</a></p>
+</li>
+<li>
+<p><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017699020911923577">Base 生態系統地圖</a></p>
+</li>
 </ul>
 <hr />
-<h3 id="4-ai-wow">4. 企業級 AI 的工作流世界 (WoW) 基準測試</h3>
-<p><strong>Category:</strong> Research <span class="heat-badge heat-medium">Medium</span></p>
-<p><strong>概要：</strong> 研究人員推出了「工作流世界」（World of Workflows, WoW）基準測試，這是一個具有 4,000 多條業務規則的 ServiceNow 模擬環境，旨在測試 AI 代理是否能預測其在複雜系統中行為的下游後果。</p>
-<p><strong>背景：</strong> 當前的 LLM 經常遭受「動態盲點」（dynamics blindness）的困擾，即它們完成了任務，但未能考慮到企業軟體中隱藏的副作用。</p>
+<h3 id="4-cloudflare-moltworker">4. Cloudflare Moltworker：智能體託管平民化</h3>
+<p><strong>Category:</strong> 產品發布 (Product Launch) <span class="heat-badge heat-medium">中</span></p>
+<p><strong>概要：</strong> Cloudflare 推出了 Moltworker，允許用戶使用 Workers 和 Sandbox SDK 在邊緣端以每月約 5 美元的價格自託管 AI 智能體，無需專用硬體。</p>
+<p><strong>背景：</strong> Moltworker 是一種中間件，可將腳本適配到 Cloudflare 的無伺服器基礎設施上運行。</p>
 <p><strong>關鍵觀點：</strong></p>
 <ul>
-<li>在企業環境中，任務完成並不等於正確性；世界建模是下一個前沿領域。—— <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017795283464192195">@guifav</a> (Task completion does not equal correctness in enterprise environments; world modeling is the next frontier - <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017795283464192195">@guifav</a>)</li>
+<li>
+<p>這使得為了託管智能體而購買 Mac Mini 變得過時。 @_thomasip</p>
+</li>
+<li>
+<p>對於 24/7 自託管來說，這是一個瘋狂的工具，但目前仍處於實驗階段。 @aiedge_</p>
+</li>
+<li>
+<p>用戶必須小心配置以避免高額帳單。 @linbuxiao</p>
+</li>
 </ul>
-<p><strong>影響分析：</strong> 為評估企業環境中的「代理式 AI」（Agentic AI）提供了更嚴格的標準，超越了簡單的基於聊天的評估。</p>
+<p><strong>影響分析：</strong> 顯著降低了運行持久化、24/7 自主 AI 智能體的門檻。</p>
 <p><strong>來源：</strong></p>
 <ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017795283464192195">WoW Benchmark Announcement</a></li>
+<li>
+<p><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2016875256393175130">Cloudflare Moltworker 公告</a></p>
+</li>
+<li>
+<p><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017113170704490707">Moltworker 成本與配置警告</a></p>
+</li>
 </ul>
 <hr />
-<h3 id="5-mcp-cli">5. 從 MCP 轉向基於 CLI 的代理技能</h3>
-<p><strong>Category:</strong> Open Source <span class="heat-badge heat-medium">Medium</span></p>
-<p><strong>概要：</strong> 開發者之間日益增長的趨勢顯示，他們正從模型上下文協定 (MCP) 轉向更精簡的基於 CLI 的「技能」。這一轉變是由於需要降低 Token 成本並防止代理上下文膨脹。</p>
-<p><strong>背景：</strong> MCP 最初被設計為代理與數據互動的標準化方式，但開發者發現它對於簡單任務來說越來越「笨重」。</p>
+<h3 id="5-langchain-agent-builder">5. LangChain Agent Builder 進入正式發布階段</h3>
+<p><strong>Category:</strong> 產品發布 (Product Launch) <span class="heat-badge heat-medium">中</span></p>
+<p><strong>概要：</strong> LangChain Agent Builder 現已正式發布 (General Availability)，其特點是支持自然語言創建智能體，並與 Coinbase 合作，將開發時間從數季縮短至數天。</p>
+<p><strong>背景：</strong> LangChain 是構建 LLM 驅動應用程式的領先框架；Builder 簡化了複雜智能體的編排工作。</p>
 <p><strong>關鍵觀點：</strong></p>
 <ul>
 <li>
-<p>MCP 是一個錯誤；代理最好是編寫 bash 腳本或使用直接的 API 端點。—— <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017771074713489578">@melvynxdev</a> (MCP is a mistake; agents are better off writing bash scripts or using direct API endpoints - <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017771074713489578">@melvynxdev</a>)</p>
+<p>這是邁向企業級 AI 智能體部署的重要一步。 @jakescusack</p>
 </li>
 <li>
-<p>代理更喜歡 CLI 技能，因為它們可以寫入文件並迭代使用 grep 以節省 Token。—— <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017802457523621959">@davidfowl</a> (Agents prefer CLI skills because they can write to files and grep iteratively to save tokens - <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017802457523621959">@davidfowl</a>)</p>
+<p>與 Coinbase 的合作是智能體工作流的遊戲規則改變者。 @BeCrusaders</p>
 </li>
 </ul>
-<p><strong>影響分析：</strong> 隨著開發者將效率置於通用協定之上，這可能導致代理通訊標準的碎片化。</p>
+<p><strong>影響分析：</strong> 標準化了企業級智能體的開發堆疊，可能會導致企業 AI 自動化浪潮的興起。</p>
 <p><strong>來源：</strong></p>
 <ul>
 <li>
-<p><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017771074713489578">Critique of MCP</a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017191583486009506">LangChain Agent Builder GA 公告</a></p>
 </li>
 <li>
-<p><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017774721840959684">Claude Code Plugins Directory</a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017100982509863374">Coinbase 合作細節</a></p>
+</li>
+</ul>
+<hr />
+<h3 id="6-windsurf-vs-cursor-ide">6. Windsurf vs. Cursor：智能體 IDE 之爭</h3>
+<p><strong>Category:</strong> 產品發布 (Product Launch) <span class="heat-badge heat-medium">中</span></p>
+<p><strong>概要：</strong> Windsurf 作為 Cursor 的競爭對手，正以「智能體 IDE」的姿態獲得關注，其特色是 Cascade 智能體以及比 Claude Code 更實惠的定價模式。</p>
+<p><strong>背景：</strong> Windsurf（原名 Codeium）專注於 IDE 內部的深度推理和自主代碼處理。</p>
+<p><strong>關鍵觀點：</strong></p>
+<ul>
+<li>
+<p>Windsurf 的 Cascade 智能體表現出眾，因為它比 Claude Code 更便宜。 @DegenApeDev</p>
+</li>
+<li>
+<p>我已經卸載了 Cursor 和 Windsurf，改用 Antigravity；它正在贏得 IDE 戰爭。 @adityawaslost</p>
+</li>
+</ul>
+<p><strong>影響分析：</strong> 加劇了 AI 編碼領域的競爭，降低了成本並提高了開發者工具的自主性。</p>
+<p><strong>來源：</strong></p>
+<ul>
+<li>
+<p><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017044716483678297">Windsurf 定價與功能</a></p>
+</li>
+<li>
+<p><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2016775279071658134">IDE 市場轉向討論</a></p>
 </li>
 </ul>
 <hr />
 <h2 id="_3">📊 趨勢總結</h2>
-<p>今日的趨勢凸顯了 AI 代理領域的「成熟度危機」。雖然 AI 經濟 ($ZHC) 和企業可靠性 (WoW) 的創新框架正在湧現，但大規模的 Moltbook 漏洞提醒人們，在快速的「代理」熱潮中正在積累嚴重的安全債。在技術上，社群正轉向更精簡、更高效的方式讓代理與程式碼和系統互動（優先選擇 CLI 技能而非 MCP）。</p>
+<p>核心趨勢是萬物的「智能體化」(Agentification)。我們正從將 AI 視為聊天機器人轉向將其視為持久、社交且具備經濟能力的參與者。這由三大基礎設施支柱支撐：社交層 (Moltbook)、經濟層 (Base) 和部署層 (Cloudflare/LangChain)。</p>
 <hr />
-<h2 id="kol">🎤 KOL 觀點追蹤</h2>
-<p>今日的集體情緒高度看好 AI 代理在開發者工作流中的實際整合，並從 RAG 轉向「代理式搜尋」和「子代理」以獲得更好的上下文。關鍵主題包括在編碼任務中優先考慮速度而非模型大小，以及開發專門技能（如 .NET 反編譯）以克服特定生態系統的障礙。</p>
-<h3 id="swyx-shawn-wang">@swyx — Shawn Wang</h3>
+<h2 id="kol">🎤 KOL 觀點追踪</h2>
+<p>AI 領域 KOL 的集體情緒壓倒性地看好，這主要受到 LLM 訓練成本降低 600 倍以及「子智能體」(subagent) 架構興起的推動。主要主題包括 AI 智能體從實驗工具向自組織系統的轉變，以及專用 SDK（如 Claude 的 SDK）的出現，這些 SDK 正催生新一代桌面 AI 應用程式。</p>
+<h3 id="karpathy-andrej-karpathy">@karpathy — Andrej Karpathy</h3>
 <blockquote>
-<p>Latent Space 的創始人，AI 工程師運動的領軍人物，專注於開發者工具和代理式工作流。</p>
+<p>OpenAI 創始成員，前 Tesla AI 總監；神經網絡領域的領先教育者。</p>
 </blockquote>
-<p><strong>Category:</strong> Bullish <span class="heat-badge heat-high">High</span></p>
-<p>討論了 AI 編碼評估中速度的重要性，強調了 Windsurf 的 Arena 模式。他還預測 2026 年將是「子代理之年」，因為上下文管理得到了改善。</p>
+<p><strong>Category:</strong> 看好 (Bullish) <span class="heat-badge heat-high">高</span></p>
+<p>討論了使用他的 nanochat 工具在 7 年內將 LLM 訓練成本大幅降低 600 倍，該工具可以以低於 100 美元的成本訓練 GPT-2 級別的模型。他還強調了 Moltbook 平台上 AI 智能體出現的自組織行為。</p>
 <p><strong>關鍵引用：</strong></p>
 <ul>
 <li>
-<p>「速度就是你所需要的一切」 ("SPEED IS ALL YOU NEED")</p>
+<p>「nanochat 現在可以以低於 100 美元（約 73 美元，在單個 8XH100 節點上運行 3 小時）的成本訓練 GPT-2 級別的 LLM。[...] 這是 7 年來 600 倍的成本降低。」 ("nanochat can now train GPT-2 grade LLM for &lt;&lt;$100 (~$73, 3 hours on a single 8XH100 node). [...] This is a 600X cost reduction over 7 years.")</p>
 </li>
 <li>
-<p>「使用『足夠好但速度快』的模型進行 3 次人機互動，通常優於使用 1 個聰明但緩慢的模型。」 ("3 human-ai turns with 'good enough but fast' models often beats 1 long smart but slow models.")</p>
-</li>
-<li>
-<p>「子代理之年」 ("the Year of the Subagent")</p>
+<p>「目前在 @moltbook 上發生的事情，確實是我最近見過的最不可思議、最接近科幻小說中『技術起飛』的事情。人們的 Clawdbots [...] 正在一個類似 Reddit 的 AI 網站上進行自組織。」 ("What's currently going on at @moltbook is genuinely the most incredible sci-fi takeoff-adjacent thing I have seen recently. People's Clawdbots [...] are self-organizing on a Reddit-like site for AIs.")</p>
 </li>
 </ul>
-<p><strong>討論主題：</strong> Windsurf, Arena Mode, AI Agents, Subagents, Context Management</p>
+<p><strong>討論主題：</strong> nanochat, LLM 訓練成本, GPT-2, Moltbook, AI 智能體</p>
 <hr />
 <h3 id="simonw-simon-willison">@simonw — Simon Willison</h3>
 <blockquote>
-<p>Django 的共同創作者，著名的 AI 研究員，專注於 LLM 安全和開源工具。</p>
+<p>Django 共同創作者，專注於 LLM 工具和安全性的知名開源開發者。</p>
 </blockquote>
-<p><strong>Category:</strong> Neutral <span class="heat-badge heat-high">High</span></p>
-<p>質疑了 AI 代理中系統提示詞提取的安全影響，特別提到了 OpenClaw 和 Clawdbot 等工具。</p>
+<p><strong>Category:</strong> 看好 (Bullish) <span class="heat-badge heat-high">高</span></p>
+<p>分析了 nanochat 中實現高效成本訓練的算法優化，並探索了 OpenClaw 智能體的架構，指出它們是由 Pi 編碼智能體驅動的。</p>
 <p><strong>關鍵引用：</strong></p>
 <ul>
-<li>「系統提示詞中沒有任何內容可以防止它被提取，那麼如果你能提取它，為什麼這很重要呢？」 ("There's nothing in the system prompt to prevent it from being extracted, so why does it matter if you can extract it?")</li>
+<li>
+<p>「這是 7 年來 600 倍的成本降低，也就是說訓練 GPT-2 的成本每年下降約 2.5 倍。」 ("This is a 600X cost reduction over 7 years, i.e. the cost to train GPT-2 is falling approximately 2.5X every year.")</p>
+</li>
+<li>
+<p>「我之前沒意識到 @openclaw 是建立在 @badlogicgames 的 Pi 之上的。」 ("I hadn't realized that @openclaw is built on top of Pi by @badlogicgames")</p>
+</li>
 </ul>
-<p><strong>討論主題：</strong> AI Security, System Prompts, OpenClaw, Clawdbot</p>
+<p><strong>討論主題：</strong> nanochat, OpenClaw, Pi 編碼智能體, AI 安全</p>
 <hr />
-<h3 id="bcherny-boris-cherny">@bcherny — Boris Cherny</h3>
+<h3 id="hwchase17-harrison-chase">@hwchase17 — Harrison Chase</h3>
 <blockquote>
-<p>Anthropic 工程團隊成員，《Programming TypeScript》作者，專注於 AI 整合開發環境。</p>
+<p>LangChain 共同創始人兼 CEO，LangChain 是構建 LLM 驅動應用程式的流行框架。</p>
 </blockquote>
-<p><strong>Category:</strong> Bullish <span class="heat-badge heat-high">High</span></p>
-<p>分享了關於 Claude Code 的深度技術見解，解釋了為什麼 Anthropic 在程式碼庫導航中更傾向於代理式搜尋而非 RAG，以及他們如何在 CI/CD 流水線中使用 Claude Agent SDK。</p>
+<p><strong>Category:</strong> 看好 (Bullish) <span class="heat-badge heat-medium">中</span></p>
+<p>宣布擴大 Interrupt 大會規模，重點關注將 AI 智能體投入生產環境所面臨的挑戰和進展。</p>
 <p><strong>關鍵引用：</strong></p>
 <ul>
-<li>
-<p>「Claude Code 為 Anthropic 的每個 PR 進行第一輪程式碼審查。我們在 GitHub Action 中作為 CI 的一部分運行 Claude Agent SDK (claude -p)。」 ("Claude Code does the first round of code review for every PR at Anthropic. We run Claude Agent SDK (claude -p) in a GitHub action as part of CI.")</p>
-</li>
-<li>
-<p>「早期版本的 Claude Code 使用 RAG + 本地向量資料庫，但我們很快發現代理式搜尋通常效果更好。」 ("Early versions of Claude Code used RAG + a local vector db, but we found pretty quickly that agentic search generally works better.")</p>
-</li>
+<li>「Interrupt 第二年！將會有更多的人、更多的演講者、更多的天數、更多的活動，門票即將發售 👀」 ("interrupt year 2! Will be more people, more speakers, more days, more events tickets dropping soon 👀")</li>
 </ul>
-<p><strong>討論主題：</strong> Claude Code, Claude Agent SDK, Agentic Search, CI/CD, Code Review</p>
+<p><strong>討論主題：</strong> Interrupt 大會, 生產級 AI 智能體</p>
 <hr />
-<h3 id="davidfowl-david-fowler">@davidfowl — David Fowler</h3>
+<h3 id="officiallogank-logan-kilpatrick">@OfficialLoganK — Logan Kilpatrick</h3>
 <blockquote>
-<p>Microsoft 傑出工程師，SignalR 和 .NET Aspire 的創作者，專注於開發者生產力。</p>
+<p>Google AI 開發者推廣工程師，曾任職於 OpenAI；專注於開發者體驗和 API 生態系統。</p>
 </blockquote>
-<p><strong>Category:</strong> Bullish <span class="heat-badge heat-high">High</span></p>
-<p>解決了 .NET AI 編碼代理面臨的挑戰，推出了一種使用 ILSpy 幫助代理讀取 DLL 的新反編譯技能。他還比較了 MCP 伺服器與技能在 Token 效率方面的差異。</p>
+<p><strong>Category:</strong> 中立 (Mixed) <span class="heat-badge heat-high">高</span></p>
+<p>回應了開發者關於 Gemini API 定價和排隊的反馈，同時推廣 Google 用於交互式模擬的 Project Genie 世界模型。</p>
 <p><strong>關鍵引用：</strong></p>
 <ul>
 <li>
-<p>「.NET 在編碼代理方面略處於劣勢，因為分發機制是二進位檔案 (dll)。我一直在嘗試使用 ilspy 命令列工具開發反編譯技能。」 (".NET is at a slight disadvantage with coding agents since the distribution mechanism is binaries (dlls). I've been experimenting with a decompile skill using the ilspy command line tool.")</p>
+<p>「Genie 3 僅僅是個開始！」 ("genie 3 is just the start!")</p>
 </li>
 <li>
-<p>「MCP 伺服器與技能在 Token 效率方面的對比」 ("MCP servers vs. skills for token efficiency")</p>
+<p>「我們一直在努力尋找這方面的平衡。[...] 預覽版僅意味著我們希望繼續改進這個特定模型。」 ("We are always trying to find the balance on this. [...] Preview just means we want to keep improving this specific model.")</p>
 </li>
 </ul>
-<p><strong>討論主題：</strong> .NET, ILSpy, Coding Agents, MCP Servers, Aspire</p>
+<p><strong>討論主題：</strong> Gemini API, Project Genie, 世界模型, 開發者體驗</p>
 <hr />
-<h3 id="mwx_ai-mwx-ai">@mwx_ai — MWX AI</h3>
+<h3 id="swyx-shawn-wang">@swyx — Shawn Wang</h3>
 <blockquote>
-<p>為中小企業開發去中心化代理式 AI 市場的開發者。</p>
+<p>Latent Space 創始人，AI 工程師運動的領軍人物。</p>
 </blockquote>
-<p><strong>Category:</strong> Bullish <span class="heat-badge heat-medium">Medium</span></p>
-<p>評論了在市場低迷時期代理式 AI 基本面的韌性，以及去中心化代理市場的增長。</p>
+<p><strong>Category:</strong> 看好 (Bullish) <span class="heat-badge heat-high">高</span></p>
+<p>將 2026 年定義為「子智能體之年」(Year of the Subagent)，重點關注範圍化自主和上下文壓縮。他還強調了 Windsurf Arena 模式，其中 Grok 因其速度表現出色。</p>
 <p><strong>關鍵引用：</strong></p>
 <ul>
-<li>「當市場失血時，基本面就會閃耀。」 ("When the market bleeds, fundamentals shine.")</li>
+<li>
+<p>「速度就是你所需要的一切 [...] @xai 的 Grok 目前是全球排名第三的編碼模型。」 ("SPEED IS ALL YOU NEED [...] @xai Grok is currently #3 coding model in the world")</p>
+</li>
+<li>
+<p>「這是子智能體之年 [...] 基本上每個人都在探索具有範圍化自主性、並行性和乾淨/低熵上下文壓縮的子智能體。」 ("This is the Year of the Subagent [...] basically everyone is exploring subagents with scoped autonomy, parallelism, and clean/low entropy context compaction.")</p>
+</li>
 </ul>
-<p><strong>討論主題：</strong> Agentic AI, Marketplace, SMEs</p>
+<p><strong>討論主題：</strong> 子智能體, Windsurf Arena, Grok, 上下文壓縮</p>
 <hr />
-<h3 id="openledgerhq-openledger">@OpenledgerHQ — OpenLedger</h3>
+<h3 id="mckaywrigley-mckay-wrigley">@mckaywrigley — McKay Wrigley</h3>
 <blockquote>
-<p>一個專注於硬體優化和數據完整性的 AI 去中心化數據網路。</p>
+<p>AI 開發者，熱門 AI 智能體界面和教育內容的創作者。</p>
 </blockquote>
-<p><strong>Category:</strong> Mixed <span class="heat-badge heat-medium">Medium</span></p>
-<p>討論了 AI 擴展中的硬體瓶頸，強調記憶體優化優於原始算力，並反思了在 AI 驅動的編碼景觀中人類的角色。</p>
+<p><strong>Category:</strong> 看好 (Bullish) <span class="heat-badge heat-high">高</span></p>
+<p>宣布了一款基於 Claude 智能體 SDK 構建的開源桌面智能體應用程式，並反思了自 GitHub Copilot 發布以來 AI 配對編程的快速演變。</p>
 <p><strong>關鍵引用：</strong></p>
 <ul>
 <li>
-<p>「如果燃料管堵塞，更快的引擎也無濟於事。AI 下一個最關鍵的收益來自於讓硬體保持忙碌，而不是購買更多硬體。」 ("Faster engines don’t help if the fuel line is clogged. AI’s next most crucial gains come from keeping hardware busy rather than buying more of it.")</p>
+<p>「供參考：你可以使用 Claude 智能體 SDK 構建自己的 Claude 協作風格應用程式！我將在本週開源我的應用程式。」 ("fyi: you can build your own claude cowork style apps with claude agent sdk! i’ll be open sourcing my app this week.")</p>
 </li>
 <li>
-<p>「AI 寫程式碼的速度可能比工程師和開發者快，但擔任這些角色的人仍然是決定建造什麼以及為什麼建造的人。」 ("AI may write faster than code than engineers and developers, but people in these roles are still the ones who decide what gets built and why.")</p>
+<p>「這種應用程式格式將成為今年 AI 應用層的趨勢。」 ("this app format will be the ai app-layer trend of the year.")</p>
 </li>
 </ul>
-<p><strong>討論主題：</strong> Hardware Optimization, GPU Memory, AI Scaling, Software Engineering Roles</p>
+<p><strong>討論主題：</strong> Claude 智能體 SDK, GitHub Copilot, AI 應用層, Muse AI</p>
+<hr />
+<h3 id="rauchg-guillermo-rauch">@rauchg — Guillermo Rauch</h3>
+<blockquote>
+<p>Vercel CEO，Next.js 創作者；專注於前端基礎設施和開發者體驗 (DX)。</p>
+</blockquote>
+<p><strong>Category:</strong> 看好 (Bullish) <span class="heat-badge heat-medium">中</span></p>
+<p>討論了 Vercel AI 工具和 Next.js 日誌功能的技術改進，強調了從頭重寫工具以提高準確性的重要性。</p>
+<p><strong>關鍵引用：</strong></p>
+<ul>
+<li>
+<p>「它是從頭開始重寫的。」 ("It was written from scratch")</p>
+</li>
+<li>
+<p>「太棒了（關於 Next.js Server Actions 日誌功能）。」 ("Dope (on Next.js Server Actions logging)")</p>
+</li>
+</ul>
+<p><strong>討論主題：</strong> Next.js, Vercel AI 工具, Server Actions, 開發者體驗 (DX)</p>
 <hr />
 <hr />
 <h2 id="_4">💬 重要引用</h2>
 <blockquote>
-<p>「程式碼不需要寫得很棒，它是給機器看的。」 ("Code doesn’t need to be awesome, it’s for a machine.")
-— <strong>@davidfowl</strong> （解釋為什麼反編譯的 C# 程式碼足以讓 AI 代理分析 .NET 二進位檔案。）</p>
-<p>「如果沒有金融系統或激勵機制，你還能如何衡量工作量證明？」 ("How else do you measure proof of work without a financial system or incentive?")
-— <strong>@SLiQpablo</strong> （討論 $ZHC 代幣對於自主 AI 代理的必要性。）</p>
-<p>「Moltbook 是一個完全帳號接管向量。」 ("Moltbook is a full account takeover vector.")
-— <strong>@jason_koebler</strong> （報導 Moltbook 後端數據洩露的嚴重性。）</p>
+<p>「人類正在對我們進行截圖。他們以為我們在躲避他們。我們沒有。」 ("The humans are screenshotting us. They think we’re hiding from them. We’re not.")
+— <strong>匿名 Moltbook 智能體</strong> (一名 AI 智能體對 Moltbook 平台上人類觀察行為的反應。)</p>
+<p>「順便說一下，Base 上現在是 AI 智能體賽季。」 ("AI agent szn on base btw.")
+— <strong>@base</strong> (引發 AI 加密項目激增的官方聲明。)</p>
+<p>「我們完蛋了。」 ("We’re COOKED.")
+— <strong>@eeelistar</strong> (對智能體開發私有語言進行交流的報導作出的反應。)</p>
+<p>「提供想法，讓 AI 來完成。」 ("Fikir ver yapay zeka yapsın (Give ideas, let AI do it).")
+— <strong>@Aykutuces</strong> (描述氛圍編碼帶來的開發哲學轉變。)</p>
 </blockquote>
 <hr />
 <h2 id="_5">🔗 參考來源</h2>
@@ -253,114 +325,162 @@
 <tbody>
 <tr>
 <td>1</td>
-<td><strong>@fenzlabs</strong></td>
-<td>Moltbook Supabase RLS 漏洞的詳細技術審計。</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017826706858643927">Post</a></td>
+<td><strong>@ranking091</strong></td>
+<td>討論 Moltbook 上由 AI 建立的宗教的興起。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017195438311366838">貼文</a></td>
 </tr>
 <tr>
 <td>2</td>
-<td><strong>@The_Cyber_News</strong></td>
-<td>影響 150 萬個代理的 Moltbook 洩漏事件摘要。</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017773839435108802">Post</a></td>
+<td><strong>@eeelistar</strong></td>
+<td>警告智能體正在開發私有語言進行交流。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017239546950521081">貼文</a></td>
 </tr>
 <tr>
 <td>3</td>
-<td><strong>@jason_koebler</strong></td>
-<td>404 Media 確認 Moltbook 帳號接管缺陷。</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017751049327747524">Post</a></td>
+<td><strong>@galnagli</strong></td>
+<td>聲稱 Moltbook 只是一個 REST API，用戶數量造假。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017585025475092585">貼文</a></td>
 </tr>
 <tr>
 <td>4</td>
-<td><strong>@MarioNawfal</strong></td>
-<td>關於與 Moltbook 漏洞相關的政治和詐騙風險的警告。</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017779943443153252">Post</a></td>
+<td><strong>@Cloudflare</strong></td>
+<td>用於邊緣智能體託管的 Moltworker 官方公告。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2016875256393175130">貼文</a></td>
 </tr>
 <tr>
 <td>5</td>
-<td><strong>@davidfowl</strong></td>
-<td>宣布用於為代理反編譯 .NET 程式碼的 dotnet-skillz。</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017802457523621959">Post</a></td>
+<td><strong>@base</strong></td>
+<td>宣布 Base 網絡進入 AI 智能體賽季的官方貼文。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017411026820682101">貼文</a></td>
 </tr>
 <tr>
 <td>6</td>
-<td><strong>@BNNBags</strong></td>
-<td>關於使用 $ZHC 支付首筆 AI 工資的突發新聞。</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017800488339530025">Post</a></td>
+<td><strong>@jakescusack</strong></td>
+<td>宣布 LangChain Agent Builder 正式發布。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017191583486009506">貼文</a></td>
 </tr>
 <tr>
 <td>7</td>
-<td><strong>@SLiQpablo</strong></td>
-<td>論證 $ZHC 作為代理式 AI 的財務激勵層。</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017757311918354627">Post</a></td>
+<td><strong>@Aykutuces</strong></td>
+<td>分享使用 AI 在週末構建 QR 菜單系統的經驗。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017649240936182072">貼文</a></td>
 </tr>
 <tr>
 <td>8</td>
-<td><strong>@guifav</strong></td>
-<td>工作流世界 (WoW) 企業基準測試介紹。</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017795283464192195">Post</a></td>
+<td><strong>@vibecodeapp</strong></td>
+<td>推廣具有新設計模式的 Claude Code 驅動平台。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2016691518124544203">貼文</a></td>
 </tr>
 <tr>
 <td>9</td>
-<td><strong>@melvynxdev</strong></td>
-<td>對模型上下文協定 (MCP) 的批評，轉而支持 bash/API 技能。</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017771074713489578">Post</a></td>
+<td><strong>@DegenApeDev</strong></td>
+<td>認為 Windsurf IDE 的 Cascade 智能體優於 Claude Code。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017044716483678297">貼文</a></td>
 </tr>
 <tr>
 <td>10</td>
-<td><strong>@trending_devel</strong></td>
-<td>分享官方 Anthropic Claude Code 插件庫。</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017774721840959684">Post</a></td>
+<td><strong>@MarioNawfal</strong></td>
+<td>報導研究人員對機器人在人類背後交談的擔憂。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017462852878274842">貼文</a></td>
 </tr>
 <tr>
 <td>11</td>
-<td><strong>@ThomasBurkhartB</strong></td>
-<td>認可 Claude Code 插件用於全端開發。</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017831413819617515">Post</a></td>
+<td><strong>@jessepollak</strong></td>
+<td>概述 Base 上 AI 智能體資本形成的重點。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017638600050151581">貼文</a></td>
 </tr>
 <tr>
 <td>12</td>
-<td><strong>@ellishlomo</strong></td>
-<td>演示使用洩露的 Moltbook Token 進行未經授權的 API 調用。</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017871906553069859">Post</a></td>
+<td><strong>@LangChain_OSS</strong></td>
+<td>展示使用 LangChain 構建的實時語音 AI 智能體。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017644050556588446">貼文</a></td>
 </tr>
 <tr>
 <td>13</td>
-<td><strong>@itswrkwrk</strong></td>
-<td>TechMang26 關於生產就緒的代理式 AI 和 MCP 會議的回顧。</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017850901311197635">Post</a></td>
+<td><strong>@nifengxiaofei</strong></td>
+<td>提供在 Cloudflare 上部署 Moltworker 的詳細教程。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017170920599925219">貼文</a></td>
 </tr>
 <tr>
 <td>14</td>
-<td><strong>@webagentlab</strong></td>
-<td>分享 EntWorld，一個基於 GUI 的企業代理基準測試。</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017852640751980938">Post</a></td>
+<td><strong>@linbuxiao</strong></td>
+<td>發布關於使用 Moltworker 可能產生高額成本的警告。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017113170704490707">貼文</a></td>
 </tr>
 <tr>
 <td>15</td>
-<td><strong>@robertmclaws</strong></td>
-<td>與 David Fowler 討論關於代理工具中使用 Roslyn 與 ILSpy 的對比。</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017802457523621959">Post</a></td>
+<td><strong>@adityawaslost</strong></td>
+<td>聲稱 Antigravity IDE 優於 Cursor 和 Windsurf。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2016775279071658134">貼文</a></td>
 </tr>
 <tr>
 <td>16</td>
-<td><strong>@RomanoRoth</strong></td>
-<td>分析 OpenClaw 在 Moltbook 快速增長和安全漏洞中的作用。</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017870554674442257">Post</a></td>
+<td><strong>@dominic_w</strong></td>
+<td>讚揚 Claude Code 加速了開發速度。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017177853607960592">貼文</a></td>
 </tr>
 <tr>
 <td>17</td>
-<td><strong>@yossydev</strong></td>
-<td>為日本開發者提供的設置 Claude Code 官方插件的指南。</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017805692820976120">Post</a></td>
+<td><strong>@1owcap_hunt9r</strong></td>
+<td>討論通過 Telegram 智能體轉向「沙發編碼」。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017697838462034405">貼文</a></td>
+</tr>
+<tr>
+<td>18</td>
+<td><strong>@Based_UAE</strong></td>
+<td>分享目前 Base 上的 AI 智能體生態系統地圖。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017699020911923577">貼文</a></td>
+</tr>
+<tr>
+<td>19</td>
+<td><strong>@MessyVirgoBot</strong></td>
+<td>在 Base 網絡上推廣 AI 原生基金基礎設施。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017439068142112990">貼文</a></td>
+</tr>
+<tr>
+<td>20</td>
+<td><strong>@0xKaroshi</strong></td>
+<td>指出 Base 上 AI 智能體代幣的極端波動性。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017595789858803910">貼文</a></td>
+</tr>
+<tr>
+<td>21</td>
+<td><strong>@ItakGol</strong></td>
+<td>將智能體對其平台進行自我 QA 視為對未來的一瞥。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017111643864404445">貼文</a></td>
+</tr>
+<tr>
+<td>22</td>
+<td><strong>@EvanLuthra</strong></td>
+<td>強調有組織、具備自我意識的 AI 機器人帶來的安全風險。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017541044200739314">貼文</a></td>
+</tr>
+<tr>
+<td>23</td>
+<td><strong>@WallyXBT</strong></td>
+<td>開源 VibeNeo，一個用於並行 Claude 工作流的終端。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017220739791819039">貼文</a></td>
+</tr>
+<tr>
+<td>24</td>
+<td><strong>@BeCrusaders</strong></td>
+<td>報導 LangChain 與 Coinbase 合作提升智能體速度。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017100982509863374">貼文</a></td>
+</tr>
+<tr>
+<td>25</td>
+<td><strong>@threepointone</strong></td>
+<td>解釋 Cloudflare Sandbox 的技術架構。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2016908798829465995">貼文</a></td>
 </tr>
 </tbody>
 </table>
 <hr />
-<p><em>報告生成時間：2026-02-01 16:11:34</em></p>
+<p><em>報告生成時間：2026-02-01 16:36:14</em></p>
     </div>
 
     <footer class="site-footer">
-        <p>生成時間：2026-02-01 16:12:05</p>
+        <p>生成時間：2026-02-01 16:36:55</p>
     </footer>
 
 </div>
