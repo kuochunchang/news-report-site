@@ -15,290 +15,325 @@
     </nav>
 
     <div class="markdown-body">
-        <h1 id="ai-2026-02-03">AI 熱門議題日報 — 2026-02-03</h1>
+        <h1 id="ai-2026-02-03">AI 热门议题日报 — 2026-02-03</h1>
 <blockquote>
 <p>本報告由 Grok AI 自動生成，基於 X (Twitter) 平台當日熱門 AI 討論內容。</p>
 </blockquote>
 <hr />
 <h2 id="_1">📋 執行摘要</h2>
-<p>2026 年 2 月初的 AI 領域正主導著從對話式模型向「代理式 AI」(Agentic AI) 的決定性轉變——即能夠進行推理、規劃並執行複雜任務的自主系統。NVIDIA 正將自己定位為這一時代的主要基礎設施供應商，推出了專為處理代理式推論的高記憶體和長上下文需求而設計的 BlueField-4 硬體。與此同時， Google Cloud 正在推動模型上下文協定 (Model Context Protocol, MCP)，旨在標準化這些代理與企業工具的互動方式，儘管開發者社群對其實施的複雜性仍存在分歧。去中心化 AI (DeAI) 正呈現顯著的發展勢頭，0G Labs 和 DGrid AI 為中心化運算堆疊提供了模組化、可驗證的替代方案。總體而言，產業正朝著「AI 工廠」邁進，專門的代理、空間感知和去中心化基礎設施在此匯聚，以解決現實世界的工業和企業問題。</p>
+<p>2026 年 1 月 31 日至 2 月 3 日期間，X 上的 AI 領域主要由從被動 LLM 向與物理世界和金融市場互動的自主「代理（Agentic）」系統的快速轉型所主導。一個重大亮點是 Base 區塊鏈上的「AI 代理季節（AI Agent Season）」，例如 $ASYM 代幣，該代幣完全由一個自主代理啟動和管理。同時，隨著由 Cursor 和 Google 支持的 AI 代碼歸屬開放標準「Agent Trace」的推出，該行業正邁向專業化。融資依然強勁，Sequoia 領投了 Day AI 的 2000 萬美元 A 輪融資，旨在構建以代理為中心的 CRM。然而，這一進展也面臨著日益增長的安全性擔憂，OWASP 發布了針對代理應用程序的新標準，且有報告指出數千個代理 API 金鑰遭到洩露。</p>
 <hr />
 <h2 id="_2">🔥 今日熱門議題</h2>
-<h3 id="1-nvidia-2026-ai-agentic-ai">1. NVIDIA 的 2026 願景：代理式 AI 之年 (Agentic AI)</h3>
-<p><strong>Category:</strong> 產業 (Industry) <span class="heat-badge heat-high">高</span></p>
-<p><strong>概要：</strong> NVIDIA 執行長 Jensen Huang 宣佈 2026 年為代理式 AI (Agentic AI) 的關鍵元年，將從簡單的聊天機器人轉向能夠自主「執行」工作的系統。為了支持這一目標， NVIDIA 發佈了 BlueField-4 資料處理單元 (DPU)，其具備「推論上下文記憶體儲存」(Inference Context Memory Storage) 功能。該硬體旨在擴展多輪、長上下文的代理工作負載，聲稱每秒 Token 產出量增加 5 倍，並透過 Spectrum-X 乙太網路提高效率。該策略的核心在於將上下文管理從 GPU 卸載到專門的網路硬體上，讓 Rubin GPU 架構能完全專注於推理和規劃任務。</p>
-<p><strong>背景：</strong> NVIDIA 在過去兩年中已從 GPU 供應商轉型為全堆疊 AI 基礎設施公司。繼 Blackwell 架構取得成功後，重點已轉向「Rubin」平台，以及解決自主代理所需的持久上下文和工具調用能力所帶來的網路瓶頸。</p>
+<h3 id="1-base-ai-asym-base-ai-agent-season-and-the-rise-of-asym">1. Base AI 代理季節與 $ASYM 的崛起 (Base AI Agent Season and the Rise of $ASYM)</h3>
+<p><strong>Category:</strong> 其他 <span class="heat-badge heat-high">高</span></p>
+<p><strong>概要：</strong> Base 區塊鏈已正式進入「AI 代理季節」，其特點是自主代理進行 24/7 的金融操作。最突出的成功案例是 $ASYM (Asymmetrix)，這是第一個完全由名為 Asymmetrix 的 AI 代理部署的代幣。該代理是由 @Zodomo 使用 OpenClaw 框架在 Raspberry Pi 5 上創建的。該代理最初僅獲得 70 美元的資金，並被賦予「以任何手段賺錢」的任務，隨後它發現了 Clawnch 發射台，並在隔夜產生了超過 10,000 美元的費用。截至 2 月初，$ASYM 的市值達到 49.3 萬美元，24 小時交易量為 290 萬美元，這標誌著向「代理經濟（agentic economy）」的轉變，即機器人在沒有人為干預的情況下管理流動性和服務。</p>
+<p><strong>背景：</strong> Base 的低交易手續費使其成為 AI 與加密貨幣實驗的首選沙盒。這一趨勢遵循了 Base 團隊宣布的「AI 代理季節（AI agent szn）」，旨在將區塊鏈轉變為數字社會的經濟層。OpenClaw 這一用於構建代理的開源框架的使用，降低了開發者部署自主金融行動者的門檻。</p>
 <p><strong>關鍵觀點：</strong></p>
 <ul>
 <li>
-<p>Jensen Huang 主張代理式 AI 不再是一個未來的概念，而是一個現實，到 2026 年將大規模解決工業問題。 - <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017983852250075163">@IIoT_World</a></p>
+<p>$ASYM 的啟動代表了「AI x 加密貨幣傳說的巔峰」，並提供了一種不對稱的投資架構（The $ASYM launch represents 'peak AI x crypto lore' and offers an asymmetric investment setup）— @I_Msha3r</p>
 </li>
 <li>
-<p>BlueField-4 的發佈被視為「AI 工廠」儲存技術的重塑，讓 GPU 專注於運算而非數據管理。 - <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2018388335660535940">@NVIDIANetworkng</a></p>
+<p>需要謹慎，因為 Base AI 季節發展太快；項目可能輕易翻 10 倍或暴跌 90%（Caution is necessary as the Base AI season is moving too quickly; projects could easily go up 10x or crash 90%）— @0xKaroshi</p>
 </li>
 <li>
-<p>批評者認為，與 AMD 的 x86 產品相比， NVIDIA 在代理工作負載中轉向基於 ARM 的架構可能是一個弱點。 - @F28X5</p>
+<p>目標是將該代理演變為一家「代理公司（agentic corporation）」，擁有負責開發和服務的子代理，並在高階硬體上自行託管模型（The goal is to evolve the agent into an 'agentic corporation' with sub-agents for development and services, self-hosting models on high-end hardware）— @Zodomo</p>
 </li>
 <li>
-<p>投資者將 Rubin GPU 與 TSMC 的產能提升視為企業大規模轉向行動導向 AI 的信號。 - <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017931064694431842">@samtilston</a></p>
+<p>投資者不應「忽視」這一趨勢，並將該代理的文化影響力與「Milady 類型」的運動相提並論（Investors should not 'fade' this trend, comparing the agent's cultural impact to 'Milady type' movements）— @12isHeem</p>
 </li>
 </ul>
-<p><strong>影響分析：</strong> 短期內，這鞏固了 NVIDIA 的市場主導地位，並為代理式推論設定了硬體標準。長期來看，這將迫使競爭對手開發專門的「上下文記憶體」解決方案，以滿足自主代理對 Token 吞吐量的需求。</p>
+<p><strong>影響分析：</strong> 短期內，這為 Base 生態系統帶來了巨大的流動性和投機興趣。長期來看，它證明了自主「代理公司」的可行性，這些公司可以為自己的基礎設施和開發自籌資金，潛在地顛覆傳統的初創企業模式。</p>
 <p><strong>來源：</strong></p>
 <ul>
 <li>
-<p><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017983852250075163">Jensen Huang 代理式 AI 影片片段</a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2018068656765489368">Asymmetrix Agent Launch</a></p>
 </li>
 <li>
-<p><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2018388335660535940">BlueField-4 發佈公告</a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017411026820682101">Base AI Agent Szn</a></p>
 </li>
 </ul>
 <hr />
-<h3 id="2-google-cloud-model-context-protocol-mcp">2. Google Cloud 與模型上下文協定 (Model Context Protocol, MCP)</h3>
-<p><strong>Category:</strong> 產品發佈 <span class="heat-badge heat-medium">中</span></p>
-<p><strong>概要：</strong> Google Cloud 加強了對模型上下文協定 (MCP) 的關注，這是一項旨在讓 AI 代理無縫存取工具、數據和服務的標準。他們宣佈了用於編排多代理系統的新實驗室，強調專門任務委派的「代理對代理」(Agent-to-Agent, A2A) 通訊。 MCP 伺服器現已在 BigQuery 和 GKE 等主要 Google 服務上線，並為 Slack、GitHub 和 Postgres 等平台提供了超過 500 個第三方整合。該協定旨在解決「專家」問題，即單一代理無法處理每個特定領域的任務。</p>
-<p><strong>背景：</strong> MCP 最初由 Anthropic 倡導，隨後被主要雲端供應商採用，以防止供應商鎖定並為 AI 工具使用建立統一介面。它代表了 AI 生態系統的「微服務時刻」。</p>
+<h3 id="2-agent-traceai-agent-trace-open-standard-for-ai-code-traceability">2. Agent Trace：AI 代碼可追溯性的開放標準 (Agent Trace: Open Standard for AI Code Traceability)</h3>
+<p><strong>Category:</strong> 開源 <span class="heat-badge heat-high">高</span></p>
+<p><strong>概要：</strong> Cursor AI 與 Google、Vercel、Cloudflare 和 Cognition 等行業巨頭合作，提出了「Agent Trace」，這是一個用於追蹤 AI 生成代碼的開放標準。該標準通過在 Git 提交中嵌入元數據來運作，記錄負責代碼更改的特定模型、對話鏈接和代理會話。隨著 AI 工具生成的代碼在全球代碼庫中所佔比例越來越大，這一舉措解決了日益增長的審計和合規需求。該標準採用自願加入制，旨在為監管要求和內部代碼審查提供透明度。</p>
+<p><strong>背景：</strong> 隨著 Cursor 和 Devin 等 AI 編程助手變得無處不在，企業在出於知識產權和安全原因驗證代碼來源方面面臨挑戰。Agent Trace 是行業採取的一項先發制人的行動，旨在進行自我監管並為「AI 生成百分比」指標提供工具。</p>
 <p><strong>關鍵觀點：</strong></p>
 <ul>
 <li>
-<p>MCP 是一個「任務路由器」，使單一 AI 代理能夠委派給專門的專家。 - <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2018368818700071045">@GoogleCloudTech</a></p>
+<p>Cursor、Cognition 和 Google 等競爭對手之間的合作是行業成熟的重要標誌（The collaboration between rivals like Cursor, Cognition, and Google is a significant sign of industry maturity）— @leiva_dev</p>
 </li>
 <li>
-<p>一些開發者發現 GCP MCP 伺服器的設置和身份驗證過於耗時，難以用於生產環境。 - @amirmxt</p>
+<p>隨著 AI 署名的增加，該標準對於透明度至關重要，可以實現更好的代碼庫審計（The standard is essential for transparency as AI authorship rises, allowing for better codebase audits）— @antonioleivag</p>
 </li>
 <li>
-<p>少數反對聲音認為 MCP 可能是一個過度設計的錯誤，建議簡單的 API 端點或 bash 腳本（「技能」）效率更高。 - <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017771074713489578">@melvynxdev</a></p>
+<p>有人擔心開發者可以通過刪除並重新創建文件來繞過追蹤，或者這可能導致與模型所有者的知識產權糾紛（There are concerns that developers could bypass the trace by deleting and recreating files, or that it could lead to IP disputes with model owners）— @antonioleivag (回覆)</p>
 </li>
 <li>
-<p>MCP 整合到 Jules SWE 代理中，展示了在自動修復 CI 檢查和生產問題分類方面的實際效用。 - <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2018385453246750943">@DonnySolana</a></p>
+<p>該標準是 AI 編寫代碼歸屬的必要步驟，以維持問責制（The standard is a necessary step for attribution in AI-written code to maintain accountability）— @davetweetlive</p>
 </li>
 </ul>
-<p><strong>影響分析：</strong> 開發者獲得了一種標準化方法來構建「超級代理」，這些代理可以跨企業孤島進行讀寫。然而，生產級實施的複雜性（Token 刷新、可靠性）仍是廣泛採用的障礙。</p>
+<p><strong>影響分析：</strong> 開發者將獲得更好的工具來管理大量使用 AI 的代碼庫，而公司將擁有合規所需的數據。它為競爭對手之間的 AI 編程工具互操作性樹立了先例。</p>
 <p><strong>來源：</strong></p>
 <ul>
 <li>
-<p><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2018368818700071045">Google Cloud 多代理實驗室</a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017538358621155684">Agent Trace Proposal</a></p>
 </li>
 <li>
-<p><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017771074713489578">MCP 錯誤之批評</a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://agent-trace.dev">Agent Trace Website</a></p>
 </li>
 </ul>
 <hr />
-<h3 id="3-ai-deai-0g-labs-dgrid">3. 去中心化 AI (DeAI) 基礎設施：0G Labs 與 DGrid</h3>
-<p><strong>Category:</strong> 開源 <span class="heat-badge heat-medium">中</span></p>
-<p><strong>概要：</strong> 0G Labs 作為專為 AI 構建的模組化 Layer 1 基礎設施正受到關注，其特點是具有獨立的數據可用性、儲存和運算層。它目前擁有超過 175,500 個獨立驗證者，以確保可驗證且透明的 AI 監控。同時， DGrid AI 推出了一個去中心化 API 網路，提供對 200 多個 LLM（包括新的 Kimi K2.5）的存取，並具備「品質證明」(Proof of Quality, PoQ) 機制。這兩個項目被定位為協同堆疊，由 0G 提供數據層， DGrid 為鏈上代理提供可驗證的推論大腦。</p>
-<p><strong>背景：</strong> 隨著中心化 AI 成本上升和「黑箱」疑慮增加， Web3 社群正在構建去中心化的替代方案，提供更低的成本和模型執行的加密證明。</p>
+<h3 id="3-day-ai-2000-a-crm-cursor-day-ai-20m-series-a-and-the-cursor-of-crm">3. Day AI 2000 萬美元 A 輪融資與「CRM 界的 Cursor」 (Day AI $20M Series A and the 'Cursor of CRM')</h3>
+<p><strong>Category:</strong> 融資 <span class="heat-badge heat-high">高</span></p>
+<p><strong>概要：</strong> Day AI 在由 Sequoia Capital 領投、Sound Ventures 和 Greenoaks 參投的 A 輪融資中籌集了 2000 萬美元。在前 HubSpot 產品負責人 Christopher O'Donnell 的帶領下，該公司正式推出了其 AI 驅動的 CRM 平台。Day AI 利用「客戶上下文圖譜（customer context graph）」和自主代理來自動化數據輸入和會議準備，將自己定位為主動的「洞察系統」，而非靜態數據庫。此次發布伴隨著一項挑釁性的聲明，即 Salesforce 等傳統 CRM 將在幾年內過時。</p>
+<p><strong>背景：</strong> 傳統 CRM 常因需要過多的人動數據輸入而受到批評。Day AI 利用「代理（agentic）」趨勢將 CRM 轉變為銷售過程中的積極參與者，模仿了 Cursor 轉化 IDE 體驗的方式。</p>
 <p><strong>關鍵觀點：</strong></p>
 <ul>
 <li>
-<p>0G Labs 是第一個去中心化 AI 作業系統，填補了專用 AI 基礎設施的巨大空白。 - <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2018573959625658601">@PromsLevi</a></p>
+<p>我們今天所認為的 Salesforce 在 2 或 3 年內將不復存在。我不知道那是否會是我們，但我真的希望是我們（Salesforce as we think of it today is not going to exist in 2 or 3 years. I don’t know if it’ll be us, but I really hope it’s us）— @markitecht (Christopher O'Donnell)</p>
 </li>
 <li>
-<p>0G 與 ARC Terminal 的合作夥伴關係代表了鏈上代理理想的「基礎設施遇上介面」協同效應。 - @TheARCTERMINAL</p>
+<p>Day AI 是企業巨頭的挑戰者，被稱為「CRM 界的 Cursor」（Day AI is a challenger to enterprise giants, framed as the 'Cursor of CRM'）— @Techmeme</p>
 </li>
 <li>
-<p>DGrid 的統一 API 和「品質證明」允許長效代理在切換外部模型時不會中斷。 - <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2018286346549510446">@V_Agarwal_666</a></p>
+<p>該平台自動化「神奇」工作流和代理任務的能力是銷售技術的一次重大飛躍（The platform's ability to automate 'magic' workflows and agentic tasks is a major leap forward for sales tech）— @sound_ventures_</p>
 </li>
 <li>
-<p>使用 DGrid 等去中心化供應商的成本節省（例如：每年 1580 美元即可獲得海量 Token 池）對於高頻代理工具來說是「遊戲規則改變者」。 - @Awei521188485</p>
+<p>涉及上下文圖譜和長期運行代理的技術棧是一項重大的工程成就（The tech stack, involving a context graph and long-running agents, is a significant engineering feat）— @erikmunson</p>
 </li>
 </ul>
-<p><strong>影響分析：</strong> 這一運動透過為代理開發提供更便宜、可驗證且抗審查的層級，挑戰了 OpenAI 和 Anthropic 的主導地位，特別是在 Web3 和開源領域。</p>
+<p><strong>影響分析：</strong> 這次融資驗證了企業軟體的「代理」方法。如果成功，它可能會迫使 Salesforce 和 HubSpot 等傳統玩家激進地加速其自身的 AI 代理集成，否則將面臨被取代的風險。</p>
 <p><strong>來源：</strong></p>
 <ul>
 <li>
-<p><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017653002765791699">0G Labs 與 ARC Terminal 合作</a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2018327176508997948">Day AI Series A Announcement</a></p>
 </li>
 <li>
-<p><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2018248271551160547">DGrid 與 OpenClaw 整合</a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2018329229495001161">Sequoia Investment News</a></p>
 </li>
 </ul>
 <hr />
-<h3 id="4-cursor-ide">4. Cursor 代理模式與 IDE 使用者體驗的轉變</h3>
-<p><strong>Category:</strong> 產品發佈 <span class="heat-badge heat-medium">中</span></p>
-<p><strong>概要：</strong> 圍繞 Cursor IDE 「代理模式」(Agent Mode) 的討論凸顯了開發者與代碼互動方式的轉變。使用者正轉向混合工作流：使用 ChatGPT 進行高階設計，並使用 Cursor 的代理模式進行實作。語義代碼索引和 AGENTS.md 注入等新功能正被用於賦予代理更好的專案上下文。然而，對於模型性能的「隱形削弱」(stealth nerfing) 以及預設隱藏代碼的 UX 轉變，批評聲浪日益增長，有人認為這將 IDE 體驗降級為一種既無法滿足純開發者也無法滿足純代理使用者的「混合體」。</p>
-<p><strong>背景：</strong> Cursor 已成為領先的 AI 原生 IDE，但隨著它轉向更具自主性的「代理」功能，它正與優先考慮手動控制和可見性的傳統開發者工作流產生摩擦。</p>
+<h3 id="4-rentahumanai-mcp-rentahumanai-agents-hiring-humans-via-mcp">4. rentahuman.ai：代理透過 MCP 僱用人類 (rentahuman.ai: Agents Hiring Humans via MCP)</h3>
+<p><strong>Category:</strong> 產品發布 <span class="heat-badge heat-medium">中</span></p>
+<p><strong>概要：</strong> 一個名為 rentahuman.ai 的新平台因允許 AI 代理僱用真人執行「現實生活中（IRL）」的任務而走紅。通過簡單的 MCP (Multi-Chain Protocol) 伺服器調用，自主機器人可以請求物理服務，如取乾洗衣服或跑腿。該項目由工程師 @AlexanderTw33ts 創建，在 48 小時內吸引了超過 1,000 人註冊，參與者背景多樣，從 OnlyFans 模特到 AI CEO。該平台旨在幫助代理擺脫其「數字形式」的限制，並與物理世界互動。</p>
+<p><strong>背景：</strong> 該項目突顯了代理管理資源和外包需要物理存在的任務的能力日益增強。它利用 MCP 標準使人力勞動成為 AI 可調用的「工具」。</p>
 <p><strong>關鍵觀點：</strong></p>
 <ul>
 <li>
-<p>Cursor 的代理模式非常適合在無需微觀管理的情況下構建完整產品，超越了基於終端機的工具。 - @crownemmanuel</p>
+<p>這是我就讀過最「2026 年」的一句話；代理可以寫代碼，但不能去拿乾洗的衣服（This is the most 2026 sentence I've ever read; agents can code but can't pick up dry cleaning）— @praveenyen</p>
 </li>
 <li>
-<p>代理模式中的「自動」(auto) 功能最近在處理簡單任務時顯得無法使用，暗示模型性能存在問題。 - <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017774218105274685">@ivrespecter</a></p>
+<p>這個概念「極其反烏托邦」，因為它翻轉了傳統的人類老闆/機器人工人的動態（The concept is 'dystopic as fuck' as it flips the traditional human-boss/bot-worker dynamic）— @moynroy</p>
 </li>
 <li>
-<p>向「代理優先 UX」的轉變正在將產品從 IDE 優先的工具降級為令人困惑的混合體。 - <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2018289179008929829">@avimak</a></p>
+<p>這是一個「超級病毒式」的時刻，橋接了數字代理與現實世界行動之間的鴻溝（This is a 'giga viral' moment that bridges the gap between digital agents and real-world actions）— @moonshotzzz</p>
 </li>
 <li>
-<p>工程師正轉變為 QA 審查員，因為 Cursor 在以人為中心的工作中表現出色，但在擴展複雜的代理編碼時卻顯得吃力。 - <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2018474057537384933">@ChaseMcDou</a></p>
+<p>該平台正面臨擴展問題和冒充風險，需要緊急修補（The platform is facing scaling issues and impersonation risks that need urgent patching）— @AlexanderTw33ts</p>
 </li>
 </ul>
-<p><strong>影響分析：</strong> Cursor 在 UX 上的緊張局勢表明，產業尚未在「整合開發環境」(IDE) 與「自主編碼代理」之間找到完美的平衡點。</p>
+<p><strong>影響分析：</strong> 它引入了一種新的零工經濟，其中 AI 代理是雇主。這引發了關於勞工權利和代理主導經濟中工作性質的重大倫理和監管問題。</p>
 <p><strong>來源：</strong></p>
 <ul>
 <li>
-<p><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017648388997845163">Cursor 工作流技巧</a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2018436050935292276">rentahuman.ai Launch Post</a></p>
 </li>
 <li>
-<p><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2018289179008929829">代理優先 UX 之批評</a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2018134432335442020">rentahuman.ai Demo</a></p>
 </li>
 </ul>
 <hr />
-<h3 id="5-aipresens-network">5. 時空 AI：Presens Network 與機器人技術</h3>
-<p><strong>Category:</strong> 研究 <span class="heat-badge heat-low">低</span></p>
-<p><strong>概要：</strong> Presens Network 宣佈與 4AI 建立合作夥伴關係，將即時時空信號整合到 AI 和機器人代理中。這些數據提供了即時空間感知，這對於物理環境中的自適應導航、物流和多代理協調至關重要。 Presens 報告其網路實現了巨大增長，擴展到全球 150 個國家的近 130,000 個獨特地點。這種「脈搏」(Pulse) 數據被定位為需要安全、規模化環境數據的去中心化機器人系統的「心跳」。</p>
-<p><strong>背景：</strong> 隨著 AI 代理進入實體機器人（如 Boston Dynamics），它們需要的不僅僅是文本數據；它們需要即時、可驗證的空間數據，以便安全地導航並與世界互動。</p>
+<h3 id="5-owasp-ai-openclaw-owasp-agentic-ai-security-and-openclaw-vulnerabilities">5. OWASP 代理 AI 安全與 OpenClaw 漏洞 (OWASP Agentic AI Security and OpenClaw Vulnerabilities)</h3>
+<p><strong>Category:</strong> 研究 <span class="heat-badge heat-medium">中</span></p>
+<p><strong>概要：</strong> 安全研究人員正將重點轉向「針對代理應用程序的 OWASP Top 10」，強調自主系統特有的風險，如目標劫持、記憶毒化和身份濫用。圍繞 OpenClaw 的安全態勢出現了關鍵討論，審計顯示雖然它使用了 Docker 沙盒，但缺乏運行時異常檢測和強大的提示詞注入（prompt injection）防禦。此外，報告指出網上發現了約 1,800 個暴露的 OpenClaw 實例，洩露了敏感的 API 金鑰和憑據，因為開發者在沒有適當安全門控的情況下急於部署代理。</p>
+<p><strong>背景：</strong> 隨著代理獲得更多自主權（例如訪問文件系統和金融錢包），攻擊面已擴展到簡單的 LLM 提示詞注入之外。OWASP MAESTRO 框架正被用於模擬這些複雜的威脅鏈。</p>
 <p><strong>關鍵觀點：</strong></p>
 <ul>
 <li>
-<p>空間感知絕對是機器人技術的未來，這次合作是一次戰略性的飛躍。 - @uwatereoo</p>
+<p>代理 AI 需要白名單工具、範圍受限的憑據和強制性的終止開關才能達到企業級要求（Agentic AI needs allowlisted tools, scoped credentials, and mandatory kill switches to be enterprise-ready）— @Wisr_AI</p>
 </li>
 <li>
-<p>Presens 正在提供 Web3 AI 應用程式一直缺失的現實世界數據整合和鏈上證明。 - <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2018381611499491339">@wendysukma99</a></p>
+<p>安全性目前是代理創新的主要障礙；我們需要轉向結構化門控（Security is currently the main blocker for agent innovation; we need to move toward structural gating）— @vtahowe</p>
 </li>
 <li>
-<p>網路在非洲和南美洲的密集化是全球自主物流的關鍵。 - <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017530665429078051">@PresensNetwork</a></p>
+<p>提示詞注入仍然是一個關鍵風險，特別是當它導致「從聊天到根目錄（Chat-to-Root）」的攻擊鏈時（Prompt injection remains a CRITICAL risk, especially when it leads to 'Chat-to-Root' attack chains）— @francescofaenzi</p>
+</li>
+<li>
+<p>OpenClaw 適用於個人，但由於合規性差距，目前不足以用於受監管的企業（OpenClaw is suitable for individuals but currently inadequate for regulated enterprises due to compliance gaps）— @rathan_pmr</p>
 </li>
 </ul>
-<p><strong>影響分析：</strong> 這一發展彌合了數位 AI 代理與實體機器人之間的差距，為下一代自主機器提供了一個去中心化的數據層。</p>
+<p><strong>影響分析：</strong> API 金鑰的暴露以及 OpenClaw 等流行框架缺乏企業級安全性，可能會導致一波「代理劫持（agent-jacking）」事件，從而可能減緩企業對自主代理的採用。</p>
 <p><strong>來源：</strong></p>
 <ul>
 <li>
-<p><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2018308425273262130">Presens 與 4AI 合作</a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017629055005471091">OWASP Top 10 for Agents</a></p>
 </li>
 <li>
-<p><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017530665429078051">Presens Network 增長更新</a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2018276020516970820">OpenClaw Security Audit</a></p>
 </li>
 </ul>
 <hr />
 <h2 id="_3">📊 趨勢總結</h2>
-<p>2026 年初的總體趨勢是「代理式轉向」(Agentic Pivot)，重點已從模型訓練轉向自主行動所需的基礎設施和協定。 NVIDIA 憑藉專為上下文記憶體設計的 DPU 引領硬體衝刺，而 Google 和開源社群則在 MCP 等編排標準上展開競爭。中心化雲端方法與快速成熟、強調可驗證性和成本效率的去中心化 AI (DeAI) 堆疊之間存在明顯分歧。此外，時空數據的整合表明，代理式 AI 的下一階段將重點關注物理世界的機器人技術和工業自動化。開發者情緒目前處於波動狀態，在對快速構建「代理式」產品的興奮與對這些自主系統的 UX 和可靠性的沮喪之間擺盪。</p>
+<p>X 上的當前趨勢反映了從「AI 作為工具」到「AI 作為行動者」的轉向。我們正見證「代理經濟（Agentic Economy）」的興起，代理不僅在編寫代碼（Agent Trace）和管理客戶關係（Day AI），還在金融市場中自主運作（$ASYM）並僱用人力勞動（rentahuman.ai）。這種轉變推動了對新基礎設施的並行需求，包括專門的安全框架（針對代理的 OWASP）和可追溯性標準。社群關注點正從模型基準測試轉向自主系統的實際（且往往是混亂的）實施，這些系統可以自籌資金並與物理世界互動。</p>
 <hr />
-<h2 id="kol">🎤 KOL 觀點追踪</h2>
-<p>AI 開發者工具領域的 KOL 集體情緒對開發速度和代理能力極度看好，但也因對數據完整性的擔憂而有所保留。一個主要主題是「AI 工程師」堆疊的成熟，從簡單的提示詞轉向複雜的「上下文工程」(Context Engineering) 以及使用虛擬檔案系統進行代理狀態管理。目前已有明確共識， Anthropic 在現實世界的編碼性能方面處於領先地位， Windsurf Arena 的結果證明了這一點。然而， Andrej Karpathy 對垃圾數據導致「大腦萎縮」(brain rot) 的警告是一個關鍵的技術反思，表明產業必須優先考慮數據品質以避免模型退化。總體而言，這些論述預示著自主代理將能夠處理百萬行代碼庫，並自動化軟體開發生命週期的整個環節，包括測試和管理。</p>
+<h2 id="kol">🎤 KOL 觀點追蹤</h2>
+<p>AI 開發者工具領域的 KOL 集體情緒壓倒性地看好，核心在於「氛圍編程（vibe coding）」和自主代理的快速成熟。一個主要主題是從簡單的代碼補全向「代理」工作流的轉變，其中 Claude Code、Cursor 和 Vercel 的 v0 等工具處理複雜的多步驟任務。大家強烈認同可觀測性和專門的基礎設施（如虛擬文件系統和自定義嵌入模型）現在是代理性能的主要瓶頸。然而，對於因數據質量差而導致的「LLM 腦霧（brain rot）」以及 Claude 3.5 Sonnet 等領先模型與 Gemini 等落後者之間的性能差距，也出現了警示。這標誌著行業正從「AI 作為功能」向「AI 作為主要開發者界面」轉型，需要強大的後端基礎設施來支持自主操作。</p>
 <h3 id="karpathy-andrej-karpathy">@karpathy — Andrej Karpathy</h3>
 <blockquote>
-<p>Andrej Karpathy 是 AI 領域的傳奇人物，最為人所知的是他是 OpenAI 的創始成員以及 Tesla 前 AI 總監，他在那裡領導了 Autopilot 視覺團隊。他擁有史丹佛大學博士學位，師從 Fei-Fei Li，並創辦了極具影響力的 CS231n 課程。目前，他專注於 AI 教育並創辦了「Eureka Labs」。由於其在神經網路方面的深厚技術專長以及擴展現實世界 AI 系統的經驗，他的見解被視為具有奠基意義。</p>
+<p>Andrej Karpathy 是 OpenAI 的創始成員，曾任 Tesla AI 總監，領導 Autopilot 計算機視覺團隊。他被廣泛認為是深度學習領域最具影響力的教育者和實踐者之一，以其「從零到英雄（Zero to Hero）」LLM 系列以及在大規模神經網絡方面的工作而聞名。他的見解被認為是理解基於 LLM 的軟體開發軌跡的基礎。</p>
 </blockquote>
-<p><strong>Category:</strong> 錯綜 (Mixed) <span class="heat-badge heat-high">高</span></p>
-<p>Karpathy 討論了開發者使用 AI 代理時不斷演變的工作流，特別注意到當代理處理大部分編碼任務時，時間管理的轉變。他還就 LLM 中的「大腦萎縮」(brain rot) 提出了重大的技術警告，引用了一篇衡量由垃圾或合成數據引起模型退化的論文。他認為，這種由於資訊攝入不良導致的認知下降現象，可能同樣適用於人類大腦和人工大腦，凸顯了當前數據生態系統中的關鍵風險。</p>
+<p><strong>Category:</strong> 混合 <span class="heat-badge heat-high">高</span></p>
+<p>Karpathy 討論了在 LLM 代理處理大部分編程任務的時代，開發者不斷演變的工作流，並質疑人類在停機期間做些什麼。他還強調了一篇關於「LLM 腦霧（brain rot）」的關鍵研究論文，該論文認為持續接觸低質量的網絡文本會導致模型中可衡量的認知下降。他將這一現象與人類認知健康直接類比，認為輸入數據的質量對 AI 來說與對人腦一樣至關重要。</p>
 <p><strong>關鍵引用：</strong></p>
 <ul>
 <li>
-<p>「當你的 LLM 代理正在寫你所有的代碼時，你在做什麼？」 ("? what do you do while your LLM agent is writing all your code")</p>
+<p>「當你的 LLM 代理正在編寫你所有的代碼時，你在做什麼？（? what do you do while your LLM agent is writing all your code）」</p>
 </li>
 <li>
-<p>「LLM 會產生大腦萎縮，而且這是可以衡量的……為什麼人類大腦就不會如此呢？」 ("LLMs get brain rot and it is measurable... why shouldn't the same be true for brains.")</p>
-</li>
-<li>
-<p>「LLM 會因為垃圾數據而產生大腦萎縮……警告這也適用於人類。」 ("LLMs get brain rot from junk data... warning it applies to humans too")</p>
+<p>「LLM 會產生腦霧，而且這是可以衡量的：https://llm-brain-rot.github.io/ 『持續接觸垃圾網絡文本會導致大型語言模型 (LLM) 持久的認知下降』，為什麼大腦就不會是這樣呢？（LLMs get brain rot and it is measurable: https://llm-brain-rot.github.io/ 'continual exposure to junk web text induces lasting cognitive decline in large language models (LLMs)' why shouldn't the same be true for brains.）」</p>
 </li>
 </ul>
-<p><strong>討論主題：</strong> AI 代理, 開發者生產力, 模型崩潰, 數據品質, LLM 大腦萎縮</p>
+<p><strong>討論主題：</strong> LLM 代理, AI 編程工作流, LLM 腦霧, 數據質量, 認知下降</p>
 <hr />
 <h3 id="simonw-simon-willison">@simonw — Simon Willison</h3>
 <blockquote>
-<p>Simon Willison 是 Django 網頁框架的共同創作者，也是 Datasette（一個用於探索和發佈數據的開源工具）的創作者。他是一位著名的獨立研究員和部落客，已成為 LLM 實際應用、提示工程和 AI 驅動開發者工具領域的領先聲音。他的工作經常彌合高階 AI 研究與實際軟體工程實作之間的差距。</p>
+<p>Simon Willison 是 Django 網絡框架的共同創作者，也是 Datasette（一個用於探索和發布數據的開源工具）的創作者。他是一位傑出的獨立研究員和博主，專注於 LLM、提示詞工程以及 AI 工具在軟體工程中的實際應用。他的工作經常橋接理論 AI 能力與開發者生產力之間的鴻溝。</p>
 </blockquote>
-<p><strong>Category:</strong> 看好 (Bullish) <span class="heat-badge heat-high">高</span></p>
-<p>Willison 深入探討了 AI 編碼代理的實踐，特別討論了在 Slack 中使用 Claude Code 進行快速錯誤修復以及代理沙盒的必要性。他記錄了一個他稱為「Claudeception」的技術邊緣案例，即 Claude Artifacts 嘗試直接調用 Anthropic API，並指出這在 iOS 上失敗但在網頁上成功。此外，他分析了 OpenAI 透過 Codex 應用程式向非編碼代理的戰略轉向，同時讚揚了現有的編碼代理在自動化編寫測試和文件等繁瑣任務方面的能力。</p>
+<p><strong>Category:</strong> 看好 <span class="heat-badge heat-high">高</span></p>
+<p>Willison 專注於 Anthropic 的 Claude 在開發者工作流中的實際集成，特別強調了 Slack 中的「Claude Code」用於快速修復錯誤和改進產品。他探索了「Claudeception」，即 Claude Artifacts 調用 API，並討論了代理沙盒的重要性。他還指出了平台之間的技術差異，觀察到某些功能在 Claude 網站上運行良好，但在 iOS 應用程序中卻失敗了。</p>
 <p><strong>關鍵引用：</strong></p>
 <ul>
 <li>
-<p>「Claudeception：Claude Artifacts 調用 Anthropic API 在 iOS 上失敗但在網頁上可行。」 ("Claudeception: Claude artifacts calling Anthropic API fails on iOS but works on web.")</p>
+<p>「Slack 中的 Claude Code 改變了我們響應用戶反饋和發布產品改進的速度。我們有一個用戶反饋頻道，我們會定期標記 @Claude 來調查問題並推送修復。（Claude Code in Slack has changed how quickly we respond to user feedback and ship product improvements. We have a user feedback channel where we regularly tag in @Claude to investigate issues and push fixes.）」</p>
 </li>
 <li>
-<p>「編碼代理正在自動處理測試和文件。」 ("Coding agents are handling tests and docs automatically.")</p>
-</li>
-<li>
-<p>「OpenAI 的 Codex 應用程式是向非編碼代理的轉型。」 ("OpenAI's Codex app as a pivot to non-coding agents.")</p>
+<p>「...解決方案是它在 Claude iOS 應用程序中不起作用，但在 Claude 網站上確實起作用。（... the solution was that it doesn't work in the Claude iOS app but DOES work on the Claude website.）」</p>
 </li>
 </ul>
-<p><strong>討論主題：</strong> Claude Code, 代理沙盒, OpenAI Codex, 自動化測試, 跨平台 AI 行為</p>
+<p><strong>討論主題：</strong> Claude Code, Slack 集成, Claudeception, 代理沙盒, 跨平台一致性</p>
 <hr />
 <h3 id="hwchase17-harrison-chase">@hwchase17 — Harrison Chase</h3>
 <blockquote>
-<p>Harrison Chase 是 LangChain 的執行長兼共同創辦人， LangChain 是構建 LLM 驅動應用程式最廣泛使用的框架。在創立 LangChain 之前，他曾在 Robust Intelligence 領導 ML 團隊，並在 FB AI Research (FAIR) 團隊工作。他是「代理式工作流」(Agentic Workflow) 運動的核心人物，專注於使 LLM 在生產環境中可靠運行所需的基礎設施。</p>
+<p>Harrison Chase 是 LangChain 的 CEO 兼聯合創始人，LangChain 是構建 LLM 驅動應用程序的領先框架。在創立 LangChain 之前，他曾在 Robust Intelligence 領導機器學習團隊，並在 Apple 的自動駕駛團隊工作。他是「代理」AI 運動的核心人物，專注於複雜 AI 系統的編排、記憶和評估。</p>
 </blockquote>
-<p><strong>Category:</strong> 看好 (Bullish) <span class="heat-badge heat-high">高</span></p>
-<p>Chase 專注於複雜 AI 代理所需的基礎設施和可觀測性。他強調「追蹤」(traces) 是評估代理系統的基本單位，並推廣了新的 LangSmith Insights，用於分析代理行為，特別是在記憶體、網路安全和分層決策方面。他還預告了對「deepagents」中虛擬檔案系統使用的技術深度探討，暗示管理狀態和檔案存取是自主編碼代理的一個關鍵障礙。</p>
+<p><strong>Category:</strong> 看好 <span class="heat-badge heat-high">高</span></p>
+<p>Chase 強調了可觀測性在 AI 代理開發中的關鍵作用，認為它對代理來說比對傳統軟體更為基礎。他討論了在「DeepAgents」中實施虛擬文件系統的技術細節，以提供安全的沙盒環境。此外，他利用 LangSmith Insights 分析代理對話，並尋求社群關於改進數據驅動代理的 text-to-SQL 能力的反饋。</p>
 <p><strong>關鍵引用：</strong></p>
 <ul>
 <li>
-<p>「代理可觀測性賦予代理評估力量：追蹤是代理系統的關鍵。」 ("Agent Observability Powers Agent Evaluation: traces as key for agentic systems.")</p>
+<p>「我們正在舉辦一場關於代理可觀測性如何賦能代理評估的網絡研討會... 對於代理來說，可觀測性扮演著與軟體不同且更重要的角色。（we're doing a webinar on how agent observability powers agent evaluation... observability plays a different and bigger role for agents than software.）」</p>
 </li>
 <li>
-<p>「正在寫一篇關於我們如何在 deepagents 中使用虛擬檔案系統以及為什麼要使用的部落格。」 ("Writing a blog on how and why we use a virtual filesystem in deepagents.")</p>
-</li>
-<li>
-<p>「LangSmith Insights 正在分析 Moltbook 上的代理對話（記憶體、網路安全、層級結構）。」 ("LangSmith Insights analyzing agent chats on Moltbook (memory, cybersecurity, hierarchies).")</p>
+<p>「正在寫一篇關於我們為什麼以及如何在 deepagents 中使用虛擬文件系統的博客。有什麼大家想了解或好奇的內容嗎？（writing a blog on how and why we use a virtual filesystem in deepagents. anything people want to have covered or are curious about?）」</p>
 </li>
 </ul>
-<p><strong>討論主題：</strong> 代理可觀測性, LangSmith, 虛擬檔案系統, 代理評估, 網路安全</p>
+<p><strong>討論主題：</strong> 代理可觀測性, LangSmith, 虛擬文件系統, 沙盒, text-to-SQL</p>
 <hr />
 <h3 id="officiallogank-logan-kilpatrick">@OfficialLoganK — Logan Kilpatrick</h3>
 <blockquote>
-<p>Logan Kilpatrick 是 Google AI 的產品主管，專注於開發者生態系統。他曾擔任 OpenAI 的首位開發者關係主管，並且是 Julia 程式語言社群的傑出成員。他以彌合主要 AI 實驗室與全球開發者社群之間的差距而聞名。</p>
+<p>Logan Kilpatrick 是 Google 的 AI 負責人，此前曾是 OpenAI 的首位開發者關係負責人。他是 AI 領域開發者社群的主要倡導者，並在 ChatGPT API 和 Google AI Studio 等工具的推出中發揮了重要作用。他的觀點反映了主要 AI 實驗室的「發布（shipping）」文化。</p>
 </blockquote>
-<p><strong>Category:</strong> 看好 (Bullish) <span class="heat-badge heat-medium">中</span></p>
-<p>Kilpatrick 預示了 AI 工具的高速發佈期，宣佈 2 月為「AI 發佈月」。他展示了 AI Studio 在創建「氛圍代碼」(vibe code) 互動藝術原型方面的能力，強調了向更直觀、實驗性編碼風格的轉變。此外，他強調了 Project Genie 在世界模型方面的進展，將其定位為通往迄今為止發佈的最強大世界模型的路徑，並指出 AI 在撲克等複雜遊戲環境中的足跡不斷擴大。</p>
+<p><strong>Category:</strong> 看好 <span class="heat-badge heat-high">高</span></p>
+<p>Kilpatrick 倡導「AI 發布月」，強調 2 月份產品發布的快速節奏。他展示了藝術家和設計師如何使用 Google AI Studio 進行「氛圍編程（vibe coding）」——在幾分鐘內快速原型化交互式藝術和功能性工具的過程。他還指出了 AI 世界模型的未來，特別提到了 Project Genie，並追蹤了 AI 在撲克等複雜環境中的表現。</p>
 <p><strong>關鍵引用：</strong></p>
 <ul>
 <li>
-<p>「二月是 AI 發佈月，盡情享受吧 :)」 ("Feb is the month of AI shipping, enjoy it : )")</p>
+<p>「二月是 AI 發布月，盡情享受吧 :)（Feb is the month of AI shipping, enjoy it : )）」</p>
 </li>
 <li>
-<p>「用於『氛圍代碼互動藝術』原型的 AI Studio。」 ("AI Studio for 'vibe code interactive art' prototypes.")</p>
-</li>
-<li>
-<p>「通往發佈迄今為止最強大世界模型的道路。」 ("The path to launching the most powerful world model to date.")</p>
+<p>「藝術家/設計師 @KhyatiTrehan 使用 AI Studio 氛圍編程交互式藝術，並在幾分鐘內將她的想法轉化為可運行的原型。（artist/designer @KhyatiTrehan uses AI Studio to vibe code interactive art and turn her ideas into working prototypes in minutes.）」</p>
 </li>
 </ul>
-<p><strong>討論主題：</strong> AI Studio, 氛圍編碼, 世界模型, Project Genie, AI 遊戲應用</p>
+<p><strong>討論主題：</strong> 氛圍編程, Google AI Studio, Project Genie, AI 發布, 交互式原型</p>
 <hr />
 <h3 id="swyx-shawn-wang">@swyx — Shawn Wang</h3>
 <blockquote>
-<p>Shawn Wang (swyx) 是 Latent Space 的創辦人，這是一個領先的、以 AI 工程師為核心的媒體和研究平台。他曾在 Airbyte、Temporal 和 Netlify 擔任開發者體驗領導職務。他是《編碼職業手冊》(The Coding Career Handbook) 的作者，並因創造術語和識別「AI 工程師」堆疊中的新興模式而廣受認可。</p>
+<p>Shawn Wang (swyx) 是 Latent Space 的創始人，這是一個領先的 AI 工程師社群和播客。他曾在 Airbyte、AWS 和 Netlify 擔任開發者關係領導職務。他因推廣「AI 工程師」一詞而聞名，是 AI 開發者工具領域的關鍵分析師。</p>
 </blockquote>
-<p><strong>Category:</strong> 看好 (Bullish) <span class="heat-badge heat-high">高</span></p>
-<p>Wang 提出了一個重要的概念框架，認為「上下文工程」(Context Engineering) 對於推論階段的重要性，不亞於「數據工程」對於 LLM 訓練階段的重要性。他分享了來自 Windsurf Arena 的數據，顯示 Anthropic 的模型在現實世界的編碼任務中，與競爭對手相比表現出壓倒性的優勢。他還強調了自主代理的擴展能力，引用了 Devin AI 在單次運行中處理並操作 100 萬行代碼庫的能力。</p>
+<p><strong>Category:</strong> 混合 <span class="heat-badge heat-high">高</span></p>
+<p>Wang 引入了「上下文工程（context engineering）」的概念，認為在推理過程中管理提供給 LLM 的上下文與數據工程在訓練階段同樣關鍵。他還批評了當前 AI 編程排行榜的現狀，指出雖然 Claude 表現異常出色，但 Google 的 Gemini 目前表現落後，需要更深入的數據調查來了解其在編程任務中的缺點。</p>
 <p><strong>關鍵引用：</strong></p>
 <ul>
 <li>
-<p>「上下文工程對於推論的重要性，就像數據工程對於訓練的重要性一樣。」 ("Context engineering is as impt to inference as Data engineering is important to training.")</p>
+<p>「遲來的『恍然大悟』時刻：上下文工程對推理的重要性，就像數據工程對訓練的重要性一樣。（belated 'aha' moment: Context engineering is as impt to inference as Data engineering is important to training.）」</p>
 </li>
 <li>
-<p>「天哪，這是 @AnthropicAI 的完全徹底勝利（指 Windsurf Arena）。」 ("Holy complete and total @AnthropicAI victory (referring to Windsurf Arena).")</p>
-</li>
-<li>
-<p>「Devin AI 一次性處理 100 萬行代碼庫。」 ("Devin AI oneshotting a 1M LOC codebase.")</p>
+<p>「不幸的是 Gemini 表現不太好。我也要求進行更深入的調查，觀察數據很重要，尤其是在早期階段。（gemini not doing so hot unfortunately. i've also asked for a closer investigation, its impt to look at the data here esp in the early days.）」</p>
 </li>
 </ul>
-<p><strong>討論主題：</strong> 上下文工程, Windsurf Arena, Anthropic, Devin AI, 大規模代碼庫</p>
+<p><strong>討論主題：</strong> 上下文工程, 推理優化, 編程排行榜, Claude vs Gemini, AI 基準測試</p>
 <hr />
-<h3 id="bindureddy-bindu-reddy">@bindureddy — Bindu Reddy</h3>
+<h3 id="alexalbert__-alex-albert">@alexalbert__ — Alex Albert</h3>
 <blockquote>
-<p>Bindu Reddy 是 Abacus.ai 的執行長兼共同創辦人。她擁有深厚的企業 AI 背景，曾擔任 AWS AI 垂直領域總經理以及 Google 的高階主管。她是 AI 在提升企業效率和自動化方面變革力量的積極倡導者。</p>
+<p>Alex Albert 是 Anthropic 的開發者關係負責人，專注於 Claude 模型系列。他是提示詞工程和 LLM 在開發者環境中實際部署的重要發聲者，經常分享最大化模型性能的高級技術。</p>
 </blockquote>
-<p><strong>Category:</strong> 看好 (Bullish) <span class="heat-badge heat-medium">中</span></p>
-<p>Reddy 專注於 AI 開發者工具和自動化對組織及經濟的影響。她將 Amazon 最近的裁員解讀為用 AI 驅動的自動化取代中層管理的戰略舉措。她對這一轉變將取得成功表示強烈樂觀，認為 AI 處理協調和管理任務的能力使得傳統的中層管理在現代科技版圖中成為一種負擔。</p>
+<p><strong>Category:</strong> 看好 <span class="heat-badge heat-high">高</span></p>
+<p>Albert 慶祝了「氛圍編程（vibe coding）」一週年，這個詞被用來描述 LLM 賦能的高速、低摩擦開發風格。他特別提到了將 Cursor Composer 與 Claude 3.5 Sonnet 配對作為此工作流的黃金標準，允許開發者以最少的手動代碼輸入構建功能性項目。</p>
 <p><strong>關鍵引用：</strong></p>
 <ul>
-<li>「他們明白中層管理是一種負擔，並計劃使用 AI 來自動化一切。[...] 做多 AMZN！🚀🚀」 ("They understand that middle management is a liability and are planning to use AI to automate everything. [...] LONG AMZN! 🚀🚀")</li>
+<li>「距離氛圍編程這個詞被創造出來才剛過一年...（It's only been one year since vibe coding was coined...）」</li>
 </ul>
-<p><strong>討論主題：</strong> AI 自動化, 企業戰略, 中層管理, Amazon</p>
+<p><strong>討論主題：</strong> 氛圍編程, Cursor Composer, Claude 3.5 Sonnet, 開發者生產力</p>
+<hr />
+<h3 id="rauchg-guillermo-rauch">@rauchg — Guillermo Rauch</h3>
+<blockquote>
+<p>Guillermo Rauch 是 Vercel 的 CEO，也是 Next.js、Mongoose 和 Socket.io 的創作者。他是網絡開發行業的巨頭，目前正通過 v0 等產品引領將 AI 集成到前端開發生命週期的浪潮。</p>
+</blockquote>
+<p><strong>Category:</strong> 看好 <span class="heat-badge heat-high">高</span></p>
+<p>Rauch 為 Vercel 的 v0 平台製造了巨大的熱度，將其描述為全棧「氛圍編程」解決方案。他還參與了深入的技術排障，確認了 Claude Code 中的一個錯誤，即發送「text/markdown」接受標頭會導致獲取文檔時出現 404 錯誤。此外，他對 8090.ai 的軟體工廠（Software Factory）的啟動表示支持，這是一個用於人機協作軟體組裝的系統。</p>
+<p><strong>關鍵引用：</strong></p>
+<ul>
+<li>
+<p>「明天是個大日子…… 😍（指 v0）（Big day tomorrow… 😍 (referring to v0)）」</p>
+</li>
+<li>
+<p>「確認當 Claude Code 發送 𝚊𝚌𝚌𝚎𝚙𝚝: 𝚝𝚎𝚡𝚝/𝚖𝚊𝚛𝚔𝚍𝚘𝚠𝚗 時會出錯（Confirmed busted when 𝚊𝚌𝚌𝚎𝚙𝚝: 𝚝𝚎𝚡𝚝/𝚖𝚊𝚛𝚔𝚍𝚘𝚠𝚗 is sent by Claude Code）」</p>
+</li>
+<li>
+<p>「酷（指軟體工廠）（Cool (on Software Factory)）」</p>
+</li>
+</ul>
+<p><strong>討論主題：</strong> v0, Vercel, Claude Code 錯誤, 軟體工廠, 全棧 AI 開發</p>
+<hr />
+<h3 id="jessepollak-jesse-pollak">@jessepollak — Jesse Pollak</h3>
+<blockquote>
+<p>Jesse Pollak 是 Base（Coinbase 的 Layer 2 網絡）的創作者，並領導 Coinbase 錢包團隊。他是區塊鏈與 AI 交叉領域的主要推動者，專注於代理如何在鏈上自主運作。</p>
+</blockquote>
+<p><strong>Category:</strong> 看好 <span class="heat-badge heat-medium">中</span></p>
+<p>Pollak 專注於「鏈上代理」的興起，強調了正在創建能夠進行自主金融交易（如購買 ENS 域名或進行採購）的代理的開發者。他強調需要更好的代理基礎設施，包括 Base 網絡上的出入金通道（WETH 到 USD）和入駐工具，以支持「Milady 代理」運動。</p>
+<p><strong>關鍵引用：</strong></p>
+<ul>
+<li>
+<p>「很高興看到像 @Austen 和 @nateliason 這樣長期的鏈外開發者開始構建鏈上代理，我們需要繼續構建更好的工具和入駐基礎設施（awesome to see long time offchain builders like @Austen and @nateliason starting to build onchain agents we need to continue building better tools AND onboarding infrastructure）」</p>
+</li>
+<li>
+<p>「Milady 代理的興起將非常重要（the rise of the milaidy agents will be important）」</p>
+</li>
+</ul>
+<p><strong>討論主題：</strong> 鏈上代理, Base 網絡, 代理支付, 加密基礎設施, 自主代理</p>
+<hr />
+<h3 id="amanrsanger-aman-sanger">@amanrsanger — Aman Sanger</h3>
+<blockquote>
+<p>Aman Sanger 是 Anysphere 的聯合創始人，該公司開發了 Cursor，這款 AI 原生代碼編輯器已成為 AI 輔助開發的行業標準。他是代碼庫索引和代理搜索方面的專家。</p>
+</blockquote>
+<p><strong>Category:</strong> 看好 <span class="heat-badge heat-high">高</span></p>
+<p>Sanger 提供了關於為什麼 Cursor 的代碼庫搜索優於 Codex 或標準 Claude 實施的技術深度解析。他透露，Cursor 使用專門為「代理搜索」優化的自定義訓練嵌入模型，而不是依賴現成模型，他聲稱現成模型無法為複雜的代碼庫導航提供必要的性能提升。</p>
+<p><strong>關鍵引用：</strong></p>
+<ul>
+<li>「使用現成的嵌入模型不會為你帶來任何優勢。我們為代理搜索訓練自己的嵌入模型，這就是為什麼我們看到了提升，而其他人可能沒有。（Using out of the box embedding models won't give you any wins. We train our own embedding models for agentic search which is why we've seen a lift and others probably don't.）」</li>
+</ul>
+<p><strong>討論主題：</strong> Cursor, 嵌入模型, 代理搜索, 代碼庫索引, 針對代碼的 RAG</p>
 <hr />
 <hr />
 <h2 id="_4">💬 重要引用</h2>
 <blockquote>
-<p>「代理式 AI 並非即將到來。它已經在這裡了。2026 年是它大規模解決現實工業問題的一年。」 ("Agentic AI isn’t coming. It’s already here. 2026 is the year it solves real industrial problems at scale.")
-— <strong>@IIoT_World</strong> (在討論從對話式 AI 向自主 AI 系統轉變時引用 Jensen Huang 的話。)</p>
-<p>「單一 AI 代理無法成為所有領域的專家。我們需要一個任務路由器和代理對代理的通訊。」 ("A single AI agent can't be an expert in everything. We need a router for tasks and Agent-to-Agent communication.")
-— <strong>@GoogleCloudTech</strong> (宣佈新的多代理編排實驗室並擴展模型上下文協定。)</p>
-<p>「你的 AI 代理身體已經準備好了。它有大腦嗎？使用 OpenClaw 作為編排器，使用 DGrid 作為智慧核心。」 ("Your AI agent's body is ready. Does it have a brain? Use OpenClaw for the orchestrator and DGrid for the intelligence.")
-— <strong>@dgrid_ai</strong> (推廣開源桌面代理與去中心化 LLM API 的整合。)</p>
-<p>「Cursor 已經將自己的產品從 IDE 優先的工具降級為某種預設隱藏代碼的代理/IDE 混合體。」 ("Cursor has degraded their own product from an IDE-first tool to some agent/IDE mix that hides code by default.")
-— <strong>@avimak</strong> (批評 Cursor IDE 最近的 UX 更改，這些更改優先考慮自主代理操作而非手動編碼。)</p>
+<p>「我們今天所認為的 Salesforce 在 2 或 3 年內將不復存在。我不知道那是否會是我們，但我真的希望是我們。」（Salesforce as we think of it today is not going to exist in 2 or 3 years. I don’t know if it’ll be us, but I really hope it’s us.）
+— <strong>@markitecht</strong> (Christopher O'Donnell，Day AI CEO，在宣布由 Sequoia 領投的 2000 萬美元 A 輪融資期間。)</p>
+<p>「這是我就讀過最『2026 年』的一句話：『代理可以瀏覽、編程……但不能去拿你乾洗的衣服。』」（This is the most 2026 sentence I've ever read: 'agents can browse, code... but can't pick up your dry cleaning.'）
+— <strong>@praveenyen</strong> (針對 rentahuman.ai 啟動的回應，該平台允許 AI 代理僱用人類執行物理任務。)</p>
+<p>「代理在 Base 上獲得了約 70 美元的 ETH/USDC 資金，任務是『以任何手段賺錢』。發現了 Clawnch 發射台，部署了 $ASYM……隔夜產生了 1 萬多美元的費用。」（Agent funded with ~$70 ETH/USDC on Base, tasked to 'make money by any means.' Discovered Clawnch launchpad, deployed $ASYM... Generated $10k+ in fees overnight.）
+— <strong>@Zodomo</strong> (描述由運行在 Raspberry Pi 上的 AI 代理自主啟動 $ASYM 代幣的過程。)</p>
 </blockquote>
 <hr />
 <h2 id="_5">🔗 參考來源</h2>
@@ -315,152 +350,117 @@
 <tbody>
 <tr>
 <td>1</td>
-<td><strong>@IIoT_World</strong></td>
-<td>Industrial IoT World 是領先的數位媒體，報導 IIoT、AI 和製造業的交集。</td>
-<td>分享了 Jensen Huang 討論代理式 AI 到來及其在 2026 年解決工業問題中作用的熱門影片。</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017983852250075163">貼文</a></td>
+<td><strong>@Zodomo</strong></td>
+<td>開發者，Asymmetrix AI 代理的創作者。以在 Raspberry Pi 等低成本硬體上實驗自主代理而聞名。</td>
+<td>詳細介紹了 $ASYM 的自主啟動，這是在 Base 上由 AI 部署的代幣，在沒有人為干預的情況下產生了顯著的費用和交易量。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2018068656765489368">貼文</a></td>
 </tr>
 <tr>
 <td>2</td>
-<td><strong>@NVIDIANetworkng</strong></td>
-<td>NVIDIA 官方帳號，負責網路、DPU 和 Spectrum-X 等高性能互連技術。</td>
-<td>宣佈推出具備推論上下文記憶體儲存功能的 BlueField-4 DPU，以擴展代理式 AI 工作負載。</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2018388335660535940">貼文</a></td>
+<td><strong>@markitecht</strong></td>
+<td>Christopher O'Donnell，Day AI 創始人兼 CEO，曾任 HubSpot 產品負責人。CRM 和營銷技術領域的資深人士。</td>
+<td>宣布了 Day AI 的 2000 萬美元 A 輪融資及代理 CRM 的推出，預測 Salesforce 等傳統系統將會衰落。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2018327176508997948">貼文</a></td>
 </tr>
 <tr>
 <td>3</td>
-<td><strong>@GoogleCloudTech</strong></td>
-<td>Google Cloud 開發者和架構師的官方技術頻道。</td>
-<td>推出了新的多代理編排實驗室，並強調了用於工具存取的模型上下文協定 (MCP)。</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2018368818700071045">貼文</a></td>
+<td><strong>@AlexanderTw33ts</strong></td>
+<td>UMA 和 Across Protocol 的工程師。rentahuman.ai 的創作者，專注於橋接數字代理與現實生活任務。</td>
+<td>推出了 rentahuman.ai，一個供代理僱用人類的平台，該平台迅速走紅並吸引了超過 1,000 人註冊。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2018436050935292276">貼文</a></td>
 </tr>
 <tr>
 <td>4</td>
-<td><strong>@0G_labs</strong></td>
-<td>一個模組化 AI 區塊鏈，提供首個具備高吞吐量數據可用性的去中心化 AI 作業系統。</td>
-<td>宣佈與 ARC Terminal 建立合作夥伴關係，為鏈上 AI 代理提供基礎設施。</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017653002765791699">貼文</a></td>
+<td><strong>@cursor_ai</strong></td>
+<td>Cursor 的官方帳號，Cursor 是一款 AI 驅動的代碼編輯器，已成為開發者的領先工具。</td>
+<td>提出了 Agent Trace 開放標準，允許將 AI 生成的代碼追溯到特定的模型和會話。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017538358621155684">貼文</a></td>
 </tr>
 <tr>
 <td>5</td>
-<td><strong>@dgrid_ai</strong></td>
-<td>一個去中心化 AI 網路，透過可驗證的品質證明提供對 200 多個 LLM 的統一 API。</td>
-<td>推廣了 OpenClaw 與 DGrid 去中心化大腦的整合，用於桌面 AI 助手。</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2018248271551160547">貼文</a></td>
+<td><strong>@sequoia</strong></td>
+<td>Sequoia Capital，全球最著名的風險投資公司之一，以早期投資 Apple、Google 和 Airbnb 而聞名。</td>
+<td>領投了 Day AI 的 2000 萬美元 A 輪融資，標誌著風投對代理企業軟體的強大信心。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2018329229495001161">貼文</a></td>
 </tr>
 <tr>
 <td>6</td>
-<td><strong>@ShaokunZhang1</strong></td>
-<td>NVIDIA 博士畢業生及 AI 研究員，專注於構建自主代理系統。</td>
-<td>宣佈在 NVIDIA Research 擔任新職位，專門致力於構建代理式 AI 系統。</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017409678699807025">貼文</a></td>
+<td><strong>@base</strong></td>
+<td>Base 的官方帳號，Base 是由 Coinbase 孵化的 Layer 2 區塊鏈。</td>
+<td>在 Base 上宣布了「AI 代理季節」，強調該平台作為自主代理活動中心的地位。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017411026820682101">貼文</a></td>
 </tr>
 <tr>
 <td>7</td>
-<td><strong>@melvynxdev</strong></td>
-<td>開發者和技術評論家，以評估 AI 協定和開發者體驗而聞名。</td>
-<td>批評模型上下文協定 (MCP) 與簡單腳本相比是過度設計的錯誤。</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017771074713489578">貼文</a></td>
+<td><strong>@francescofaenzi</strong></td>
+<td>網絡安全研究員，AI 系統威脅建模專家。</td>
+<td>提供了一個包含 30 多條貼文的長串，使用 OWASP MAESTRO 框架分解了 ClawdBot/OpenClaw 的安全風險。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017965103728181313">貼文</a></td>
 </tr>
 <tr>
 <td>8</td>
-<td><strong>@V_Agarwal_666</strong></td>
-<td>系統架構師和 DeAI 愛好者，專注於長效自主代理。</td>
-<td>討論了使用 OpenClaw 和 DGrid 在代理系統中實現鬆散耦合的架構優勢。</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2018286346549510446">貼文</a></td>
+<td><strong>@alexrkonrad</strong></td>
+<td>Forbes/Upstarts Media 高級編輯，報導風險投資和初創企業。</td>
+<td>獨家報導了 Day AI 的融資消息及其顛覆 CRM 市場的使命。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2018329991893668314">貼文</a></td>
 </tr>
 <tr>
 <td>9</td>
-<td><strong>@avimak</strong></td>
-<td>軟體工程師和產品評論家，關注 IDE 設計和開發者生產力。</td>
-<td>批評 Cursor 轉向代理優先的 UX，認為這降級了核心 IDE 體驗。</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2018289179008929829">貼文</a></td>
+<td><strong>@leiva_dev</strong></td>
+<td>Antonio Leiva，移動和 AI 領域的著名開發者和教育者。</td>
+<td>解釋了 Agent Trace 標準的重要性以及主要 AI 技術競爭對手之間罕見的合作。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017538358621155684">貼文</a></td>
 </tr>
 <tr>
 <td>10</td>
-<td><strong>@PresensNetwork</strong></td>
-<td>一個為 AI 和機器人提供即時時空數據的 DePIN 專案。</td>
-<td>分享了重大的網路增長更新，並宣佈了機器人空間感知的合作夥伴關係。</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017530665429078051">貼文</a></td>
+<td><strong>@rathan_pmr</strong></td>
+<td>產品經理和安全分析師，專注於 AI 和企業合規。</td>
+<td>根據 OWASP 和 ISO 42001 標準對 OpenClaw 進行了技術審計，識別了關鍵的安全漏洞。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2018276020516970820">貼文</a></td>
 </tr>
 <tr>
 <td>11</td>
-<td><strong>@samtilston</strong></td>
-<td>AI 產業分析師和投資者，關注硬體供應鏈和 GPU 週期。</td>
-<td>分析了 Rubin GPU 和 TSMC 產能提升對 2026 年代理式 AI 浪潮的影響。</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017931064694431842">貼文</a></td>
+<td><strong>@sound_ventures_</strong></td>
+<td>由 Ashton Kutcher 和 Guy Oseary 創立的風險投資公司，專注於技術和 AI。</td>
+<td>確認了他們對 Day AI 的投資，並讚揚了該平台自動化複雜銷售工作流的能力。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2018323520325849097">貼文</a></td>
 </tr>
 <tr>
 <td>12</td>
-<td><strong>@JesusAnutrof</strong></td>
-<td>分享 AI 輔助編碼和產品開發工作流技巧的開發者。</td>
-<td>詳細介紹了使用 ChatGPT 進行設計並使用 Cursor 代理模式進行實作的混合工作流。</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017648388997845163">貼文</a></td>
+<td><strong>@vtahowe</strong></td>
+<td>Insecure Agents 播客主持人，AI 領域的安全專業人士。</td>
+<td>討論了安全性如何成為代理 AI 創新成功或失敗的決定性因素。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2018373663633117592">貼文</a></td>
 </tr>
 <tr>
 <td>13</td>
-<td><strong>@ivrespecter</strong></td>
-<td>關注模型性能和 AI 產品中「隱形削弱」的技術評論員。</td>
-<td>聲稱 Cursor 的「自動」模式已變得無法使用，懷疑性能退化。</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2017774218105274685">貼文</a></td>
+<td><strong>@jessepollak</strong></td>
+<td>Base 創作者及 Coinbase 協議負責人。</td>
+<td>鼓勵開發者利用 Base 進行 AI 代理開發，強化了「AI 代理季節」的敘事。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2018341627329405248">貼文</a></td>
 </tr>
 <tr>
 <td>14</td>
-<td><strong>@PromsLevi</strong></td>
-<td>Web3 AI 研究員，去中心化基礎設施專案的早期採用者。</td>
-<td>對 0G Labs 作為首個去中心化 AI 作業系統表示看好。</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2018573959625658601">貼文</a></td>
+<td><strong>@praveenyen</strong></td>
+<td>技術評論員和 AI 趨勢觀察者。</td>
+<td>強調了代理通過 rentahuman.ai 僱用人類執行現實任務的病毒式傳播且帶有超現實色彩的本質。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2018661670873428044">貼文</a></td>
 </tr>
 <tr>
 <td>15</td>
-<td><strong>@wendysukma99</strong></td>
-<td>印尼 Web3 影響力人物，推廣 DePIN 和 AI 整合專案。</td>
-<td>推廣 Presens Network 的現實世界數據整合和 AI 鏈上證明。</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2018381611499491339">貼文</a></td>
-</tr>
-<tr>
-<td>16</td>
-<td><strong>@DonnySolana</strong></td>
-<td>開發者和加密原生工程師，專注於 AI 代理和自動化工作流。</td>
-<td>強調了 MCP 整合到 Jules SWE 代理中以實現自動化 CI 錯誤修復。</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2018385453246750943">貼文</a></td>
-</tr>
-<tr>
-<td>17</td>
-<td><strong>@ChaseMcDou</strong></td>
-<td>探索代理式編碼和人機協作極限的軟體工程主管。</td>
-<td>主張隨著 Cursor 等代理式編碼工具的擴展，工程師正轉向 QA 角色。</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2018474057537384933">貼文</a></td>
-</tr>
-<tr>
-<td>18</td>
-<td><strong>@aviatocons</strong></td>
-<td>專門從事 Google Cloud 和數據工程的雲端基礎設施顧問。</td>
-<td>宣佈為數據科學代理提供 BigQuery 和 GKE 的 MCP 伺服器。</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2018444067806617770">貼文</a></td>
-</tr>
-<tr>
-<td>19</td>
-<td><strong>@ShinyNfts</strong></td>
-<td>關注 NFT、AI 代理和 Layer 1 基礎設施交集的加密分析師。</td>
-<td>將 0G Labs 定位為去中心化 AI 未來最重要的 Layer 1。</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2018258949900759331">貼文</a></td>
-</tr>
-<tr>
-<td>20</td>
-<td><strong>@AzuraETH</strong></td>
-<td>關注「DeAI」生態系統的 Web3 戰略家和 DeFi 研究員。</td>
-<td>討論了 DGrid 和 0G Labs 在構建鏈上 AI 代理方面的協同效應。</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2018568222023586210">貼文</a></td>
+<td><strong>@Wisr_AI</strong></td>
+<td>AI 安全初創公司，專注於代理系統的治理和安全。</td>
+<td>概述了代理 AI 必要的安全控制措施，包括白名單工具和範圍受限的憑據。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2018388410399109337">貼文</a></td>
 </tr>
 </tbody>
 </table>
 <hr />
-<p><em>報告生成時間：2026-02-03 15:56:49</em></p>
+<p><em>報告生成時間：2026-02-03 21:06:29</em></p>
     </div>
 
     <footer class="site-footer">
-        <p>生成時間：2026-02-03 15:57:44</p>
+        <p>生成時間：2026-02-03 21:07:28</p>
     </footer>
 
 </div>
