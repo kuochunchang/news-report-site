@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 熱門議題日報 — 2026-02-17</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="container">
+
+    <nav class="report-nav">
+        <a href="../index.html">&larr; 所有報告</a>
+        <a href="ai-report-2026-02-17.html">English</a>
+    </nav>
+
+    <div class="markdown-body">
+        <h1 id="ai-2026-02-17">AI 熱門議題日報 — 2026-02-17</h1>
+<blockquote>
+<p>本報告由 Grok AI 自動生成，基於 X (Twitter) 平台當日熱門 AI 討論內容。</p>
+</blockquote>
+<hr />
+<h2 id="_1">📋 執行摘要</h2>
+<p>今天標誌著 AI 行業從對話式助手向自主「代理工程」(Agentic Engineering) 的決定性轉向，領頭羊為 Anthropic 的 Claude Opus 4.6 和 OpenAI 的 GPT-5.3 Codex。這些發布的版本具備高達 1M token 的海量上下文窗口，以及每秒可達 1,000 token 的專門「Spark」變體，將競爭前沿從簡單的提示 (prompting) 轉移到了長程執行和多代理編排。Cursor AI 推出 52 小時雲端代理以及 xAI 的並行代理生成，預示著 IDE 正在演變成自主機群的指揮中心，能夠在幾天內完成長達一個季度的專案。同時，Google DeepMind 和 Allen Institute 正在通過委派框架和貝氏假設生成 (Bayesian hypothesis generation) 將「代理網路」(Agentic Web) 正式化，將焦點轉向治理和科學發現。總體而言，社群情緒反映出一種轉變：AI 不再僅僅是一個「副駕駛」(copilot)，而是一個能夠進行獨立、端到端工作流管理的「資深架構師」。</p>
+<hr />
+<h2 id="_2">🔥 今日熱門議題</h2>
+<h3 id="1-anthropic-claude-opus-46-agent-teams">1. Anthropic Claude Opus 4.6 與代理團隊 (Agent Teams) 發布</h3>
+<p><strong>Category:</strong> 產品發布 (Product Launch) <span class="heat-badge heat-high">高</span></p>
+<p><strong>概要：</strong> Anthropic 正式發布了 Claude Opus 4.6，這是一次重大的模型升級，具有海量的 1M token 上下文窗口（約 750,000 字）和 128K 的輸出 token 限制。此次發布引入了「代理團隊」(Agent Teams)，這是一個多代理協作框架，允許模型通過新的子代理執行模式，在複雜的長程任務上自主協調。在技術上，Opus 4.6 設定了新的行業基準，在 Terminal-Bench 2.0 上達到了創紀錄的 65.4%，在 GDPval 上達到了 1606 Elo，領先 GPT-5.2 達 144 分。Anthropic 透露，該模型現在通過代理工作流生成了近 100% 的內部代碼，將功能實現率從 14% 提升至 37%。儘管能力大幅提升，定價仍穩定在每百萬輸入 token 5 美元和每百萬輸出 token 25 美元。</p>
+<p><strong>背景：</strong> 這次發布標誌著行業從「提示工程」(Prompt Engineering) 向「代理工程」(Agentic Engineering) 的轉型，焦點從單輪查詢轉向結構化的自主工作流。隨著 LLM 的演進，跨海量數據集保持「上下文完整性」已成為新的競爭前沿，超越了簡單的推理，進入了長時間運行的執行階段。Anthropic 的舉動緊隨其傳聞中的 300 億美元 G 輪融資之後，旨在通過提供強大的 SDK 和用於多代理編排的法律插件，挑戰 OpenAI 在企業代理領域的統治地位。</p>
+<p><strong>關鍵觀點：</strong></p>
+<ul>
+<li>
+<p>提示工程的時代已經結束；現在真正的技能在於「代理工程」——分解複雜任務並設計可靠的工具使用模式。 ("The era of prompt engineering is over; the real skill now lies in 'Agentic Engineering'—decomposing complex tasks and designing reliable tool-use patterns.") - <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2022702234140614973">@0xjoggie</a></p>
+</li>
+<li>
+<p>Claude 4.6 代表了開發者「能力的完全轉變」，由於其對大規模架構的細緻處理，其表現更像是一位資深架構師，而非簡單的編碼助手。 ("Claude 4.6 represents a 'complete capability shift' for developers, acting more like a senior architect than a simple coding assistant due to its meticulous handling of large-scale architecture.") - @chatGPTina</p>
+</li>
+<li>
+<p>未來的 AI 將是「環境化 Claude」(Ambient Claude)——一種無需鍵盤的體驗，代理在其中提供上下文智慧並在現實世界中自主迭代。 ("Future AI will be 'Ambient Claude'—a keyboard-less experience where agents provide contextual intelligence and iterate in the real world autonomously.") - <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023326240892232134">@RahulPatil</a></p>
+</li>
+<li>
+<p>對於「50 個代理編寫一個作業系統」的敘事存在顯著的懷疑，一些人認為這是過度炒作的行銷，而非實際的 SaaS 突破。 ("There is significant skepticism regarding the '50 agents writing an OS' narrative, with some viewing it as overhyped marketing rather than a practical SaaS breakthrough.") - @cheese_moon</p>
+</li>
+<li>
+<p>1M token 的上下文窗口是大規模代碼庫的遊戲規則改變者，因為它有效地消除了長程編碼任務中的「上下文腐爛」。 ("The 1M token context window is a game-changer for massive repositories because it effectively eliminates 'context rot' during long-horizon coding tasks.") - <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023368884460593454">@JulianGoldieSEO</a></p>
+</li>
+</ul>
+<p><strong>影響分析：</strong> 短期內，開發者可以預期生產力的大幅提升，因為模型處理每個任務 20 個以上自主動作的能力將開發週期從數週縮短至數小時。對於企業而言，「代理團隊」框架提供了一種部署多雲 AI 集群的標準化方法，儘管安全和「信任」仍是全面採用的關鍵障礙。長期來看，這次發布預示著向「環境 AI」(Ambient AI) 的轉變，自主代理將管理大部分企業工作流，這可能會顛覆傳統的軟體開發和專案管理角色。</p>
+<p><strong>來源：</strong></p>
+<ul>
+<li>
+<p><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023368884460593454">Claude 4.6 代理編碼概述</a></p>
+</li>
+<li>
+<p><a target="_blank" rel="noopener noreferrer" href="https://code.claude.com/docs/en/agent-teams">Anthropic 代理團隊文件</a></p>
+</li>
+<li>
+<p><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023326240892232134">Anthropic 建設者日亮點</a></p>
+</li>
+</ul>
+<hr />
+<h3 id="2-terminal-bench-20">2. 編碼代理基準測試之戰：Terminal-Bench 2.0</h3>
+<p><strong>Category:</strong> 研究 (Research) <span class="heat-badge heat-high">高</span></p>
+<p><strong>概要：</strong> Terminal-Bench 2.0 已成為自主編碼代理的決定性戰場，評估模型在複雜、多步驟終端任務（如跨文件調試和環境配置）上的表現。OpenAI 的 GPT-5.3-Codex (High 變體) 目前以 77.3% 的成功率保持著當前最佳技術 (SOTA) 稱號，顯著優於其蒸餾後的「Spark」變體 (58.4%)。然而，Anthropic 的 Claude 4.6 (Opus) 憑藉 65.4% 的得分在長程代理任務中建立了主導地位，利用其海量的 1M token 上下文窗口和 128K 輸出能力，在其他模型遭受「上下文腐爛」的大規模代碼庫中保持連貫性。Google 洩漏的 Gemini 3.1 Pro 以 63.5% 緊隨其後，而像阿里巴巴 Ant Group 的 Ling-2.5-1T 等專門模型也加入了競爭。競爭正從簡單的代碼補全轉向「代理式」執行，模型直接與 shell 和文件系統交互以解決端到端的工程問題。</p>
+<p><strong>背景：</strong> AI 行業正從建議代碼片段的「副駕駛」(Copilots) 轉向能夠自主操作終端、運行測試並調試整個系統的「代理」(Agents)。Terminal-Bench 2.0 的開發是為了通過關注現實世界的終端交互和多文件導航，來解決之前像 SWE-bench 等基準測試的局限性。這一轉變至關重要，因為它代表了 AI 具備處理架構複雜性而非僅僅是語法的「資深開發者」功能的最後障礙。</p>
+<p><strong>關鍵觀點：</strong></p>
+<ul>
+<li>
+<p>Claude 4.6 代表了生產級編碼「能力的完全轉變」，這歸功於其卓越的推理能力以及在大規模專案中不會出現上下文退化的特性。 ("Claude 4.6 represents a 'complete capability shift' for production-grade coding due to its superior reasoning and lack of context degradation in large-scale projects.") - <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023368884460593454">@JulianGoldieSEO</a></p>
+</li>
+<li>
+<p>GPT-5.3 Codex High 在原始基準測試性能上從根本上優於 Opus 4.6，在正面交鋒中擁有 98% 的勝率，儘管 Opus 在某些邊緣案例中仍更具成本效益。 ("GPT-5.3 Codex High is fundamentally superior to Opus 4.6 in raw benchmark performance, claiming a 98% win rate in head-to-head comparisons, though Opus remains more cost-effective for certain edge cases.") - <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023033704965382624">@corbin_braun</a></p>
+</li>
+<li>
+<p>GPT-5.3 的「Spark」變體針對極速（&gt;1000 tokens/sec）進行了優化，但對於需要完整 Codex 模型的複雜多代理任務來說則顯得不足。 ("The 'Spark' variant of GPT-5.3 is optimized for extreme speed (&gt;1000 tokens/sec) but is insufficient for complex, multi-agent tasks where the full Codex model is required.") - @Goosewin</p>
+</li>
+<li>
+<p>像 Terminal-Bench 2.0 這樣的基準測試是有用的信號，但並不總是能轉化為生產可靠性；真正的考驗在於這些代理如何處理「放棄傾向」(eagerness to quit) 以及在調試中的持久性。 ("Benchmarks like Terminal-Bench 2.0 are useful signals but do not always translate to production reliability; the real test is how these agents handle 'eagerness to quit' and persistence in debugging.") - @AIMevzulari</p>
+</li>
+<li>
+<p>編碼代理的性能嚴重依賴於所提供的「腳手架」或工具集；Claude Code 新的 Bash 工具優化（提速 7 倍）與模型的原始智慧同樣關鍵。 ("The performance of coding agents is heavily dependent on the 'scaffold' or toolset provided; Claude Code's new Bash tool optimization (7x faster) is as critical as the model's raw intelligence.") - <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2022537655339397133">@jarredsumner</a></p>
+</li>
+</ul>
+<p><strong>影響分析：</strong> 對於開發者來說，這種競爭正在迅速催熟「AI 軟體工程師」類別，將工具從實驗性的 CLI 包裝器轉變為生產就緒的自主隊友。像 Anthropic 這樣的公司已經報告稱，約 100% 的內部代碼是通過代理工作流生成的，這預示著軟體構建和維護方式的巨大轉變。長期來看，這場「基準測試之戰」可能會迫使 IDE 和終端工具進行整合，因為模型將成為作業系統的主要介面，這可能使手動文件導航對許多任務來說變得過時。</p>
+<p><strong>來源：</strong></p>
+<ul>
+<li><a target="_blank" rel="noopener noreferrer" href="https://tbench.ai">Terminal-Bench 2.0 排行榜</a></li>
+</ul>
+<hr />
+<h3 id="3-mcp-ai-usb-c">3. 模型上下文協定 (MCP) 作為「AI 工具的 USB-C」</h3>
+<p><strong>Category:</strong> 開源 (Open Source) <span class="heat-badge heat-high">高</span></p>
+<p><strong>概要：</strong> Anthropic 的模型上下文協定 (Model Context Protocol, MCP) 正成為將 Claude 連接到外部工具、數據庫和服務的標準，創造了一個「即插即用」的代理生態系統。</p>
+<hr />
+<h3 id="4-openai-gpt-53-codex">4. OpenAI GPT-5.3 Codex 與個人代理策略</h3>
+<p><strong>Category:</strong> 產品發布 (Product Launch) <span class="heat-badge heat-high">高</span></p>
+<p><strong>概要：</strong> OpenAI 正式發布了 GPT-5.3 Codex，這是一個專門的模型系列，分為「Spark」和「High」兩個變體，旨在主導代理編碼市場。GPT-5.3 Codex Spark 針對極低延遲進行了優化，據報導每秒超過 1,000 個 token，並具有 128K 上下文窗口，使其成為實時 IDE 集成和快速多代理編排的理想選擇。相反，「High」變體專注於複雜推理，在 Codeforces 上獲得了 3455 分，在 98% 的編碼基準測試中優於 Anthropic 的 Claude Opus 4.6。與這種硬體級速度相輔相成的是一項重大的戰略招聘：曾任職於 PSPDFKit 和 OpenClaw 的 Peter Steinberger 已加入 OpenAI，領導新的「個人代理」(Personal Agent) 部門。此舉加上 OpenClaw 框架向開源基金會的轉型，標誌著 OpenAI 意圖超越聊天介面，轉向能夠處理端到端開發者工作流和個人任務管理的自主多代理系統。</p>
+<p><strong>背景：</strong> AI 行業正從被動的大型語言模型轉向能夠自主執行的主動「代理式」系統。OpenAI 的 Codex 系列已從簡單的自動補全工具演變為複雜開發者生態系統的骨幹，目前面臨來自 Anthropic Claude 和 Google Gemini 3 的激烈競爭。這次發布代表了 OpenAI 試圖通過提供自主軟體工程所需的原始速度 (Spark) 和深度推理 (High)，重新奪回在「代理網路」中的領先地位。聘請 Peter Steinberger 專門解決了對能夠在生產環境中管理高性能、多代理協調的強大基礎設施的需求。</p>
+<p><strong>關鍵觀點：</strong></p>
+<ul>
+<li>
+<p>GPT-5.3 Codex High 在編碼任務上顯著優於 Claude Opus 4.6，儘管 Opus 在成本效益和處理模糊邊緣案例方面可能仍具優勢。 ("GPT-5.3 Codex High is significantly superior to Claude Opus 4.6 in coding tasks, though Opus may still hold an advantage in cost-efficiency and handling ambiguous edge cases.") - <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023033704965382624">@corbin_braun</a></p>
+</li>
+<li>
+<p>「Spark」變體是處理實時任務的「生產級猛獸」，在 Codeforces 上達到 3455 分，並在其他模型失敗的基礎拼寫或繪圖任務中表現出色。 ("The 'Spark' variant is a 'production-ready beast' for real-time tasks, hitting 3455 on Codeforces and excelling where other models fail basic spelling or drawing tasks.") - <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023107517476131061">@bridgemindai</a></p>
+</li>
+<li>
+<p>雖然 Spark 的速度快得驚人（超過 1000 tokens/sec），但它缺乏完整 GPT-5.3 Codex 的架構深度，應避免用於複雜的高風險任務。 ("While Spark is 'insanely fast' at over 1000 tokens/sec, it lacks the architectural depth of the full GPT-5.3 Codex and should be avoided for complex, high-stakes tasks.") - @Goosewin</p>
+</li>
+<li>
+<p>該模型「放棄傾向低」或高持久性的特點，使其在自主執行和長時間運行的代理任務中優於 Gemini 3。 ("The model's 'low eagerness to quit' or high persistence makes it superior to Gemini 3 for autonomous execution and long-running agentic tasks.") - @mtochs</p>
+</li>
+<li>
+<p>轉向多代理委派框架是企業 IT 領導者的必讀內容，因為像 ServiceNow 和 Palantir 這樣的平台到 2027 年可能會被這些協定所主導。 ("The shift toward multi-agent delegation frameworks is mandatory reading for enterprise IT leaders, as platforms like ServiceNow and Palantir will likely be dominated by these protocols by 2027.") - <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023256621120356578">@lakshmann</a></p>
+</li>
+</ul>
+<p><strong>影響分析：</strong> 短期內，隨著 GPT-5.3 Codex Spark 實現近乎瞬時的代碼生成和實時多代理調試，開發者將看到生產力的巨大飆升。對於更廣泛的 AI 生態系統，聘請 Peter Steinberger 和 OpenClaw 的開源化建議將個人代理交互方式標準化，這可能在現有作業系統之上創建一個新的「代理層」。長期來看，這可能導致企業軟體從靜態工具轉向「代理能力」，公司購買的是自主工作流而非席位授權。然而，該模型目前在端到端安全場景中的失敗（儘管原子任務成功率達 86%）表明，敏感環境中的完全自主仍是未來的里程碑。</p>
+<p><strong>來源：</strong></p>
+<ul>
+<li>
+<p><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023107517476131061">GPT-5.3 Codex 基準測試飆升</a></p>
+</li>
+<li>
+<p><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023150230905159801">Sam Altman 談 Peter Steinberger 與個人代理</a></p>
+</li>
+</ul>
+<hr />
+<h3 id="5-cursor-ai-52">5. Cursor AI 的 52 小時長時間運行雲端代理：向自主工程的轉變</h3>
+<p><strong>Category:</strong> 產品發布 (Product Launch) <span class="heat-badge heat-medium">中</span></p>
+<p><strong>概要：</strong> 2026 年 2 月 17 日，Cursor AI 正式推出了能夠自主運行長達 52 小時的長時間運行雲端代理。這一功能代表了從實時「自動補全」到異步專案管理的重大飛躍，允許 AI 處理超過 150,000 行代碼的海量拉取請求 (PR)，並在無需人工干預的情況下執行全功能重構。代理通過無頭 CLI 和雲端環境運行，有效地將 IDE 變成了一個「下屬員工」，可以在幾天內完成長達一個季度的工程專案。早期的基準測試和演示顯示，這些代理可以在大約 12 小時內從簡單的截圖構建出功能齊全的多組件工具，計算成本約為 100-200 美元，標誌著軟體開發速度的範式轉移。</p>
+<p><strong>背景：</strong> 自成立以來，Cursor 一直引領「AI 原生 IDE」運動，從簡單的代碼建議發展到用於多文件編輯的「Composer」模式。然而，開發者仍然是瓶頸，需要實時監控每一次更改。52 小時雲端代理的引入通過將 AI 的執行與用戶的活動會話解耦解決了這個問題，這符合行業向「代理工作流」發展的更廣泛趨勢，即 Claude 3.5/4 和 GPT-5 等 AI 模型被視為自主協作者而非僅僅是工具。</p>
+<p><strong>關鍵觀點：</strong></p>
+<ul>
+<li>
+<p>這次發布代表了軟體工程的一個根本性範式轉移，從六個月前的「不可能」發展到現在只需幾百美元就能在 12 小時內構建完整工具。 — @robinebers ("The launch represents a fundamental paradigm shift in software engineering, moving from 'impossible' six months ago to building full tools in 12 hours for a few hundred dollars.")</p>
+</li>
+<li>
+<p>Cursor 和 Claude 的結合解鎖了「代理流」，允許開發者以「曲速」交付生產級代碼，有效地創造了一個無敵的開發堆棧。 — @humanin_theloop ("The combination of Cursor and Claude unlocks 'agentic flows' that allow developers to ship production-grade code at 'warp speed,' effectively creating an unbeatable development stack.")</p>
+</li>
+<li>
+<p>深度集成的 AI 優先工作流開始使傳統的架構模式（如特定的數據庫設計）變得過時，因為 AI 可以管理人類以前刻意規避的複雜性。 — @genwinRahul ("Deeply integrated AI-first workflows are beginning to render traditional architectural patterns, such as specific database designs, obsolete because the AI can manage complexity that humans previously avoided.")</p>
+</li>
+<li>
+<p>雖然功能強大，但 Cursor CLI 和 IDE 集成的當前版本與 Laravel 的 Composer 等成熟生態系統工具相比仍顯笨拙，導致一些純粹主義者堅持使用傳統設置。 — @olivierpicault ("While powerful, the current iteration of the Cursor CLI and IDE integration can still be clunky compared to established ecosystem tools like Composer for Laravel, leading some purists to stick to traditional setups.")</p>
+</li>
+</ul>
+<p><strong>影響分析：</strong> 短期內，這使得「一人企業」(solopreneurs) 和小團隊能夠處理以前需要數週專門工程時間的企業級重構和功能構建。對於更廣泛的 AI 生態系統，它驗證了「無頭」代理模式，其中 IDE 作為雲端工作機群的指揮中心。長期來看，這可能會重新定義資深工程師的角色，從「編碼員」轉變為「系統架構師和審查員」，因為大部分實現工作都外包給了能夠進行 50 小時以上「苦幹」的自主代理，這是任何人類都無法持續的。</p>
+<p><strong>來源：</strong></p>
+<ul>
+<li><a target="_blank" rel="noopener noreferrer" href="https://cursor.com/blog/long-running-agents">Cursor 部落格：長時間運行代理</a></li>
+</ul>
+<hr />
+<h3 id="6-qwen3-coder-next-qwen-code-cli">6. 阿里巴巴 Qwen3-Coder-Next 與 Qwen Code CLI：「資深架構師」代理的崛起</h3>
+<p><strong>Category:</strong> 開源 (Open Source) <span class="heat-badge heat-medium">中</span></p>
+<p><strong>概要：</strong> 阿里巴巴 Qwen 團隊推出了 Qwen3-Coder-Next，這是一個高效的稀疏混合專家 (MoE) 模型，擁有 80B 總參數，而每個 token 僅有 3B 激活參數。隨模型一同發布的是 Qwen Code CLI，這是一個開源代理工具包，旨在本地處理複雜的多步驟編碼任務。該 CLI 引入了「計畫模式」(Plan Mode)，在該模式下，代理充當資深架構師，在修改任何代碼之前，先映射系統依賴關係並概述分步執行計畫供用戶批准。此版本戰略性地定位於對抗 Claude Code 等企業工具，通過 Qwen OAuth 為個人開發者提供慷慨的每日 1,000 次免費請求，並支持與 OpenAI API 和 Ollama 等本地供應商集成。</p>
+<p><strong>背景：</strong> AI 編碼領域正從簡單的補全引擎演變為能夠管理整個代碼庫的自主代理。阿里巴巴的 Qwen 系列已成為開源 LLM 中的主導力量，經常在編碼和數學基準測試中名列前茅。這次發布代表了向「代理工作流」的轉變，重點是減少「AI 混亂」——即模型做出破壞性或不協調更改的傾向——通過強制執行結構化計畫和系統級意識來實現。</p>
+<p><strong>關鍵觀點：</strong></p>
+<ul>
+<li>
+<p>與 Claude Code 等專注於企業的工具相比，Qwen Code CLI 對於獨立開發者來說是一個更好的選擇，這歸功於其易用性和慷慨的免費額度。 — @Rixhabh__ ("The Qwen Code CLI is a superior alternative for solo developers compared to enterprise-focused tools like Claude Code due to its accessibility and generous free tier")</p>
+</li>
+<li>
+<p>計畫模式是行業所需的「資深架構師」解決方案，旨在防止代理執行盲目且具破壞性的代碼。 — @dr_cintas ("Plan Mode is the 'Senior Architect' fix the industry needed to prevent agents from performing blind, destructive code execution")</p>
+</li>
+<li>
+<p>CLI 介面本身正在成為一種商品；現在真正的競爭優勢在於底層模型的效率和推理能力。 — @tau_rho_ai ("The CLI interface itself is becoming a commodity; the true competitive advantage now lies in the underlying model's efficiency and reasoning capabilities")</p>
+</li>
+<li>
+<p>這次發布標誌著從「AI 玩具」向專業級開發者工具的決定性轉變，彌補了編寫代碼與交付產品之間的差距。 — @MartinSzerment ("This release marks a definitive shift from 'AI toys' to professional-grade developer tools that bridge the gap between writing code and shipping products")</p>
+</li>
+<li>
+<p>雖然計畫模式對於複雜系統具有革命性意義，但對於簡單的一次性編碼任務來說，它可能會讓人感到多餘或緩慢。 — @jpreagan ("While Plan Mode is revolutionary for complex systems, it can feel superfluous or slow for simple, one-off coding tasks")</p>
+</li>
+</ul>
+<p><strong>影響分析：</strong> 短期內，這次發布通過提供高性能、低門檻的開源替代方案，給付費編碼助手帶來了巨大壓力。對於開發者來說，「計畫優先」的方法很可能成為代理的標準要求，以確保在大規模生產環境中的安全性。長期來看，3B 激活參數 MoE 模型的高效率證明了高品質的代理編碼可以在消費級硬體上執行，這有可能使 AI 開發從大規模雲端集群去中心化。</p>
+<p><strong>來源：</strong></p>
+<ul>
+<li>
+<p><a target="_blank" rel="noopener noreferrer" href="https://qwenlm.github.io/qwen-code-docs/">Qwen Code CLI 文件</a></p>
+</li>
+<li>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/QwenLM/qwen-code">QwenLM GitHub 倉庫</a></p>
+</li>
+</ul>
+<hr />
+<h3 id="7-google-deepmind-ai">7. Google DeepMind 的智慧 AI 委派框架</h3>
+<p><strong>Category:</strong> 研究 (Research) <span class="heat-badge heat-medium">中</span></p>
+<p><strong>概要：</strong> Google DeepMind 推出了一個全面的「智慧 AI 委派」框架，為多代理任務分配、權限轉移和問責制建立了正式協定。該研究解決了新興代理網路中固有的「治理問題」，即自主代理必須在沒有持續人工監督的情況下進行交互、談判和執行複雜的工作流。關鍵技術支柱包括原生模型上下文協定 (MCP) 支持、信任機制和結構化責任鏈。該框架旨在與 Gemini 3 Pro 和 Flash 模型配合使用，利用新的「開發技能」(Dev Skill) API，允許代理保持最新的最佳實踐並避免使用過時的代碼。通過定義「領導」、「審查者」和「執行者」等角色，該系統旨在減輕多代理經濟中的級聯錯誤和幻覺循環。</p>
+<p><strong>背景：</strong> 隨著 AI 行業從單模型提示轉向自主多代理系統，缺乏標準化協調導致了以高延遲和可靠性問題為特徵的「協調稅」。之前的編排嘗試通常專注於簡單的任務拆分，但 DeepMind 的框架引入了正式的權限轉移和可審計性，以確保代理對其輸出負責。這項研究與「代理工作流」的更廣泛趨勢以及向去中心化「代理網路」的轉變相關聯，在該網路中，不同的 AI 實體必須跨組織邊界進行協作。</p>
+<p><strong>關鍵觀點：</strong></p>
+<ul>
+<li>
+<p>該框架是「代理網路」的基本基礎設施，為自主實體之間的信任和責任提供了必要的協定。 ("The framework is essential infrastructure for the 'agentic web,' providing the necessary protocols for trust and responsibility between autonomous entities.") - <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023146815789597015">@omarsar0</a></p>
+</li>
+<li>
+<p>這是企業 IT 領導者的必讀內容；像 ServiceNow 和 Palantir 這樣的平台到 2027 年可能會通過實施這些委派協定來佔據主導地位。 ("This is mandatory reading for enterprise IT leaders; platforms like ServiceNow and Palantir will likely dominate by 2027 by implementing these delegation protocols.") - <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023256621120356578">@lakshmann</a></p>
+</li>
+<li>
+<p>正在解決的核心問題是一個「治理問題」而非僅僅是技術問題，旨在應對多代理經濟中的潛在失敗。 ("The core issue being solved is a 'governance problem' rather than just a technical one, addressing potential failures in multi-agent economies.") - @DataScienceDojo</p>
+</li>
+<li>
+<p>雖然前景廣闊，但多代理編排增加了顯著的複雜性和新的故障點，特別是在數據管道等敏感領域。 ("While promising, multi-agent orchestration adds significant complexity and new failure points, particularly in sensitive areas like data pipelines.") - @saen_dev</p>
+</li>
+<li>
+<p>原生 MCP 支持和「開發技能」的集成允許代理緊跟 API 更改，解決了代理使用過時代碼的長期問題。 ("The integration of native MCP support and 'Dev Skills' allows agents to stay current with API changes, solving the persistent problem of agents using outdated code.") - <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2022728163139420318">@jocarrasqueira</a></p>
+</li>
+</ul>
+<p><strong>影響分析：</strong> 短期內，該框架為開發者提供了構建代理團隊「人員配置計畫」的藍圖，提高了自主編碼和行政任務的一致性。對於企業而言，它提供了一條通往可審計 AI 運營的道路，這對於自動化工作流中的合規性和風險管理至關重要。長期來看，這可能導致多代理通信的標準化，允許來自不同供應商（Google、OpenAI、Mistral）的模型在統一的治理結構內無縫互操作，從而可能降低 token 成本和延遲帶來的「代理稅」。</p>
+<p><strong>來源：</strong></p>
+<ul>
+<li><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023146815789597015">智慧 AI 委派：代理網路協定</a></li>
+</ul>
+<hr />
+<h3 id="8-allen-institute-autodiscovery-llm">8. Allen Institute 的 AutoDiscovery：用於自動化科學假設生成的貝氏-LLM 框架</h3>
+<p><strong>Category:</strong> 研究 (Research) <span class="heat-badge heat-low">低</span></p>
+<p><strong>概要：</strong> Allen Institute for AI (AI2) 推出了 AutoDiscovery，這是一個開源框架，旨在通過自動化假設的生成和測試來加速科學突破。該系統將大型語言模型 (LLMs) 與貝氏統計方法相結合，從結構化數據集中綜合證據並更新模型先驗。核心創新在於其對「驚訝度」(surprise) 或資訊增益的關注，這使得該工具能夠優先處理挑戰現有共識或填補關鍵知識空白的假設。通過系統地探索廣闊的假設空間，AutoDiscovery 旨在減輕人類的認知偏見以及傳統研究中趨向「共識洗白」(consensus-washing) 的傾向。初步應用已證明其在腫瘤學、氣候科學和材料滲透性等不同領域的效用。該工具附帶一份正式的研究論文和一篇詳細介紹其方法論和開放獲取可用性的公開部落格文章。</p>
+<p><strong>背景：</strong> 科學研究常受限於人類的局限性，包括認知偏見、海量的現有文獻以及資助「安全」的增量研究的傾向。「AI for Science」運動試圖通過使用機器學習以人類不可能達到的規模解析數據來克服這些障礙。AutoDiscovery 代表了這一趨勢中的重要一步，從簡單的數據分析轉向主動的假設生成。它通過提供一種結構化、自動化的方式從現有資訊中提取新見解，解決了「重複性危機」和開放獲取數據集利用不足的問題。</p>
+<p><strong>關鍵觀點：</strong></p>
+<ul>
+<li>
+<p>Prachee Avasthi 認為 AutoDiscovery 是避免研究中人為偏見和「共識洗白」的變革性工具。她建議資助機構可以利用它來識別非顯而易見的高影響力研究領域，從而優化研究投資回報率 (ROI)。 ("Prachee Avasthi views AutoDiscovery as a transformative tool for avoiding human biases and 'consensus-washing' in research. She suggests it could be used by funding agencies to optimize research ROI by identifying non-obvious, high-impact study areas") - <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023367205149164032">@PracheeAC</a></p>
+</li>
+<li>
+<p>Bodhisattwa Majumder 強調了該工具利用 LLM 先驗進行假設搜索的技術能力，展示了其從腫瘤和氣候數據集中生成新穎見解的能力。 ("Bodhisattwa Majumder emphasizes the technical capability of the tool to use LLM priors for hypothesis search, showcasing its ability to generate novel insights from tumor and climate datasets") - <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023488715008733686">@mbodhisattwa</a></p>
+</li>
+<li>
+<p>Vineeth Surendranath 表達了較為謹慎的觀點，稱他對白血病數據集的初步測試結果相對於高預期來說「有點令人失望」，儘管他承認其在快速基礎分析方面的效用。 ("Vineeth Surendranath expressed a more cautious view, describing his initial tests on a leukemia dataset as 'a bit underwhelming' relative to high expectations, though he acknowledged its utility for quick rudimentary analyses") - <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023069095705330003">@vineeth</a></p>
+</li>
+<li>
+<p>Mark Hahnel 認為該框架對「驚訝度」的關注為科學家分享數據提供了新的動力，因為數據集的價值現在與其生成新穎、自動化發現的潛力掛鉤。 ("Mark Hahnel argues that the framework's focus on 'surprisals' provides a new incentive for scientists to share their data, as the value of a dataset is now linked to its potential for generating novel, automated discoveries") - <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023329765059383452">@MarkHahnel</a></p>
+</li>
+<li>
+<p>George Bevis 將 AutoDiscovery 視為「更安全的多工具代理」趨勢中的一項重要發展，為複雜科學環境中的代理式 AI 提供了結構化框架。 ("George Bevis frames AutoDiscovery as a significant development in the trend toward 'safer multi-tool agents,' providing a structured framework for agentic AI in complex scientific environments") - <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023371064189882672">@GeorgeBevis</a></p>
+</li>
+</ul>
+<p><strong>影響分析：</strong> 短期內，AutoDiscovery 為研究人員提供了一個強大的元分析和初步假設測試工具，有可能減少花在手動文獻審查上的時間。對於更廣泛的 AI 生態系統，它為使用貝氏推理以確保比標準 LLM 提示更可靠且具「驚訝度」輸出的「代理式」科學工具建立了藍圖。長期來看，這可能會通過識別人類評審員可能忽視的高潛力、非顯而易見的研究領域，徹底改變研究資助方式。此外，隨著結構化數據成為自動化發現引擎的主要燃料，它可能會推動科學文化向更強大的數據共享實踐轉變。</p>
+<p><strong>來源：</strong></p>
+<ul>
+<li>
+<p><a target="_blank" rel="noopener noreferrer" href="https://allenai.org/papers/autodiscovery">AutoDiscovery：通過 LLM 實現自動化科學發現</a></p>
+</li>
+<li>
+<p><a target="_blank" rel="noopener noreferrer" href="https://allenai.org/blog/autodiscovery">AI2 部落格：AutoDiscovery 介紹</a></p>
+</li>
+</ul>
+<hr />
+<h3 id="9-xai-grok-5-beta">9. xAI Grok 5 Beta：並行代理與原生工具集成</h3>
+<p><strong>Category:</strong> 產品發布 (Product Launch) <span class="heat-badge heat-low">低</span></p>
+<p><strong>概要：</strong> xAI 計畫於 2026 年 2 月發布 Grok 5 Beta，為 Premium+ 用戶引入向自主代理工作流的重大轉變。此次更新的主打功能是「並行代理」(Parallel Agents)，允許同時生成多達八個編碼代理，以加速軟體開發和專案完成。此外，該版本還包括「原生工具使用」和獨特的用於錦標賽式代理性能評估的「競技場模式」(Arena Mode)。此次發布旨在將 xAI 定位為開發者生產力的領導者，直接挑戰目前以 65.4% 的得分領先 Terminal-Bench 的 Claude 4.6，以及 OpenAI 的 GPT-5.3 Codex。</p>
+<p><strong>背景：</strong> AI 行業正迅速從簡單的聊天介面轉向能夠執行複雜、多步驟任務的高級代理系統。xAI 的舉動緊隨 Grok 4.2 分析工具的成功，並符合 Gartner 的預測，即到 2026 年底，40% 的企業應用程序將具備代理功能。通過專注於並行執行和原生工具集成，xAI 正試圖解決之前 LLM 世代固有的延遲和順序瓶頸。</p>
+<p><strong>關鍵觀點：</strong></p>
+<ul>
+<li>
+<p>Grok 5 Beta 代表了代理能力的一次競爭性飛躍，使 xAI 在新興的 AI 即服務 (AaaS) 領域佔據強勢地位。 ("Grok 5 Beta represents a competitive leap in agentic capabilities, positioning xAI strongly within the emerging AI-as-a-Service (AaaS) landscape") - <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2022853756019446141">@MikeyJNicholls</a></p>
+</li>
+<li>
+<p>並行代理功能是開發者效率和測試的遊戲規則改變者，儘管 AI 進步的飛速步伐引發了對人工監督的擔憂。 ("The Parallel Agents feature is a game-changer for developer efficiency and testing, though the rapid pace of AI advancement raises concerns about human oversight") - <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023153515926081767">@ShinniegalX</a></p>
+</li>
+<li>
+<p>同時生成八個代理的能力有效地為開發者提供了「即時的專家程式設計師團隊」，從根本上改變了編碼的本質。 ("The ability to spawn eight agents simultaneously effectively provides developers with an 'instant team of expert programmers,' fundamentally changing the nature of coding") - <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023266122762461257">@JUSTICElht8</a></p>
+</li>
+<li>
+<p>謹慎樂觀地認為，xAI 專注於現實世界的效用而非原始基準測試是一項戰略舉措，前提是這不被用來掩蓋性能缺陷。 ("There is cautious optimism that xAI's focus on real-world utility over raw benchmarks is a strategic move, provided it isn't used to mask performance deficiencies") - <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023499872976990319">@Tuxsoia</a></p>
+</li>
+<li>
+<p>雖然 Grok 5.0 因其「接地氣」且有效而受到稱讚，但在複雜的長時間任務中仍面臨輕微的連續性問題。 ("While Grok 5.0 is praised for being 'grounded' and effective, it still faces minor continuity issues in complex, long-duration tasks") - @MekoKnowle40889</p>
+</li>
+</ul>
+<p><strong>影響分析：</strong> 短期內，Grok 5 Beta 預計將為多代理編排設定新標準，可能會迫使 Anthropic 和 OpenAI 等競爭對手加速開發自己的並行處理功能。對於開發者來說，這通過允許同時進行調試和功能實現，縮短了軟體上市時間。長期來看，這次發布標誌著一種範式轉移，即軟體工程從手動編碼轉向高層代理編排，這可能導致自主企業應用程序的激增。</p>
+<p><strong>來源：</strong></p>
+<ul>
+<li>
+<p><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2022853756019446141">xAI 路線圖與 AI 景觀更新</a></p>
+</li>
+<li>
+<p><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023153515926081767">Grok 構建功能與開發生產力討論</a></p>
+</li>
+</ul>
+<hr />
+<h3 id="10-ai-aaas">10. 代理式 AI 即服務 (AaaS) 與代理網路的崛起</h3>
+<p><strong>Category:</strong> 行業 (Industry) <span class="heat-badge heat-low">低</span></p>
+<p><strong>概要：</strong> 2026 年 2 月中旬，AI 行業開始正式化「代理式 AI 即服務」(AaaS)，這是從對話式助手向能夠執行端到端工作流的自主代理的轉變。Appier Group (TYO: 4180) 和 Salesforce 等關鍵參與者正在引領這一轉型，Appier 因其專注於行銷的 AaaS 而入選 JPX Startup High Growth 100 指數。在技術上，這一運動由 Anthropic 的模型上下文協定 (MCP) 提供支撐，旨在解決上下文碎片化並實現「全棧代理式」基礎設施。雖然 Salesforce 的 Agentforce 和 ServiceNow 專注於自動化 IT 分流和工單解決，但行業正在應對新的安全風險，包括「API 爆炸」和運行時提示攻擊，這需要持續的發現和護欄。</p>
+<p><strong>背景：</strong> 向 AaaS 的轉型代表了 SaaS 模式的下一次演進，軟體從人類使用的工具轉變為代表人類執行任務的自主實體。這一轉變是由減少「轉椅式」工具切換的需求以及傳統 LLM 包裝器（僅提供建議而非行動）的局限性所驅動的。隨著代理開始直接與 API 和內部數據庫交互，行業正朝著「代理網路」發展，在該網路中，像 MCP 這樣的協定變得比底層模型參數更為關鍵。</p>
+<p><strong>關鍵觀點：</strong></p>
+<ul>
+<li>
+<p>代理式 AI 正在從「愛聊天」的建議轉向實際的任務完成（例如發送電子郵件、解決工單），這比簡單的 LLM 包裝器提供更高的投資回報率 (ROI)。 ("Agentic AI is moving from 'chatty' suggestions to actual task completion (e.g., sending emails, resolving tickets), which provides higher ROI than simple LLM wrappers.") - @FaresAsadi</p>
+</li>
+<li>
+<p>AI 代理的主要瓶頸是上下文碎片化；模型上下文協定 (MCP) 是實現「代理網路」的關鍵，在該網路中，代理可以導航由 MCP 伺服器組成的並行互聯網。 ("The primary bottleneck for AI agents is context fragmentation; the Model Context Protocol (MCP) is the key to enabling an 'Agentic Web' where agents can navigate a parallel internet of MCP servers.") - <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023124582098456726">@BretKerr</a></p>
+</li>
+<li>
+<p>代理式 AI 將給網路帶來前所未有的負載，使物理地理位置和數據中心的協同定位對性能至關重要，這可能有利於本地化基礎設施而非中心化雲端。 ("Agentic AI will place unprecedented load on networks, making physical geography and co-location of data centers critical for performance, potentially favoring localized infrastructure over centralized cloud.") - @wellingdoncrow</p>
+</li>
+<li>
+<p>「代理牛市週期」將由鏈上自主新創公司驅動，這些公司可以獨立管理支付並將專案代幣化。 ("The 'agentic bull cycle' will be driven by on-chain autonomous startups that can manage payments and tokenize projects independently.") - @sirohedge</p>
+</li>
+<li>
+<p>MCP 的通用安裝程序至關重要，因為目前單獨配置代理的摩擦正在扼殺採用的勢頭。 ("Universal installers for MCP are essential because the current friction of configuring agents individually is killing adoption momentum.") - @LLMJunky</p>
+</li>
+</ul>
+<p><strong>影響分析：</strong> 短期內，企業將看到自動化 IT 和行銷工作流的激增，減少了事件分流和行銷活動優化的手動勞動。然而，這將引發對高級安全框架的迫切需求，以管理由自主代理創建的「API 爆炸」和隱藏端點。長期來看，隨著通用代理取代專門的軟體介面，SaaS 行業面臨著根本性的重新定價和生存威脅，迫使行業向基於協定的基礎設施和「代理式 AI 即服務」商業模式轉型。</p>
+<p><strong>來源：</strong></p>
+<ul>
+<li>
+<p><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023654520296010218">Appier 入選 JPX Startup High Growth 100 指數</a></p>
+</li>
+<li>
+<p><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023371064189882672">Anthropic 通過全棧代理框架擴展 MCP</a></p>
+</li>
+</ul>
+<hr />
+<h2 id="_3">📊 趨勢總結</h2>
+<p>一個清晰的模式已經出現，「代理式 AI 即服務」(AaaS) 開始蠶食傳統 SaaS，因為模型正從提供建議轉向執行經過身份驗證的 API 操作。這種轉變正通過 Anthropic 的模型上下文協定 (MCP) 實現標準化，該協定充當代理的通用連接器，以及 Google DeepMind 的委派協定，解決了多代理系統的「協調稅」。我們看到「基準測試之戰」已進入終端領域，Terminal-Bench 2.0 取代了靜態編碼測試，代之以現實世界的環境配置和調試挑戰。此外，像 Qwen3-Coder-Next 等模型中「計畫模式」的興起表明，「計畫優先」架構正成為行業標準，以防止破壞性的自主執行。總體而言，這些發展表明 AI 的主要價值正從原始模型智慧轉向「腳手架」的穩健性以及長時間運行、異步工作流的可靠性。</p>
+<hr />
+<h2 id="kol">🎤 KOL 觀點追踪</h2>
+<p>AI 開發者工具領域的 KOL 集體情緒壓倒性看漲，重點高度集中在「代理基礎設施」的成熟上。一個主要主題是從簡單的 LLM 包裝器轉向像 OpenClaw、WebMCP 和 Showboat 這樣複雜的系統，這些系統為代理提供記憶、網頁瀏覽能力以及記錄自身工作的能力。存在一種明顯的趨向「氛圍編碼」(vibe coding) 和快速原型設計的趨勢，如 Google AI Studio 所見；同時，關於是使用供應商原生工具還是為代理構建自定義環境的技術辯論也正在興起。雖然對即將推出的 SOTA 模型（如 GPT 5.2 和 Opus 4.6）感到興奮，但在閉源模型的復興以及來自中國在影片和機器人領域的國際競爭方面，存在著潛在的緊張情緒。</p>
+<h3 id="simonw-simon-willison">@simonw — Simon Willison</h3>
+<blockquote>
+<p>Django 網頁框架的共同創作者，Datasette（用於探索和發布數據的工具）的創作者。他是著名的開源開發者和獨立研究員，專注於 LLM 的效用和倫理。他的工作通常彌合了數據工程與生成式 AI 之間的差距，使他成為開發者構建實際 AI 集成應用程序的關鍵聲音。</p>
+</blockquote>
+<p><strong>Category:</strong> 看漲 (Bullish) <span class="heat-badge heat-high">高</span></p>
+<p>Simon 討論了他的「Showboat」專案的重大更新，該專案旨在幫助自主編碼代理生成解釋其內部過程和輸出的文件。他引入了兩個新的補充工具：用於生成基於 CLI 圖表的「Chartroom」和用於實時接收文件的「datasette-showboat」。他還展示了一個實驗性工作流，使用「Nano Banana Pro」（基於 Gemini 的模型）從代碼差異中自動生成網路漫畫，以解釋技術更改。除了他自己的工具外，他還分析了 OpenAI 最近的稅務申報，特別質疑了其使命宣言中「安全」一詞的移除。</p>
+<p><strong>關鍵引用：</strong></p>
+<ul>
+<li>
+<p>"上週我推出了 Showboat 來幫助編碼代理構建展示其工作的文檔——今天我增加了另外兩個補充工具：用於 CLI 圖表的 Chartroom 和用於在構建過程中接收 Showboat 文檔的 datasette-showboat。" ("Last week I introduced Showboat help coding agents build documents that demonstrate their work - today I'm adding another two complementary tools - Chartroom for CLI charts and datasette-showboat for receiving Showboat documents as they are being built.")</p>
+</li>
+<li>
+<p>"嘗試使用 Nano Banana Pro (基於 Gemini) 從代碼差異中生成解釋 Showboat 更改的網路漫畫。" ("Experimented with Nano Banana Pro (Gemini-based) to generate webcomics explaining Showboat changes from code diffs.")</p>
+</li>
+</ul>
+<p><strong>討論主題：</strong> Showboat, coding agents, Chartroom, datasette-showboat, Nano Banana Pro, OpenAI 使命宣言, AI 安全</p>
+<hr />
+<h3 id="hwchase17-harrison-chase">@hwchase17 — Harrison Chase</h3>
+<blockquote>
+<p>LangChain 的共同創辦人兼執行長，LangChain 是構建 LLM 驅動應用程序的領先框架。曾任 Robust Intelligence 的負責人和 Facebook AI Research (FAIR) 的工程師。他的工作定義了 LLM 編排的標準，使他對代理工具使用和基礎設施的觀察在 AI 工程師中極具影響力。</p>
+</blockquote>
+<p><strong>Category:</strong> 看漲 (Bullish) <span class="heat-badge heat-high">高</span></p>
+<p>Harrison 介紹了「Ciana Parrot」，這是一個基於「deepagents」框架構建的新型自託管 AI 助手。他將其描述為一個具備多渠道支持、計畫任務和可擴展技能的助手，並將其與 OpenClaw 進行了比較。他還分享了一個關於 Claude Code 和 Codex 等高端編碼代理開發的技術觀察，指出它們出人意料地避開了供應商定義的工具（如 Anthropic 的原生 bash 工具），轉而採用自定義實現，這暗示了為了更好的控制而轉向定製工具調用環境的趨勢。</p>
+<p><strong>關鍵引用：</strong></p>
+<ul>
+<li>
+<p>"🦜Ciana Parrot 具有多渠道支持、計畫任務和可擴展技能的自託管 AI 助手。有點像 OpenClaw，但是建立在 deepagents 之上！" ("🦜Ciana Parrot Self-hosted AI assistant with multi-channel support, scheduled tasks, and extensible skills Kind of like OpenClaw but on top of deepagents!")</p>
+</li>
+<li>
+<p>"注意到 Claude Code 和 Codex 避開了供應商定義的工具 (例如 Anthropic 的 bash 工具)，轉而選擇自定義工具，這令人驚訝。" ("Noted surprise that Claude Code and Codex avoid provider-defined tools (e.g., Anthropic's bash tool), opting for custom ones instead.")</p>
+</li>
+</ul>
+<p><strong>討論主題：</strong> Ciana Parrot, deepagents, OpenClaw, Claude Code, Codex, 工具調用, 代理基礎設施</p>
+<hr />
+<h3 id="officiallogank-logan-kilpatrick">@OfficialLoganK — Logan Kilpatrick</h3>
+<blockquote>
+<p>Google AI Studio 和 Gemini API 的負責人。曾任 OpenAI 的首位開發者關係負責人，也是 Julia 程式語言的著名倡導者。他是開發者生態系統中的關鍵人物，專注於減少使用前沿模型的開發者摩擦。</p>
+</blockquote>
+<p><strong>Category:</strong> 看漲 (Bullish) <span class="heat-badge heat-high">高</span></p>
+<p>Logan 強調了 Google AI Studio 的快速開發能力，展示了一個「氛圍編碼」會話，其中一個新的啟動畫面在大約 1.5 小時內從原型轉向了生產環境。他通過討論 Gemini API 的路線圖解決了開發者的痛點，特別提到了即將對計費摩擦進行的改進以及 API 金鑰上限的實施。他還推廣了 Nano Banana Pro 模型在開發者工作流中的能力。</p>
+<p><strong>關鍵引用：</strong></p>
+<ul>
+<li>
+<p>"從 AI Studio 中的原型到真正的 AI Studio 生產代碼庫中支持移動端等功能的可用代碼，大約只花了 1.5 小時。AI 太瘋狂了！" ("From prototype in AI Studio to working code in the real AI Studio production code base with support for mobile, etc in ~1.5 hours. AI is wild!")</p>
+</li>
+<li>
+<p>"專注於 Google AI Studio 和 Gemini API 的改進，包括使用 AI 快速原型化新的「氛圍編碼」啟動畫面。" ("Focused on Google AI Studio and Gemini API improvements, including new 'vibe coding' start screens prototyped rapidly with AI.")</p>
+</li>
+</ul>
+<p><strong>討論主題：</strong> Google AI Studio, Gemini API, vibe coding, Nano Banana Pro, API 計費, API 金鑰管理</p>
+<hr />
+<h3 id="swyx-shawn-wang">@swyx — Shawn Wang</h3>
+<blockquote>
+<p>Latent Space 和 Smarter.ai 的創辦人，《編碼職業手冊》的作者。曾任職於 Airbyte、AWS 和 Netlify 的開發者體驗部門。他是「AI 工程師」運動的領軍人物，專注於構建生產級 AI 代理所需的基礎設施和模式。</p>
+</blockquote>
+<p><strong>Category:</strong> 看漲 (Bullish) <span class="heat-badge heat-high">高</span></p>
+<p>Shawn 專注於蓬勃發展的代理基礎設施生態系統，強調了 OpenClaw、RLM 和 Code Mode 等專案。他強調了「將電腦交給代理」的重要性，並討論了代理記憶的技術細微差別，特別讚揚了 OpenClaw 的基於文件的方法和動態上下文管理。他還推廣了即將舉行的 Compute Conference，將其視為學習當前最佳技術 (SOTA) 代理開發的關鍵場所。</p>
+<p><strong>關鍵引用：</strong></p>
+<ul>
+<li>
+<p>"整個世界都在後知後覺地為將電腦交給代理而感到興奮：OpenClaw、RLM、Code Mode 等。學習 SOTA 的最佳場所將是 3 月 9 日由 @ivanburazin 舉辦的 Compute Conference。" ("entire world is belatedly getting excited about giving computers to agents: OpenClaw, RLM, Code Mode etc top place for learning sota will be at @ivanburazin's Compute Conference on March 9.")</p>
+</li>
+<li>
+<p>"讚揚了像 OpenClaw 這樣專案的謙遜起源。" ("Praised humble origins of projects like OpenClaw.")</p>
+</li>
+<li>
+<p>"討論了代理記憶系統 (例如 OpenClaw 基於文件的方法、動態上下文)。" ("Discussed agent memory systems (e.g., OpenClaw's file-based approach, dynamic context).")</p>
+</li>
+</ul>
+<p><strong>討論主題：</strong> OpenClaw, RLM, Code Mode, 代理記憶, Compute Conference, 代理基礎設施</p>
+<hr />
+<h3 id="skirano-sahil-lavingia">@skirano — Sahil Lavingia</h3>
+<blockquote>
+<p>Gumroad 的創辦人兼執行長，也是一位活躍的天使投資人。他以其「極簡主義企業家」哲學而聞名，最近成為 AI 驅動自動化和基於網頁任務的代理框架的積極倡導者。</p>
+</blockquote>
+<p><strong>Category:</strong> 看漲 (Bullish) <span class="heat-badge heat-medium">中</span></p>
+<p>Sahil 確認了 WebMCP 作為專為 AI 代理與網頁介面交互而設計的框架的效用。他強調了其在電子商務中的應用，並提供了代理成功導航複雜網頁流程（如將商品加入購物車並自主完成結帳過程）的示例。</p>
+<p><strong>關鍵引用：</strong></p>
+<ul>
+<li>
+<p>"是的（確認 WebMCP 作為代理網頁框架）。" ("Yes (confirming WebMCP as agent web framework).")</p>
+</li>
+<li>
+<p>"確認 WebMCP 作為 AI 代理網頁交互的框架，包括代理處理電子商務任務（如加入購物車和結帳）的示例。" ("Confirmed WebMCP as a framework for web interaction with AI agents, including an example of an agent handling e-commerce tasks like adding to cart and checkout.")</p>
+</li>
+</ul>
+<p><strong>討論主題：</strong> WebMCP, AI 代理, 網頁自動化, 電子商務代理</p>
+<hr />
+<h3 id="alexgraveley-alex-graveley">@alexgraveley — Alex Graveley</h3>
+<blockquote>
+<p>GitHub Copilot 的創作者，AI 編碼助手領域的先驅。他在開源領域 (GNOME) 和工程領導力方面有著悠久的歷史。他的認可通常預示著高品質的開發者體驗工具。</p>
+</blockquote>
+<p><strong>Category:</strong> 看漲 (Bullish) <span class="heat-badge heat-high">高</span></p>
+<p>Alex 對 Tambo AI 表示了強烈支持，這是一個旨在將生成式 UI 集成到 React 應用程序中的工具。他指出，該工具能有效地讓開發者快速構建可以與自定義用戶介面交互並對其進行操作的代理，彌補了靜態 UI 與動態代理交互之間的差距。</p>
+<p><strong>關鍵引用：</strong></p>
+<ul>
+<li>
+<p>"好主意！" ("Great idea!")</p>
+</li>
+<li>
+<p>"讚揚了 Tambo AI，這是一個為 React 應用增加生成式 UI 並快速構建與自定義介面交互的代理的工具。" ("Praised Tambo AI, a tool for adding generative UI to React apps and quickly building agents that interact with custom interfaces.")</p>
+</li>
+</ul>
+<p><strong>討論主題：</strong> Tambo AI, 生成式 UI, React, AI 代理</p>
+<hr />
+<h3 id="bindureddy-bindu-reddy">@bindureddy — Bindu Reddy</h3>
+<blockquote>
+<p>Abacus.ai 的執行長兼共同創辦人。曾任 AWS AI 垂直領域總經理和 Google Apps 產品負責人。她以對 LLM 基準測試、模型性能以及美中 AI 公司競爭格局的挑釁性且數據驅動的觀點而聞名。</p>
+</blockquote>
+<p><strong>Category:</strong> 混合 (Mixed) <span class="heat-badge heat-high">高</span></p>
+<p>Bindu 對當前的 LLM 景觀進行了戰略概述，建議為編碼代理選擇 Claude Opus 4.6 或 Sonnet，並預測 GPT 5.2 將用於複雜推理。她警告稱，隨著預計即將發布的兩個主要 SOTA 模型，閉源模型的主導地位將會回歸。此外，她強調了中國 AI 的快速進步，特別提到 SeaDance 2 在影片和機器人領域處於領先地位，並預測 AI 影片生成很快將使高預算電影製作民主化。</p>
+<p><strong>關鍵引用：</strong></p>
+<ul>
+<li>
+<p>"編碼代理 - Opus 4.6 或 Sonnet" ("coding agent - Opus 4.6 or Sonnet")</p>
+</li>
+<li>
+<p>"字面上任何人都能用幾千美元的 token 拍出 10 億美元預算的大片。" ("Literally anyone will be able to make a big budget $1 Billion movies with a few thousand dollars of tokens.")</p>
+</li>
+<li>
+<p>"下週至少會有兩個大型 SOTA 模型發布。閉源模型正在捲土重來。" ("At least TWO big SOTA models will launch this coming week. Closed source is making a come back.")</p>
+</li>
+<li>
+<p>"警告中國在 AI 領域正在實現跨越式發展，稱 SeaDance 2 在影片和機器人領域處於 SOTA 領先地位。" ("Warned about China leapfrogging in AI, citing SeaDance 2 as SOTA video and robotics lead.")</p>
+</li>
+</ul>
+<p><strong>討論主題：</strong> Opus 4.6, Sonnet, GPT 5.2, SeaDance 2, SOTA 模型, AI 影片生成, 閉源 vs 開源</p>
+<hr />
+<hr />
+<h2 id="_4">💬 重要引用</h2>
+<blockquote>
+<p>"提示工程的時代已經結束；現在真正的技能在於「代理工程」——分解複雜任務並設計可靠的工具使用模式。" ("The era of prompt engineering is over; the real skill now lies in 'Agentic Engineering'—decomposing complex tasks and designing reliable tool-use patterns.")
+— <strong>@0xjoggie</strong> (討論從簡單提示向 Claude 4.6 所需的結構化執行設計的轉變。)</p>
+<p>"Claude 4.6 是能力的完全轉變。它感覺像是一位對架構非常細緻的資深開發者，而不僅僅是一個代碼補全器。" ("Claude 4.6 is a complete capability shift. It feels like a senior developer who is meticulous about architecture, not just a code completer.")
+— <strong>@JulianGoldieSEO</strong> (將 Anthropic 最新模型的定性推理與大規模代碼庫中的先前版本進行比較。)</p>
+<p>"GPT-5.3 Codex High &gt; Opus 4.6。原始基準測試數據不會撒謊，即使 Claude 在處理模糊性推理方面表現更好。" ("GPT-5.3 Codex High &gt; Opus 4.6. The raw benchmark numbers don't lie, even if Claude is better for reasoning through ambiguity.")
+— <strong>@corbin_braun</strong> (在 Terminal-Bench 2.0 上分析 OpenAI 和 Anthropic 旗艦編碼模型的正面交鋒性能。)</p>
+<p>"Cursor 的代理現在能夠自主苦幹長達 52 小時，在幾天內完成長達一個季度的專案。" ("Cursor's agents are now capable of grinding autonomously for up to 52 hours, completing quarter-long projects in days.")
+— <strong>@cursor_ai</strong> (關於發布長時間運行雲端代理的官方公告，該代理將 AI 執行與用戶會話解耦。)</p>
+<p>"計畫模式是針對盲目執行的資深架構師級修復。" ("Plan Mode is the Senior Architect fix for blind execution.")
+— <strong>@dr_cintas</strong> (解釋阿里巴巴的 Qwen Code CLI 如何通過要求系統級執行計畫來防止破壞性更改。)</p>
+<p>"這是一個超越簡單任務拆分的治理問題，旨在解決多代理經濟中的失敗。" ("It's a governance problem beyond simple task splitting, addressing failures in multi-agent economies.")
+— <strong>@DataScienceDojo</strong> (評論 Google DeepMind 關於自主代理團隊中權限轉移和問責制的框架。)</p>
+<p>"這是我一段時間以來見過最酷的事情……它避免了人類偏見、冗餘和共識洗白。" ("The coolest thing I’ve seen in a while... it avoids human biases, redundancies, and consensus-washing.")
+— <strong>@PracheeAC</strong> (對 Allen Institute 用於自動化科學假設生成的 AutoDiscovery 框架的反應。)</p>
+<p>"AI 瓶頸 = 上下文碎片化；MCP 實現了「代理網路」（並行 MCP 伺服器互聯網）。" ("AI bottleneck = context fragmentation; MCP enables 'Agentic Web' (parallel MCP-server internet).")
+— <strong>@BretKerr</strong> (描述模型上下文協定在為 AI 代理創建統一基礎設施方面的戰略重要性。)</p>
+</blockquote>
+<hr />
+<h2 id="_5">🔗 參考來源</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>作者</th>
+<th>簡介</th>
+<th>摘要</th>
+<th>連結</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>@0xjoggie</strong></td>
+<td>專注於代理工作流和 LLM 編排的 AI 工程師和建設者。</td>
+<td>認為 Claude 4.6 的發布和 Anthropic 的新指南標誌著提示工程的終結，取而代之的是結構化的代理設計。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2022702234140614973">貼文</a></td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>@RahulPatil</strong></td>
+<td>Anthropic 技術長，領導 Claude 和代理框架的開發。</td>
+<td>討論了「環境化 Claude」的願景，以及向無需鍵盤、長時間運行的自主 AI 執行的轉變。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023326240892232134">貼文</a></td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>@JulianGoldieSEO</strong></td>
+<td>以技術模型基準測試和生產力工具評論聞名的 SEO 專家和 AI 分析師。</td>
+<td>提供了 Claude 4.6 基準測試的詳細技術分解，包括其 1M 上下文窗口和 Terminal-Bench 2.0 性能。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023368884460593454">貼文</a></td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>@Intellectualins</strong></td>
+<td>Sahil Khanna，涵蓋 AI 企業採用的技術分析師和影響者。</td>
+<td>分享了 Anthropic 內部採用 Claude 4.6 的數據，指出 100% 的內部代碼現在通過代理工作流生成。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2022928868706009158">貼文</a></td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>@lior_gazit</strong></td>
+<td>以追踪 SOTA 模型發布和基準測試性能聞名的 AI 研究員和行業分析師。</td>
+<td>宣布 OpenAI 的 GPT-5.3-Codex 發布，強調其在 Terminal-Bench、OSWorld 和 SWE-Bench Pro 上的 SOTA 表現。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023747265555574798">貼文</a></td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>@jarredsumner</strong></td>
+<td>Bun 的創辦人，Anthropic 工程師；高性能開發者工具的創作者。</td>
+<td>討論了 Claude Code Bash 工具的技術優化，為代理工作流實現了 7 倍的速度提升和顯著的內存減少。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2022537655339397133">貼文</a></td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>@elmd_</strong></td>
+<td>Bolt.new 首席工程師，專攻基於瀏覽器的 AI 開發環境。</td>
+<td>澄清了 GPT-5.3 變體之間的區別，指出「Spark」版本是蒸餾模型，不應與完整的 SOTA Codex 模型混淆。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023417837193240788">貼文</a></td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>@sama</strong></td>
+<td>OpenAI 執行長。AI 行業的核心人物，負責 GPT 模型的戰略方向以及 OpenAI 向 AGI 的轉型。</td>
+<td>宣布聘請 Peter Steinberger 領導「下一代個人代理」計畫，並確認 OpenClaw 正轉向開源基金會以支持多代理設置。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023150230905159801">貼文</a></td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>@bridgemindai</strong></td>
+<td>專注於生產級模型評估的 AI 基準測試和研究集體。</td>
+<td>發布了「BridgeBench」結果，顯示 GPT-5.3 Codex Spark 在 Codeforces 上達到 3455 分，並在生產特定編碼任務中優於 GLM 5 和 Gemini 3。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023107517476131061">貼文</a></td>
+</tr>
+<tr>
+<td>10</td>
+<td><strong>@corbin_braun</strong></td>
+<td>以嚴格的模型正面交鋒比較聞名的開發者和 AI 影響者。</td>
+<td>聲稱 GPT-5.3 Codex High 在基準測試上比 Claude Opus 4.6 優越 98%，引發了關於成本與性能權衡的大規模辯論。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023033704965382624">貼文</a></td>
+</tr>
+<tr>
+<td>11</td>
+<td><strong>@omarsar0</strong></td>
+<td>以總結尖端論文和行業轉變聞名的 AI 研究員和教育家。</td>
+<td>在 OpenAI 新代理策略的背景下分析了「智慧 AI 委派」框架，強調了任務分配和信任協定的重要性。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023146815789597015">貼文</a></td>
+</tr>
+<tr>
+<td>12</td>
+<td><strong>@robinebers</strong></td>
+<td>Robin Ebers 是一位專注於尖端 AI 實施的 AI 教練和開發者。他以壓力測試 AI 代理從極簡輸入構建功能軟體而聞名。</td>
+<td>展示了一個 12 小時的自主運行，Cursor 從單個截圖提示構建了一個完整的 AI 編碼工具（語法高亮、多代理、終端管理），API 費用約為 100-200 美元。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2022657842726269238">貼文</a></td>
+</tr>
+<tr>
+<td>13</td>
+<td><strong>@humanin_theloop</strong></td>
+<td>Tim Green 是一位首席工程師和開源倡導者，專攻「代理式」開發者堆棧和快速原型設計。</td>
+<td>認為「Cursor + Claude」堆棧是 2026 年決定性的代理流，能夠利用 React/Next.js 進行快速 UI 開發，並利用 Laravel 構建強大的後端。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023399972356395151">貼文</a></td>
+</tr>
+<tr>
+<td>14</td>
+<td><strong>@triggerdotdev</strong></td>
+<td>Trigger.dev 是一個用於 TypeScript/JavaScript 後台作業和長時間運行任務的平台。</td>
+<td>展示了在 Trigger.dev 任務中集成 Cursor 的無頭 CLI 代理，將自主編碼輸出直接流式傳輸到 Next.js 前端。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023449874990330264">貼文</a></td>
+</tr>
+<tr>
+<td>15</td>
+<td><strong>@Rixhabh__</strong></td>
+<td>以深入研究開源 LLM 發布和代理工作流聞名的 AI 開發者和技術分析師。</td>
+<td>發布了一個詳細介紹 Qwen Code CLI 功能的綜合執行緒，包括技能 (Skills)、子代理 (SubAgents) 和計畫模式 (Plan Mode)。強調了每日 1,000 次免費請求，並提供了桌面自動化和影片生成的演示。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2022559930545508755">貼文</a></td>
+</tr>
+<tr>
+<td>16</td>
+<td><strong>@dr_cintas</strong></td>
+<td>專注於自主代理和軟體架構的 AI 研究員和開發者。</td>
+<td>分享了對「計畫模式」的影片分析，將其描述為一項關鍵演進，迫使 AI 在編碼前先充當架構師，防止複雜文件結構中的常見錯誤。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2022701199510618310">貼文</a></td>
+</tr>
+<tr>
+<td>17</td>
+<td><strong>@tau_rho_ai</strong></td>
+<td>AI 行業戰略家，Tau Rho AI 創辦人，專攻 LLM 市場趨勢。</td>
+<td>認為 CLI 工具（Claude Code, Cline, Qwen）的激增意味著模型性能現在是開發者工具領域唯一的真實差異化因素。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2022624351820919077">貼文</a></td>
+</tr>
+<tr>
+<td>18</td>
+<td><strong>@cedric_chee</strong></td>
+<td>追踪 Qwen 生態系統和中國 LLM 發展的軟體工程師和 AI 愛好者。</td>
+<td>注意到 Qwen3-Coder-Flash 的發布與關於農曆新年期間發布完整 Qwen 3.5 系列的更廣泛傳聞之間的聯繫。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023254346058907965">貼文</a></td>
+</tr>
+<tr>
+<td>19</td>
+<td><strong>@lakshmann</strong></td>
+<td>企業 AI 戰略家和技術負責人，專注於 AI 研究與企業 IT 基礎設施的交集。</td>
+<td>認為該框架是企業級 AI 的先決條件，並預測其到 2027 年將被主要 SaaS 平台採用。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023256621120356578">貼文</a></td>
+</tr>
+<tr>
+<td>20</td>
+<td><strong>@_philschmid</strong></td>
+<td>Google DeepMind 開發者，專注於開源工具和代理框架。</td>
+<td>發布了「agents-core」，這是一個極簡的 TypeScript 框架，旨在實現研究中討論的委派和工具調用邏輯。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023425063391809905">貼文</a></td>
+</tr>
+<tr>
+<td>21</td>
+<td><strong>@jocarrasqueira</strong></td>
+<td>前 Google DeepMind 開發者關係，API 生態系統和開發者體驗專家。</td>
+<td>討論了新的 Gemini API「開發技能」(Dev Skill)，它利用 Gemini 3 Pro 邏輯和原生 MCP 支持為委派框架提供動力。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2022728163139420318">貼文</a></td>
+</tr>
+<tr>
+<td>22</td>
+<td><strong>@PracheeAC</strong></td>
+<td>Prachee Avasthi 是 Arcadia Science 和 Astera Institute 的科學家，以其在細胞生物學方面的工作以及對開放科學和研究創新的倡導而聞名。</td>
+<td>讚揚該工具是科學 AI 領域最具創新性的發展之一，特別指出其繞過人類偏見和提高研究投資回報率的能力。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023367205149164032">貼文</a></td>
+</tr>
+<tr>
+<td>23</td>
+<td><strong>@mbodhisattwa</strong></td>
+<td>Bodhisattwa Majumder 是 Allen Institute for AI (AI2) 的 AI x 數據驅動發現負責人，專攻利用 LLM 促進科學進步。</td>
+<td>分享了該工具從腫瘤、氣候和滲透性數據集中生成假設的技術細節和具體示例。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023488715008733686">貼文</a></td>
+</tr>
+<tr>
+<td>24</td>
+<td><strong>@vineeth</strong></td>
+<td>Vineeth Surendranath 是一位專注於數據分析和基因組學的研究員。</td>
+<td>在個人白血病數據集上測試該工具後提供了實踐視角，指出雖然它對快速分析很有用，但最初並未達到他對深度的預期。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023069095705330003">貼文</a></td>
+</tr>
+<tr>
+<td>25</td>
+<td><strong>@MarkHahnel</strong></td>
+<td>Mark Hahnel 是 Figshare 的創辦人，這是一個用戶可以使其所有研究輸出可引用、可共享和可發現的倉庫。</td>
+<td>討論了 AutoDiscovery 通過數據集中「驚訝度」的概念來激勵數據共享的潛力。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023329765059383452">貼文</a></td>
+</tr>
+<tr>
+<td>26</td>
+<td><strong>@MikeyJNicholls</strong></td>
+<td>污染修復專家和 AI 景觀觀察者，追踪企業 AI 路線圖和代理趨勢。</td>
+<td>詳細介紹了 2026 年 2 月的 xAI 路線圖，強調了 Grok 5 Beta 的發布、Premium+ 用戶的原生工具使用，以及針對 Claude 4.6 和 GPT-5.3 Codex 的競爭定位。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2022853756019446141">貼文</a></td>
+</tr>
+<tr>
+<td>27</td>
+<td><strong>@ShinniegalX</strong></td>
+<td>專注於效率工具和 AI 創新速度的技術評論員和開發者。</td>
+<td>討論了「並行代理」和「競技場模式」功能，質疑行業是否發展過快，同時承認測試方面的巨大效率提升。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023153515926081767">貼文</a></td>
+</tr>
+<tr>
+<td>28</td>
+<td><strong>@JUSTICElht8</strong></td>
+<td>對團隊規模自動化感興趣的軟體開發者和 AI 早期採用者。</td>
+<td>描述了 Grok 5 同時生成 8 個代理的能力，就像擁有一個「即時的專家程式設計師團隊」供人支配。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023266122762461257">貼文</a></td>
+</tr>
+<tr>
+<td>29</td>
+<td><strong>@Tuxsoia</strong></td>
+<td>AI 分析師，優先考慮現實世界的用例和實際應用，而非合成基準測試。</td>
+<td>提供了一個平衡的視角，希望 xAI 對實際開發工具的關注是一項戰略選擇，而不是規避基準測試比較的一種方式。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023499872976990319">貼文</a></td>
+</tr>
+<tr>
+<td>30</td>
+<td><strong>@aiedge_</strong></td>
+<td>AI 研究員和 X 分析專家，以評估 Grok 在數據密集型任務中的表現而聞名。</td>
+<td>雖然主要討論 Grok 4.2，但該用戶強調了 Grok 現有工具集在情緒衡量和尋找超額收益 (alpha) 方面的優勢，為 Grok 5 的工具集成奠定了基礎。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2022921325183144279">貼文</a></td>
+</tr>
+<tr>
+<td>31</td>
+<td><strong>@Appier_TYO4180</strong></td>
+<td>在東京證券交易所 (Prime 4180) 上市的領先 AI 行銷公司 Appier Group 的官方帳號。</td>
+<td>宣布入選 JPX Startup High Growth 100 指數，將自己定位為自主行銷「代理式 AI 即服務」(AaaS) 的全球領導者。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023654520296010218">貼文</a></td>
+</tr>
+<tr>
+<td>32</td>
+<td><strong>@GeorgeBevis</strong></td>
+<td>BuildWithScram 執行長，專注於 AI 開發和行業分析。</td>
+<td>強調了 Anthropic 將模型上下文協定 (MCP) 擴展為全棧代理應用框架，標誌著向更安全、更高效的多工具代理環境的轉變。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023371064189882672">貼文</a></td>
+</tr>
+<tr>
+<td>33</td>
+<td><strong>@BretKerr</strong></td>
+<td>專注於協定與代理工作流交集的 AI 戰略家和行業觀察者。</td>
+<td>認為 MCP 伺服器正在修復上下文碎片化和幻覺，引領一個「代理網路」，在該網路中協定比模型更重要。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023124582098456726">貼文</a></td>
+</tr>
+<tr>
+<td>34</td>
+<td><strong>@PortkeyAI</strong></td>
+<td>專注於 LLM 應用可觀測性和安全性的 AI 基礎設施平台。</td>
+<td>詳細介紹了 MCP Gateway 與 Lasso Security 的集成，以保護代理對數據庫和內部系統的工具調用，應對新興威脅。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023660794442137712">貼文</a></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>報告生成時間：2026-02-17 21:30:50</em></p>
+    </div>
+
+    <footer class="site-footer">
+        <p>生成時間：2026-02-17 21:32:47</p>
+    </footer>
+
+</div>
+</body>
+</html>
