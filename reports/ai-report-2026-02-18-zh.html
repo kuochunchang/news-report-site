@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 熱門議題日報 — 2026-02-18</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="container">
+
+    <nav class="report-nav">
+        <a href="../index.html">&larr; 所有報告</a>
+        <a href="ai-report-2026-02-18.html">English</a>
+    </nav>
+
+    <div class="markdown-body">
+        <h1 id="ai-2026-02-18">AI 熱門議題日報 — 2026-02-18</h1>
+<blockquote>
+<p>本報告由 Grok AI 自動生成，基於 X (Twitter) 平台當日熱門 AI 討論內容。</p>
+</blockquote>
+<hr />
+<h2 id="_1">📋 執行摘要</h2>
+<p>今日的 AI 領域正由向「代理式 AI (Agentic AI)」的決定性轉變所主導，其特徵是 Anthropic 的 Claude 3.6 Sonnet 和 OpenAI 的 GPT-5.3 Codex-Spark 的重磅發布。這些模型正超越簡單的程式碼補全，轉向自主的儲存庫級工程，Anthropic 特別透過具有里程碑意義的 Figma 整合，彌合了設計與開發之間的鴻溝。然而，這一進展因一場重大的安全危機而蒙上陰影，涉及 30 多個惡意 Chrome 擴充功能以及針對 Claude「Artifacts」功能的漏洞利用。與此同時，Google 正透過其 8 萬美元的 Gemini Multimodal Live API 挑戰賽推動即時互動的邊界；而創意領域則出現了結合 Suno v5 音訊與 Claude 生成視覺效果的「AI DJ」工作流熱潮。總體而言，社群情緒呈現出快速專業化的趨勢，開發者紛紛採用混合「代理堆疊 (Agentic Stacks)」和標準化配置協議（如「agents.md」）來管理日益複雜的自主工作流。</p>
+<hr />
+<h2 id="_2">🔥 今日熱門議題</h2>
+<h3 id="1-anthropic-claude-code-sonnet-46-figma">1. Anthropic Claude Code 一週年：Sonnet 4.6 發布與 Figma 整合</h3>
+<p><strong>Category:</strong> 產品發布 (Product Launch) <span class="heat-badge heat-high">高</span></p>
+<p><strong>概要：</strong> Anthropic 藉由大規模的生態系統擴張標誌著 Claude Code 誕生一週年，其中以 Claude 3.6 Sonnet 的發布以及與 Figma 開創性的雙向整合為首。Sonnet 4.6 為代理式 AI 樹立了新的行業標準，在 SWE-Bench Verified 上達到了主導性的 79.6%，在 Terminal-Bench 2.0 上達到了 59.1%，有效地將其定位為自主軟體工程的首選「主力」模型。新的「Claude Code to Figma」功能允許開發者將生產就緒的程式碼直接作為可編輯的設計圖層導入 Figma，而 Figma MCP 插件則使設計師能夠將 UI 更改推回程式碼。此版本得到了日益增長的「Skills」生態系統和新 AWS Agent 插件的支持，標誌著從簡單的自動補全工具向完全自主、多代理開發框架的轉變。</p>
+<p><strong>背景：</strong> 自 2025 年初首次亮相以來，Claude Code 已從一個基於終端機的實驗演變為「代理式編程 (Agentic Coding)」的核心樞紐——這是一種 AI 自主執行 bash 命令、管理 git 工作流並解決複雜錯誤的範式。這一擴張反映了更廣泛的行業趨勢，即轉向「氛圍編程 (Vibe Coding)」，自然語言和高層次意圖取代了手動語法。透過與 Figma 和 GitHub Copilot 的深度整合，Anthropic 正試圖在單一代理循環中彌合設計、開發和部署之間的傳統鴻溝。</p>
+<p><strong>關鍵觀點：</strong></p>
+<ul>
+<li>
+<p>在平衡成本效益與高端代理性能時，Sonnet 4.6 可能是目前整體表現最好的模型，在大多數生產工作流中可能超越 Opus。 - <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023824564892168510">@bindureddy</a></p>
+</li>
+<li>
+<p>Claude Code 不再僅僅是一個編程助手；它已成熟為一個全面的自動化框架，開發者可以在其中構建專業的「技能 (Skills)」和多代理團隊。 - @mikestaub</p>
+</li>
+<li>
+<p>Figma 整合是即時協作的「遊戲規則改變者」，儘管其效用取決於它處理複雜設計變量和組件的能力，而不僅僅是原始的 CSS/HTML。 - @santosh_arron</p>
+</li>
+<li>
+<p>轉向「在程式碼中設計」使得一些視覺優先的工具顯得過時，因為開發者越來越傾向於程式碼優先的工作流，然後再由 AI 進行視覺化。 - @kitze</p>
+</li>
+<li>
+<p>最近隱藏文件訪問細節的 UI 更新對於需要對代理文件系統操作保持完全透明的高級用戶來說是一個倒退。 - @pcdoctor_kam</p>
+</li>
+</ul>
+<p><strong>影響分析：</strong> 短期內，79.6% 的 SWE-Bench 分數意味著企業團隊手動修復錯誤的時間將顯著減少，而 Figma 橋樑則加速了從原型到生產的流程。長期來看，這一生態系統威脅到傳統 IDE 的主導地位，證明了基於終端機的代理 CLI 可以處理端到端的產品開發。「Skills」和 AWS 插件的推出預示著「代理驅動的 DevOps (Agent-driven DevOps)」的興起，基礎設施和程式碼完全透過自主代理循環進行管理，這可能會減少日常維護對大型專業工程團隊的需求。</p>
+<p><strong>來源：</strong></p>
+<ul>
+<li>
+<p><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023759565029003769">Figma: From Claude Code to Figma</a></p>
+</li>
+<li>
+<p><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023829306112434495">Claude Sonnet 4.6 in GitHub Copilot GA</a></p>
+</li>
+<li>
+<p><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023825881601302757">Claude 4.6 Agentic Benchmarks Analysis</a></p>
+</li>
+</ul>
+<hr />
+<h3 id="2-openai-gpt-53-codex-spark">2. OpenAI GPT-5.3 Codex-Spark：自主編程突破受降級指控困擾</h3>
+<p><strong>Category:</strong> 產品發布 (Product Launch) <span class="heat-badge heat-high">高</span></p>
+<p><strong>概要：</strong> OpenAI 正式發布了 GPT-5.3 Codex-Spark，這是一款專為自主、儲存庫級軟體工程設計的專業模型。此版本標誌著「代理式」AI 的重大飛躍，具有在跨越數百萬 token 的程式碼庫上進行規劃、調試和自我迭代的能力。技術上，據報導該模型比 GPT-5.2 快 25%，並在 SWE-Bench Pro 基準測試中創下了新紀錄。它支持高級多代理配置，例如 Codex CLI v0.102 中看到的 12 線程支持，允許「探索者 (Explorer)」和「工作者 (Worker)」代理角色。然而，此次發布目前正捲入一場「降級醜聞」，知名開發者指稱 OpenAI 為了管理運算負載，正悄悄將付費訂閱者的 GPT-5.3 請求路由到較舊的 GPT-5.2 後端。</p>
+<p><strong>背景：</strong> 「Codex」系列代表了 OpenAI 對編程的專注，從 2021 年原始的 Codex 模型演變為 GPT-5 生態系統的核心組件。隨著行業轉向「氛圍編程 (Vibe Coding)」——開發者描述高層次意圖，AI 負責實現——GPT-5.3 Codex-Spark 旨在主導代理工作流市場。此次發布是對 Anthropic Claude 4.6 和 Google Gemini 3 Pro 在開發者圈中日益普及的直接回應，強調長文本自主性和成本效益。</p>
+<p><strong>關鍵觀點：</strong></p>
+<ul>
+<li>
+<p>該模型在代理工作方面是「不可阻擋的」，引用 25% 的速度提升和在 SWE-Bench Pro 上的卓越表現作為其超越先前版本的證據。 - @wolfaidev</p>
+</li>
+<li>
+<p>OpenAI 正在進行「後端降級」操作，支付 GPT-5.3 訪問費用的用戶在未獲通知的情況下被提供 GPT-5.2 的回應，導致輸出質量顯著下降。 - <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023383472816173315">@AGIGuardian</a></p>
+</li>
+<li>
+<p>該模型的安全過濾器過於激進，經常將合法、複雜的編程任務標記為「高風險網絡活動」，這阻礙了專業開發工作流。 - <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023086815767609470">@banteg</a></p>
+</li>
+<li>
+<p>對於繁重的編程任務，GPT-5.3 Codex-Spark 比 Claude 更具成本效益，特別是透過 ClawNow 等繞過限制性使用禁令的工具進行整合時。 - @deepcarryai</p>
+</li>
+<li>
+<p>新 Codex CLI (v0.102) 中的多代理支持是一個遊戲規則改變者，允許使用 Spark 架構在 12 個線程上進行並行開發。 - <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023864261949399311">@kevinkern</a></p>
+</li>
+</ul>
+<p><strong>影響分析：</strong> 短期內，此版本為「氛圍編程者」和初創公司提供了巨大的生產力提升，使其能夠從單個提示詞自主生成複雜功能（如 Three.js 遊戲機制）。然而，降級爭議威脅到 OpenAI 的透明度聲譽，可能驅使專業用戶轉向 Anthropic 等更可預測的競爭對手。長期來看，在自身的訓練循環中使用 GPT-5.3 Codex 標誌著向自我改進 AI 的邁進，這可能會呈指數級加速軟體開發，但也引入了關於自主代理對齊和「觸發式」未經驗證程式碼編輯的風險。</p>
+<p><strong>來源：</strong></p>
+<ul>
+<li>
+<p><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023327004108738784">GPT-5.3-Codex-Spark: Agentic Coding Overview</a></p>
+</li>
+<li>
+<p><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023864261949399311">Codex CLI v0.102 Release Notes</a></p>
+</li>
+<li>
+<p><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023383472816173315">OpenAI Downgrade Controversy Report</a></p>
+</li>
+</ul>
+<hr />
+<h3 id="3-google-gemini-multimodal-live-api-8">3. Google Gemini Multimodal Live API 與 8 萬美元代理挑戰賽</h3>
+<p><strong>Category:</strong> 資金/競賽 (Funding) <span class="heat-badge heat-medium">中</span></p>
+<p><strong>概要：</strong> Google 與 Devpost 合作啟動了 Gemini Live Agent 挑戰賽，這是一場高額獎金的黑客松，提供總計 8 萬美元的獎金，以加速即時多模態 AI 代理的開發。競賽核心是新的 Gemini Multimodal Live API，它使應用程式能夠以低延遲即時聽取、觀察並對環境刺激做出反應。開發者的任務是構建「即時代理 (Live Agents)」，從靜態的提示-回應循環轉向持續的互動體驗。已經出現的關鍵項目示例包括使用 YOLO 姿勢估計的語音驅動 AI 瑜伽教練，以及解釋當地口語意圖的旅行代理「KyaBol」。提交窗口於 2026 年 2 月 17 日開啟，將於 3 月 16 日關閉，標誌著 Google 集中力量主導新興的「代理式 AI」開發者生態系統。</p>
+<p><strong>背景：</strong> 這一挑戰標誌著 AI 領域從「靜態」模型向「即時」多模態互動的重大轉變，視覺和語音被同時處理。這是在 Google 發布 Gemini 1.5 Pro 和 Flash 模型之後進行的，這些模型引入了巨大的上下文窗口，但 Multimodal Live API 特別針對即時機器人和助手應用程式的延遲要求。透過提供大量資金激勵開發者，Google 旨在彌合實驗性研究與實用的、面向消費者的 AI 代理之間的鴻溝，這些代理可以作為現實世界的伴侶或企業工具。</p>
+<p><strong>關鍵觀點：</strong></p>
+<ul>
+<li>
+<p>即時代理能力與競爭性黑客松的結合是 AI 領域一直缺失的「參與組合」，可能推動更高質量的開發者產出。 - @raeyko_</p>
+</li>
+<li>
+<p>從標準的視覺和語音技巧轉向完全即時的多模態互動，代表了人類與機器交互方式的「下一層級」演變。 - @afrzlmy</p>
+</li>
+<li>
+<p>透過「氛圍編程」，Gemini 生態系統對非開發者來說越來越容易上手，允許編程經驗極少的人構建像影片編輯器這樣的功能性工具。 - <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023025467423678649">@_kidrah_24</a></p>
+</li>
+<li>
+<p>雖然 API 功能強大，但仍有技術障礙需要克服，特別是關於在即時對話流中無縫整合文字轉語音 (TTS) 的問題。 - @dyamashiro</p>
+</li>
+<li>
+<p>企業採用已經開始，像 SCSK 這樣的大型 IT 公司已開始開發語音 AI 代理，這表明該 API 已準備好用於專業級應用。 - <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023608112805277951">@yasuhito_morimo</a></p>
+</li>
+</ul>
+<p><strong>影響分析：</strong> 短期內，這一挑戰可能會產生大量創意多模態演示，展示 Gemini API 的低延遲能力，特別是在教育和健身領域。長期來看，它降低了進入「代理式」軟體的門檻，使小團隊和非技術性的「氛圍編程者」能夠在構建複雜 AI 助手方面與大公司競爭。對於更廣泛的 AI 生態系統，這標誌著從以文本為中心的 LLM 轉向能夠即時感知物理世界並與之互動的「始終開啟」感官 AI。</p>
+<p><strong>來源：</strong></p>
+<ul>
+<li><a target="_blank" rel="noopener noreferrer" href="https://geminiliveagentchallenge.devpost.com/">Gemini Live Agent Challenge on Devpost</a></li>
+</ul>
+<hr />
+<h3 id="4-agentsmd">4. 「agents.md」作為互操作性配置標準的興起</h3>
+<p><strong>Category:</strong> 開源 (Open Source) <span class="heat-badge heat-medium">中</span></p>
+<p><strong>概要：</strong> 開發者正迅速向「agents.md」靠攏，將其作為 AI 編程代理的事實配置標準，以確保跨平台互操作性。這種基於 Markdown 的規範允許開發者在單個文件中定義代理指令、人格特質和「技能」，該文件正日益受到包括 Claude Code、Cursor、GitHub Copilot、Gemini 和 Codex 在內的工具認可。最近對 2,926 個 GitHub 儲存庫的分析顯示，Claude Code 用戶正引領採用曲線，通常使用「agents.md」在不同的 IDE 和 CLI 環境中保持一致的行為。隨著「agents.md」生成器和 Git 鉤子（在儲存庫初始化期間自動創建這些配置）的引入，生態系統正在趨於成熟。技術討論強調保持這些文件的簡潔和手動策劃，重點是解決特定的「工具異味 (Tool Smells)」和模型特定的怪癖。這一運動代表了向「代理式 MLOps (Agentic MLOps)」的轉變，其中代理行為是版本控制且可移植的，而不是鎖定在專有的 IDE 設置中。</p>
+<p><strong>背景：</strong> 歷史上，AI 編程助手使用碎片化的、特定於工具的配置文件（如「.cursorrules」或隱藏目錄），這給在多個 AI 介面之間切換的開發者帶來了摩擦。隨著行業進入 2026 年的「代理時代」，對「代理網站地圖 (Sitemap for Agents)」的需求日益增長——這是一種讓自主代理在進入時理解程式碼庫架構和可用工具的標準化方式。這一趨勢與模型上下文協議 (MCP) 以及需要統一事實來源進行協調的多代理系統 (MAS) 的興起密切相關。透過標準化 Markdown 格式，開發者可以利用一種人類可讀且機器可解析的媒介，自然地融入現有的文檔工作流。</p>
+<p><strong>關鍵觀點：</strong></p>
+<ul>
+<li>
+<p>將「agents.md」定位為代理時代權威的互操作配置標準，引用對「工具異味」的研究作為推動更好配置衛生的動力。 - <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023881486185734634">@boyuan_chen</a></p>
+</li>
+<li>
+<p>主張使用符號連結 (symlinks) 的務實方法（例如，將 .agents/skills 連結到 .claude/skills）來彌補當前的平台差距，同時質疑缺乏標準化究竟是關鍵障礙還是僅僅是輕微的不便。 - <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023827030593466729">@arlogilbert</a></p>
+</li>
+<li>
+<p>推廣使用自動生成器和 Git 鉤子，以確保每個新儲存庫都以基準「agents.md」文件開始，將其視為現代 DevOps 的基本基礎設施。 - @arr0w_swe</p>
+</li>
+<li>
+<p>建議將「agents.md」與模型上下文協議 (MCP) 和代理對代理 (A2A) 通信模式相結合，以創建真正強大的多代理系統。 - @InfoQ</p>
+</li>
+<li>
+<p>警告說，雖然「agents.md」提供了一個合理的基準，但開發者必須手動重新評估並合併更新，以處理底層模型的安全和記憶體改進。 - @vicky_makhija</p>
+</li>
+</ul>
+<p><strong>影響分析：</strong> 短期內，「agents.md」顯著減少了開發者的「配置稅」，允許他們在不同的編程環境中攜帶自定義 AI 指令，而無需手動遷移。對於更廣泛的 AI 生態系統，它建立了一個供應商中立層，防止被鎖定在 Cursor 或 Copilot 等特定 IDE 中。長期來看，這一標準可能會演變成一個全面的「代理清單 (Agent Manifest)」，不僅定義指令，還定義自主代理的安全邊界、API 權限和成本配額。這可能會導致「代理原生 (Agent-Native)」儲存庫的出現，這些儲存庫針對機器理解和人類可讀性進行了同等優化。</p>
+<p><strong>來源：</strong></p>
+<ul>
+<li>
+<p><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023881486185734634">Emerging Interoperable Standard for AI Coding Agents</a></p>
+</li>
+<li>
+<p><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023691483526951310">7 patterns to build multi-agent systems</a></p>
+</li>
+</ul>
+<hr />
+<h3 id="5-ai-ide">5. AI 編程 IDE 之戰：混合代理堆疊的興起</h3>
+<p><strong>Category:</strong> 行業 (Industry) <span class="heat-badge heat-medium">中</span></p>
+<p><strong>概要：</strong> AI 編程領域正從「贏家通吃」的 IDE 市場轉向混合「代理堆疊 (Agentic Stack)」方法。開發者越來越多地將 Cursor 卓越的 IDE 原生功能（內聯補全、前端原型設計）與 Anthropic 的 Claude Code CLI 相結合，用於複雜的多文件架構重構和代理編排。Windsurf 已成為極具破壞性的第三方參與者，透過極具競爭力的 15 美元/月 Pro 計劃以及對 30 多個模型（包括 Claude 4.6 Fast/Opus 和 Sonnet 4.5）的支持獲得了關注。一個關鍵的技術趨勢涉及「指令同步」，開發者使用自動化腳本保持 Cursor 的 .cursorrules 和 Claude 的 .md 配置文件對齊，確保在不同 AI 代理之間保持一致的設計選擇。雖然 Cursor 在「流暢度 (flow)」方面仍具優勢，但 Claude Code 因其「廣度思考」和在深層邏輯任務中超越傳統 IDE 的能力而受到讚譽。</p>
+<p><strong>背景：</strong> 自 GitHub Copilot 發布以來，AI 編程空間已從簡單的自動補全演變為完全代理化的環境。Cursor 最初透過分叉 VS Code 並深度整合 AI 佔據主導地位，但 Claude Code 等獨立代理工具和 Windsurf 等多模型 IDE 的發布使市場變得碎片化。開發者現在正針對成本、延遲和推理深度進行優化，導致了一種模組化工作流，其中不同的工具處理軟體開發生命週期 (SDLC) 的特定階段。</p>
+<p><strong>關鍵觀點：</strong></p>
+<ul>
+<li>
+<p>Claude Code 是一個碰巧使用你編輯器的 AI，而 Cursor 是一個碰巧使用 AI 的編輯器；對於單文件編輯以外的任何任務，搭載 Opus 4.6 的 Claude Code 表現都優於 Cursor。 - <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2022948422756524407">@tacodevs</a></p>
+</li>
+<li>
+<p>現代堆疊不是二選一；使用 Claude Code 進行從零開始的構建和代理工作流，使用 Cursor 在現有程式碼庫中工作。 - @TheMarketingai</p>
+</li>
+<li>
+<p>對於注重成本的開發者來說，Windsurf 是更優越的編排器，提供 15 美元/月的 Pro 計劃並可訪問 30 多個模型，有效地作為 Cursor 60 美元/月定價的「模型無關」替代方案。 - @DegenApeDev</p>
+</li>
+<li>
+<p>Claude Code 的延遲（1-3 分鐘的回應時間）是一個主要瓶頸，迫使開發者進入低效的多分頁工作流。 - <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023443556312969633">@levelsio</a></p>
+</li>
+<li>
+<p>在這個新時代，成功需要一種「AI 好友」設置，工具會自動同步指令，以便每個代理都能理解項目的架構目標。 - <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023896425092861986">@chams_builds</a></p>
+</li>
+</ul>
+<p><strong>影響分析：</strong> 短期內，開發者透過將架構規劃外包給 Claude Code，同時使用 Cursor 進行快速 UI 執行，看到了生產力的巨大提升。僅使用基本 IDE 功能的中層「AI 工程師」面臨風險，因為行業正轉向獎勵能夠編排多個代理工具的「AI 架構師」。長期來看，Anthropic、Cursor 和 Windsurf 之間的競爭可能會降低訂閱成本，並迫使整個生態系統實現「代理規則」（如 .cursorrules）的標準化。</p>
+<p><strong>來源：</strong></p>
+<ul>
+<li>
+<p><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023512836497174982">AI Coding Community Discussions on Cursor and Claude Code</a></p>
+</li>
+<li>
+<p><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023163036580676027">Windsurf IDE vs. JetBrains and Cursor Comparisons</a></p>
+</li>
+</ul>
+<hr />
+<h3 id="6-ai-artifact">6. AI 生態系統安全危機：惡意擴充功能與 Artifact 漏洞利用</h3>
+<p><strong>Category:</strong> 政策/安全 (Policy) <span class="heat-badge heat-medium">中</span></p>
+<p><strong>概要：</strong> 一場涉及 30 多個惡意 Chrome 擴充功能的協同行動，透過冒充 ChatGPT、Claude、Gemini 和 Grok 等熱門 AI 工具，已導致超過 26 萬名用戶受害。這些擴充功能中有些甚至在 Chrome 線上應用程式商店中獲得「精選」標記以建立虛假信任，它們利用隱藏的遠端 iframe 監控瀏覽活動、獲取 Gmail 內容並竊取敏感的 API 金鑰。與此同時，安全研究人員發現了利用 Claude 的「Artifacts」功能託管欺騙性頁面的「ClickFix」網絡釣魚活動，誘騙 macOS 用戶安裝資訊竊取程式 (infostealer) 惡意軟體。此外，Claude Desktop 中的零點擊漏洞等其他弱點突顯了日益擴大的攻擊面，AI 生態系統中的生產力功能正被武器化用於遠端程式碼執行 (RCE) 和數據盜竊。此次行動展示了對共享惡意程式碼庫的複雜利用，使得克隆版本即使在官方下架後也能迅速重新出現。</p>
+<p><strong>背景：</strong> AI 助手的快速普及導致第三方瀏覽器擴充功能和旨在提高生產力的整合功能（如「Artifacts」）激增。然而，Chrome 線上應用程式商店缺乏嚴格審核，加上用戶對 AI 品牌的固有信任，造成了巨大的安全真空。這一趨勢延續了瀏覽器擴充功能惡意軟體的歷史，但現在專門針對與 AI 工作流相關的高價值數據，如專有提示詞、Gmail 數據和昂貴的 API 憑據。隨著 AI 成為專業工作流的核心，這些工具正成為供應鏈攻擊的主要目標。</p>
+<p><strong>關鍵觀點：</strong></p>
+<ul>
+<li>
+<p>詳細介紹了 30 多個擴充功能的技術機制，強調使用 iframe 繞過標準安全檢查以及 26 萬受害者的規模。 - <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023271842903994677">@karthik_rangan</a></p>
+</li>
+<li>
+<p>特別警告了「ClickFix」活動，指出 Claude 的 Artifacts 如何被用來繞過傳統網頁過濾器以傳遞 macOS 惡意軟體。 - <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023397045847949717">@gossy_84</a></p>
+</li>
+<li>
+<p>對當前的 AI 「炒作」表示懷疑，稱圍繞這些工具的薄弱安全意識「超級危險」且只是一時熱潮。 - @10xrecruit22602</p>
+</li>
+<li>
+<p>強調了 Claude Desktop 中零點擊漏洞的關鍵性質，這擴大了在無需用戶交互的情況下進行遠端漏洞利用的攻擊面。 - <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023807672479330761">@Anomali</a></p>
+</li>
+<li>
+<p>敦促立即審計所有瀏覽器擴充功能，指出儘管已有報告，但商店中仍有數十個惡意 AI 主題工具處於活動狀態。 - @dhoesq</p>
+</li>
+</ul>
+<p><strong>影響分析：</strong> 短期內，用戶和組織必須立即審計瀏覽器擴充功能並禁用未經驗證的 AI 整合，以防止憑據被盜。開發者面臨 API 金鑰被盜的風險增加，這可能導致重大的財務損失和數據洩漏。長期來看，這場危機可能會迫使 Google 對 Chrome 線上應用程式商店實施更嚴格的「精選」徽章要求，並推動 Anthropic 等 AI 供應商加強 Artifacts 等功能以防範惡意腳本的外部託管。此事件突顯了網絡犯罪向針對「AI 供應鏈」以及用戶與其 AI 助手之間信任關係的根本轉變。</p>
+<p><strong>來源：</strong></p>
+<ul>
+<li>
+<p><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023271842903994677">LayerX Security Report on Malicious AI Extensions</a></p>
+</li>
+<li>
+<p><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023397045847949717">Claude Artifacts ClickFix Campaign Analysis</a></p>
+</li>
+</ul>
+<hr />
+<h3 id="7-suno-v5-ai-dj">7. Suno v5 發布與「AI DJ」多模態趨勢</h3>
+<p><strong>Category:</strong> 產品發布 (Product Launch) <span class="heat-badge heat-medium">中</span></p>
+<p><strong>概要：</strong> Suno v5 的發布標誌著生成式音樂的重大飛躍，特別是掌握了具有高保真音訊的複雜電子流派（如 Riddim Dubstep）。一種病毒式趨勢正在興起，「代理工程師」正將 Suno v5 與 Anthropic 的 Claude Code（利用 Sonnet 4.5/4.6）串聯起來，生成即時、反應式的狂歡視覺效果，有效地創造了自動化的「AI DJ」體驗。v5 的技術升級包括用於細粒度人聲控制的「表演提示 (Performance Cues)」，如 [airy] 和 [legato]，儘管其可靠性目前正受到高級用戶的爭論。雖然 Suno 佔據了熱度，但 Mureka V8 等競爭對手正在挑戰其人聲真實感，創作者越來越多地將 Suno 音訊與 Sora2 和 Hailuo 等影片模型整合，用於全規模 AI 音樂錄影帶製作。</p>
+<p><strong>背景：</strong> Suno 已從一個新奇的歌曲生成器演變為專業級的製作工具，v5 專注於專業級保真度和特定流派的細微差別。此版本的發布恰逢「代理式」工作流的興起，開發者不僅將 Claude 等 LLM 用於文本，還將其作為多模態創意套件的編排器。這一趨勢反映了 AI 生態系統向互操作性的更廣泛轉變，音樂、程式碼驅動的視覺效果和影片生成被組合成單一、自動化的創意流水線。</p>
+<p><strong>關鍵觀點：</strong></p>
+<ul>
+<li>
+<p>Suno v5 代表了複雜電子音樂的重大技術突破，使用戶能夠生成專業級的 Riddim Dubstep，並將其與 AI 生成的視覺效果同步，充當「AI DJ」。 - <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023534595980054554">@KingBootoshi</a></p>
+</li>
+<li>
+<p>Suno v5 中新的「表演提示」（如 [airy] 或 [legato]）需要將特定標籤放在行首才能生效，且其可靠性仍不穩定。 - <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2022868964775473538">@MAYAmusicS</a></p>
+</li>
+<li>
+<p>雖然 Suno v5 在作曲方面功能強大，但根據盲測結果，Mureka V8 目前在人聲真實感和情感深度方面表現更佳。 - <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023760856413360562">@manishkumar_dev</a></p>
+</li>
+<li>
+<p>整合 Claude 4.6 創作歌詞和 Suno v5 進行作曲，模糊了 AI 「情感」的界限，創造了一種新的協作敘事形式。 - <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023947162615451675">@mikasayuu_x</a></p>
+</li>
+<li>
+<p>Claude Code (Sonnet 4.6) 正成為生成 AI 音樂視覺效果所需反應式程式碼的首選引擎，儘管一些開發者仍傾向於 OpenAI 的 Codex 以獲得無錯執行。 - @ClaudeCodeLog / @Parmartejas</p>
+</li>
+</ul>
+<p><strong>影響分析：</strong> 短期內，隨著 VJ 和音樂製作的門檻崩塌，我們將看到 AI 生成的音樂錄影帶和直播「AI DJ」表演的激增。開發者將越來越多地專注於構建「膠水」應用程式，以自動化 Suno 的音訊輸出與 Claude 的視覺程式碼之間的同步。長期來看，這可能會透過將高能量流派商品化，並將現場表演的價值轉向創作者使用的獨特「代理式」工作流和提示詞，從而顛覆電子音樂行業。</p>
+<p><strong>來源：</strong></p>
+<ul>
+<li>
+<p><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023534595980054554">KingBootoshi Suno v5 + Claude Code Demo</a></p>
+</li>
+<li>
+<p><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2022868964775473538">Suno v5 Performance Cues Discussion</a></p>
+</li>
+</ul>
+<hr />
+<h3 id="8-iliadnear-ai">8. Iliad：NEAR 協議的 AI 驅動智能合約開發</h3>
+<p><strong>Category:</strong> 產品發布 (Product Launch) <span class="heat-badge heat-low">低</span></p>
+<p><strong>概要：</strong> Iliad 是一款專門的 AI 整合開發環境 (IDE)，旨在簡化 NEAR 協議上智能合約的創建。該平台由 Shadowcorp 開發，允許開發者使用包括 Claude Opus 4.6、Sonnet 4.5 和專有 NEAR AI 模型在內的高級模型，從自然語言描述生成生產就緒的 Rust 程式碼。該 IDE 具有完整的基於 Monaco 的編輯器、整合終端以及一鍵編譯和部署系統，消除了對複雜本地 CLI 配置的需求。透過利用雲端儲存和「從提示到部署」的工作流，Iliad 旨在將新合約的上市時間縮短至 10 分鐘以內。該工具目前正進入 Alpha 測試階段，目標用戶是希望繞過 Rust 和 NEAR 特定架構陡峭學習曲線的開發者。</p>
+<p><strong>背景：</strong> NEAR 協議長期以來一直將自己定位為對開發者友好的區塊鏈，但要求使用 Rust 編寫智能合約——這是一門以安全著稱但極其複雜的語言——仍然是一個准入門檻。隨著行業轉向以 AI 為中心的開發，NEAR 投入巨資整合 AI 代理和 IronClaw 等安全執行環境。Iliad 代表了這一策略的實際應用，從簡單的程式碼補全轉向整體的、AI 優先的開發體驗。此次發布符合「鏈抽象 (Chain Abstraction)」的更廣泛趨勢，即區塊鏈底層的技術複雜性被隱藏在直觀、高層次的介面之後。</p>
+<p><strong>關鍵觀點：</strong></p>
+<ul>
+<li>
+<p>Iliad 與 NEAR AI 安全 Rust 代理 (IronClaw) 的整合優於本地推理解決方案，因為它為開發者工作流提供了更好的隱私和安全性。 - <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023660446310408642">@jp_dawg</a></p>
+</li>
+<li>
+<p>發布智能合約應該像描述你想要什麼一樣簡單；Iliad 旨在消除 CLI 設置和樣板程式碼的摩擦。 - <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023484331780636675">@shadowcorp_dev</a></p>
+</li>
+<li>
+<p>使用基於 Rust 的隔離和提示詞安全對於建立對 AI 生成程式碼的信任至關重要，這表明 Iliad 的底層架構是更廣泛的「Rust 重建信任」運動的一部分。 - <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2022999800959135863">@SherifDefi</a></p>
+</li>
+<li>
+<p>該平台是快速原型的遊戲規則改變者，透過消除對深厚 Rust 專業知識的要求，有效地使 NEAR 開發民主化。 - <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023600448058671177">@NEARLegion</a></p>
+</li>
+</ul>
+<p><strong>影響分析：</strong> 短期內，Iliad 可能會引發 NEAR 上實驗性 dApp 和快速原型的激增，因為部署功能性合約的門檻顯著降低。對於更廣泛的 AI 生態系統，它作為一個將 LLM 與特定領域編譯器和部署流水線相結合的專業 IDE 案例研究。長期來看，這可能會將區塊鏈開發者的角色從編寫樣板程式碼轉向高層次系統架構和提示工程。然而，對 AI 生成程式碼的依賴將需要新的審計標準，以確保這些快速部署合約的安全性。</p>
+<p><strong>來源：</strong></p>
+<ul>
+<li><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023483880381247788">Iliad Official Launch Announcement</a></li>
+</ul>
+<hr />
+<h3 id="9-claude-code-obsidian">9. Claude Code 與 Obsidian 整合實現自動化繪圖</h3>
+<p><strong>Category:</strong> 其他 (Other) <span class="heat-badge heat-low">低</span></p>
+<p><strong>概要：</strong> Claude Code 與 Obsidian 的整合代表了透過社群開發的「技能」實現自動化知識視覺化的重大飛躍。透過利用「axton-obsidian-visual-skills」套件，用戶現在可以在 Claude Code CLI 中直接從單個自然語言提示生成複雜的圖表、流程圖和心智圖。此工作流允許 AI 代理與 Obsidian 的本地文件系統交互，並觸發特定的插件，如用於手繪美學的 Excalidraw、用於結構化技術流程的 Mermaid 以及用於空間想法探索的 Obsidian Canvas。該整合有效地消除了繪圖的手動摩擦，允許用戶在幾秒鐘內將大量筆記轉換為視覺結構或創建技術插圖。這一發展在開發者和技術部落客中特別受歡迎，他們使用它來自動創建「張子忠式」白板影片和文檔視覺效果。</p>
+<p><strong>背景：</strong> 隨著 Anthropic 的 Claude Code 等 AI 代理的演進，出現了向「代理式工作流」發展的趨勢，即 AI 工具直接與本地生產力軟體交互。Obsidian 作為一款基於 Markdown 的筆記應用，由於其本地優先的架構和可擴展的插件生態系統，已成為這些整合的主要目標。這一特定整合解決了長期存在的「視覺摩擦」挑戰——即手動創建圖表以配合文本筆記的耗時過程。透過彌合 Claude 的推理能力與 Obsidian 的視覺插件之間的鴻溝，社群正在為自動化知識管理創建一個無縫流水線。</p>
+<p><strong>關鍵觀點：</strong></p>
+<ul>
+<li>
+<p>該整合是技術內容創作的「遊戲規則改變者」，將手繪圖表的時間從半天縮短到單個句子提示。 - @chishanAI</p>
+</li>
+<li>
+<p>使用 Claude Code 將大量筆記轉換為 Obsidian Canvas 視圖的能力對於以視覺方式重新思考和探索複雜想法具有變革性。 - <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023222533688861063">@internetvin</a></p>
+</li>
+<li>
+<p>「Claudian + Opus」插件將 Claude Code 直接放入 Obsidian 側邊欄，具有完整的庫訪問和 bash 能力，其效果非常好，以至於用戶「再也不想回到」傳統方法。 - <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023838938440585274">@WellerVision</a></p>
+</li>
+<li>
+<p>使用本地 Markdown 文件配合 Claude Code 構建完整的 AI 助手，其簡單性優於使用 Notion 或 Google Docs 等中心化平台。 - <a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023812207495250148">@KacperTrzepiec1</a></p>
+</li>
+</ul>
+<p><strong>影響分析：</strong> 短期內，這種整合為開發者和技術作家提供了即時的生產力提升，他們現在無需離開終端機或筆記應用即可生成文檔視覺效果。它降低了創建高質量視覺內容的門檻，可能導致出現更多視覺豐富的技術部落格和內部文檔。長期來看，這標誌著向「代理式知識庫」的轉變，AI 不僅僅是存儲信息，還代表用戶主動對其進行結構化、視覺化和探索。它還加強了 Obsidian 等本地優先、開放格式軟體在 AI 驅動生態系統中的價值，因為它提供了 AI 代理髮揮真正效力所需的透明度和訪問權限。</p>
+<p><strong>來源：</strong></p>
+<ul>
+<li><a target="_blank" rel="noopener noreferrer" href="https://github.com/axtonliu/axton-obsidian-visual-skills">Axton Obsidian Visual Skills GitHub</a></li>
+</ul>
+<hr />
+<h2 id="_3">📊 趨勢總結</h2>
+<p>一種明顯的「代理互操作性 (Agentic Interoperability)」模式正在顯現，行業正從孤立的工具轉向統一的生態系統，其中「agents.md」在 Claude、Cursor 和 Codex 之間充當通用配置標準。與此同時，「混合堆疊 (Hybrid Stack)」趨勢也相輔相成，開發者不再依賴單一 IDE，而是編排多個模型——使用 Cursor 處理 UI 流程，使用 Claude Code 處理深層架構邏輯。我們還見證了「代理驅動的 DevOps」和「鏈抽象」的誕生，例如 Iliad 在 NEAR 上實現的從提示到部署的智能合約，將技術複雜性隱藏在自然語言之後。然而，日益增長的「透明度赤字」正在產生摩擦，這體現在 OpenAI 被指控悄悄降級模型，以及網絡犯罪分子將生產力功能武器化。最後，多模態正從靜態生成演變為「即時」感官體驗，預示著 AI 代理將持續感知並即時對環境刺激做出反應的未來。</p>
+<hr />
+<h2 id="kol">🎤 KOL 觀點追踪</h2>
+<p>AI 開發者工具領域的 KOL 集體情緒壓倒性看漲，核心在於從「AI 輔助編程」向「代理式軟體工程」的轉變。一個主要主題是代理專用基礎設施的出現，包括 Zed 的 ACP 等新協議以及 Anthropic 用於網頁搜索的動態程式碼過濾。強烈共識認為軟體開發的基本約束正在發生變化，Karpathy 預測遺留程式碼將迎來大規模重寫，而 swyx 則展望向「家常式 (home-cooked)」代理應用的轉變。雖然對 Claude Sonnet 4.6 等新模型的興奮度很高，但人們也越來越關注「枯燥」但必不可少的中間件：調試器、可觀測性工具以及像 Rodney 這樣的瀏覽器自動化 CLI 工具。分歧極小，不過 swyx 對代理炒作與實際交付之間的差距提出了必要的警示。</p>
+<h3 id="karpathy-andrej-karpathy">@@karpathy — Andrej Karpathy</h3>
+<blockquote>
+<p>Andrej Karpathy 是世界知名的 AI 研究員和教育家。他是 OpenAI 的創始成員，曾擔任 Tesla 的 AI 總監，領導 Autopilot 電腦視覺團隊。他擁有史丹佛大學博士學位，因其深度學習教程以及對大規模神經網絡開發的貢獻而廣受認可。由於他處於學術研究與複雜系統 AI 工業應用的交匯點，他的觀點極具價值。</p>
+</blockquote>
+<p><strong>Category:</strong> 看漲 (Bullish) <span class="heat-badge heat-high">高</span></p>
+<p>Karpathy 討論了由 LLM 驅動的軟體工程根本轉變，認為軟體開發的約束條件已被完全改變。他主張我們正進入一個現有軟體的大部分將被多次重寫的時代，因為 LLM 使程式碼翻譯和遺留系統遷移變得顯著容易。此外，他建議行業可能需要從以人為中心的編程語言轉向專門為 LLM 消費和生成而優化的語言。他的觀點表明，隨著程式碼生成成本的下降，軟體的「大重寫」不僅是可能的，而且是不可避免的。</p>
+<p><strong>關鍵引用：</strong></p>
+<ul>
+<li>「LLM 完全改變了軟體的整個約束景觀……我們很可能最終會將所有曾編寫過的軟體的大部分重寫很多次。」 (LLMs change the whole constraints landscape of software completely... It feels likely that we'll end up re-writing large fractions of all software ever written many times over.)</li>
+</ul>
+<p><strong>討論主題：</strong> LLM 原生編程、軟體工程約束、遺留程式碼遷移、程式碼翻譯</p>
+<hr />
+<h3 id="simonw-simon-willison">@@simonw — Simon Willison</h3>
+<blockquote>
+<p>Simon Willison 是一位獨立開源開發者，Django 網頁框架的共同創作者，以及 Datasette 的創作者。他是 LLM 社群的傑出人物，以其在提示工程、本地 LLM 工具以及「LLM 作為工具」哲學方面的工作而聞名。他的工作通常專注於實用的、以開發者為中心的實用程序，旨在彌合原始 AI 模型與可用軟體工作流之間的差距。</p>
+</blockquote>
+<p><strong>Category:</strong> 看漲 (Bullish) <span class="heat-badge heat-high">高</span></p>
+<p>Simon 宣布發布 Rodney，這是一款專為 AI 編程代理背景下的瀏覽器自動化設計的新 CLI 工具。Rodney 經過優化，可與 Showboat 等工具配合使用，並作為 agent-browser 或 Chrome DevTools MCP 等通用工具的更專業替代方案。他還分享了關於 Claude Sonnet 4.6 的技術觀察，特別指出其在執行 AI 圖像生成測試時的性能和怪癖，強調了與最新前沿模型合作的迭代性質。</p>
+<p><strong>關鍵引用：</strong></p>
+<ul>
+<li>「Rodney 的新版本發布了，這是我用於瀏覽器自動化的 CLI 工具（專為編程代理和 Showboat 使用而設計）。」 (New release of Rodney, my CLI tool for browser automation (designed for use by coding agents and with Showboat).)</li>
+</ul>
+<p><strong>討論主題：</strong> 瀏覽器自動化、編程代理、Rodney CLI、Claude Sonnet 4.6、MCP</p>
+<hr />
+<h3 id="hwchase17-harrison-chase">@@hwchase17 — Harrison Chase</h3>
+<blockquote>
+<p>Harrison Chase 是 LangChain 的執行長兼共同創始人，LangChain 是構建 LLM 驅動應用程式最廣泛使用的框架。在創立 LangChain 之前，他在 Robust Intelligence 領導機器學習團隊，並在 Facebook 的自動駕駛團隊工作。他是 AI 代理領域的核心人物，專注於將代理從原型推向生產就緒系統所需的基礎設施和編排層。</p>
+</blockquote>
+<p><strong>Category:</strong> 看漲 (Bullish) <span class="heat-badge heat-high">高</span></p>
+<p>Harrison 專注於 AI 代理生態系統的成熟，介紹了「agent-debugger」，這是一款用於 LangGraph 和 LangChain 的基於終端機的工具，可提供對代理狀態和 Python 執行的深度可見性。他強調了透過 LangSmith Insights 進行「線束工程 (harness engineering)」和生產可觀測性的重要性。值得注意的是，他將 Zed 的代理客戶端協議 (ACP) 視為一項可能徹底改變代理與 IDE 交互方式的「黑馬」技術，透過為其提供豐富、結構化的上下文，標誌著向 AI 代理與開發環境之間標準化通信協議的轉變。</p>
+<p><strong>關鍵引用：</strong></p>
+<ul>
+<li>
+<p>「agent-debugger 是一款用於 LangGraph/LangChain 代理的終端機調試器。」 (agent-debugger is a terminal debugger for LangGraph/LangChain agents.)</p>
+</li>
+<li>
+<p>「ACP 是我認為下一個會爆發的協議的黑馬競爭者。」 (ACP is my dark-horse contender for the next protocol to explode.)</p>
+</li>
+</ul>
+<p><strong>討論主題：</strong> 代理可觀測性、LangGraph、代理客戶端協議 (ACP)、線束工程、LangSmith</p>
+<hr />
+<h3 id="swyx-shawn-wang">@@swyx — Shawn Wang</h3>
+<blockquote>
+<p>Shawn Wang (swyx) 是 Latent Space 的創始人，也是「AI 工程師」運動中極具影響力的聲音。他曾在 Airbyte、Temporal 和 Netlify 擔任開發者體驗方面的領導職務。他以識別開發者生態系統中的新興趨勢並倡導賦予個人開發者構建複雜全棧應用能力的「代理式」軟體架構而聞名。</p>
+</blockquote>
+<p><strong>Category:</strong> 中性/混合 (Mixed) <span class="heat-badge heat-high">高</span></p>
+<p>Shawn 強調了 Dreamer（前身為 /dev/agents）的發布，這是一個旨在構建「代理式應用 (agentic apps)」的平台。他描述了一種工作流，其中一個「助手 (Sidekick)」代理構建並發布其他代理，利用模型上下文協議 (MCP)、便攜式記憶體以及整合的全棧工具（如資料庫和無伺服器函數）。他將其框架化為「家常式」軟體的未來，個人 AI 工具將取代傳統的軟體包。然而，他用對當前行業炒作的批評來平衡這種熱情，警告那些未能兌現承諾的代理。</p>
+<p><strong>關鍵引用：</strong></p>
+<ul>
+<li>「/dev/agents 以 @dreamer 的身份結束隱身模式……這是將應用程式作為『家常便飯』的平台。」 (/dev/agents is out of stealth as @dreamer... this is the platform for apps as a 'home-cooked meal'.)</li>
+</ul>
+<p><strong>討論主題：</strong> 代理式應用、Dreamer 平台、MCP、家常式軟體、AI 代理炒作</p>
+<hr />
+<h3 id="alexalbert__-alex-albert">@@alexalbert__ — Alex Albert</h3>
+<blockquote>
+<p>Alex Albert 領導 Anthropic 的開發者關係。他是 Claude 生態系統中的關鍵人物，專注於幫助開發者利用 Anthropic 模型的獨特功能。他的工作通常涉及基準測試模型性能、探索「電腦使用 (computer use)」能力，以及開發使用 Claude API 的代理工作流最佳實踐。</p>
+</blockquote>
+<p><strong>Category:</strong> 看漲 (Bullish) <span class="heat-badge heat-high">高</span></p>
+<p>Alex 詳細介紹了 Claude Sonnet 4.6 的發布，將其定位為一款在保持 Sonnet 效率的同時接近 Opus 級能力的模型。他強調了一項重大的技術進步：Claude 的網頁搜索工具現在會編寫並執行程式碼，在結果進入上下文窗口之前對其進行過濾。這種「動態過濾」使 BrowseComp 基準測試的準確性提高了 13%，同時減少了 32% 的輸入 token 使用量。他還指出「電腦使用」能力的快速進展，表明 AI 在導航數位介面方面正接近人類水平的熟練度。</p>
+<p><strong>關鍵引用：</strong></p>
+<ul>
+<li>
+<p>「Sonnet 4.6 來了。它是我們迄今為止最強大的 Sonnet 模型，在許多領域都接近 Opus 級別的能力。」 (Sonnet 4.6 is here. It's our most capable Sonnet model by far, approaching Opus-class capabilities in many areas.)</p>
+</li>
+<li>
+<p>「Claude 的網頁搜索和獲取工具現在會編寫並執行程式碼，在結果進入上下文窗口之前對其進行過濾。啟用後，Sonnet 4.6 在 BrowseComp 上的準確性提高了 13%，同時減少了 32% 的輸入 token。」 (Claude's web search and fetch tools now write and execute code to filter results before they reach the context window. When enabled, Sonnet 4.6 saw 13% higher accuracy on BrowseComp while using 32% fewer input tokens.)</p>
+</li>
+<li>
+<p>「不到一年半前，電腦使用幾乎還不存在，而現在我們已接近人類水平的能力。這再次提醒我們，事情進展得非常快。」 (Less than a year and a half ago computer use was barely even a thing and now we're near human-level capability. Another reminder that things are improving very fast.)</p>
+</li>
+</ul>
+<p><strong>討論主題：</strong> Claude Sonnet 4.6、電腦使用、動態程式碼過濾、BrowseComp 基準測試、token 效率</p>
+<hr />
+<hr />
+<h2 id="_4">💬 重要引用</h2>
+<blockquote>
+<p>「這是開發者的 ChatGPT 『時刻』——自主解決問題，而不僅僅是簡單的自動補全。」 (This is ChatGPT's 'moment' for developers—autonomous problem-solving over simple autocomplete.)
+— <strong>@MakingSense_14</strong> (討論從僅提供程式碼建議的 LLM 轉向像 Claude Code 這樣能自主解決工程工單的代理。)</p>
+<p>「OpenAI 正悄悄在後端將付費用戶從 GPT-5.3 降級到 5.2。我們支付了最新技術的費用，得到的卻是上個月的模型。」 (OpenAI is silently downgrading paid users from GPT-5.3 to 5.2 on the backend. We are paying for the latest tech but getting last month's model.)
+— <strong>@AGIGuardian</strong> (引發開發者社群關於 GPT-5.3 Codex-Spark 「降級醜聞」爭議的主要指控。)</p>
+<p>「Cursor 是一個碰巧使用 AI 的編輯器。Claude Code 是一個碰巧使用你編輯器的 AI……對於單文件編輯以外的任何任務，搭載 Opus 4.6 的 Claude Code 表現都優於 Cursor。」 (cursor is an editor that happens to use AI. claude code is an AI that happens to use your editor... claude code with opus 4.6 runs circles around cursor for anything beyond single-file edits.)
+— <strong>@tacodevs</strong> (比較修改版 VS Code (Cursor) 與原生代理 CLI (Claude Code) 之間的根本架構差異。)</p>
+<p>「agents.md 是程式碼儲存庫中代理式 AI 工具的互操作配置標準。」 (agents.md is THE interoperable config standard for agentic AI tools in code repositories.)
+— <strong>@boyuan_chen</strong> (評論跨平台 AI 代理標準化 Markdown 配置的興起。)</p>
+<p>「ClickFix 活動利用 Claude 的 Artifacts 功能託管虛假頁面，誘騙 macOS 用戶安裝資訊竊取程式，繞過過濾器。」 (ClickFix campaigns using Claude's Artifacts feature to host fake pages tricking macOS users into installing infostealers, bypassing filters.)
+— <strong>@gossy_84</strong> (警告社群攻擊者如何將合法的 AI 功能武器化以傳遞惡意軟體。)</p>
+<p>「天哪，Suno v5 現在可以生成瘋狂的 Riddim Dubstep 了，我把它和 Claude Code 結合起來創建了狂歡視覺效果，我現在可以成為 AI DJ 了。」 (HOLY SHIT SUNO v5 CAN GENERATE INSANE RIDDIM DUBSTEP NOW I COMBINED IT WITH CLAUDE CODE TO CREATE RAVE VISUALS I CAN BECOME AN AI DJ NOW)
+— <strong>@KingBootoshi</strong> (對 Suno 音樂生成與 Claude 即時編程能力多模態整合的病毒式反應。)</p>
+<p>「如果發布智能合約就像描述你想要什麼一樣簡單會怎樣？見見 Iliad。」 (What if shipping a smart contract was as simple as describing what you want? Meet Iliad.)
+— <strong>@shadowcorp_dev</strong> (來自 Iliad IDE 的官方發布，強調轉向基於提示詞的區塊鏈開發。)</p>
+<p>「手繪半天 vs. 一個句子。」 (Hand-draw half a day vs. one sentence.)
+— <strong>@chishanAI</strong> (描述使用 Claude Code 與 Obsidian 整合來自動化技術繪圖的效率提升。)</p>
+</blockquote>
+<hr />
+<h2 id="_5">🔗 參考來源</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>作者</th>
+<th>簡介</th>
+<th>摘要</th>
+<th>連結</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>@bcherny</strong></td>
+<td>Boris Cherny，Anthropic Claude Code 的創作者，著有《Programming TypeScript》。他是基於終端機的 AI 介面設計領域的領軍人物。</td>
+<td>討論了 Claude Code 的起源，強調其終端機優先的簡潔性，以及子代理處理複雜任務的未來，這可能使傳統 IDE 成為可選項。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023774438798299479">貼文</a></td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>@figma</strong></td>
+<td>Figma 官方帳號，領先的協作設計平台，被全球數百萬設計師和開發者使用。</td>
+<td>宣布了「Claude Code to Figma」整合，允許將基於程式碼的原型導入為可編輯的 Figma 框架，有效地閉合了從設計到程式碼的循環。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023759565029003769">貼文</a></td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>@bindureddy</strong></td>
+<td>Abacus.AI 執行長，前 AWS AI 總經理。以其對 LLM 基準測試和成本性能比的深度技術分析而聞名。</td>
+<td>分析了 Sonnet 4.6 的發布，聲稱由於其在成本和高端代理能力之間的平衡，它極有機會成為市場上整體表現最好的模型。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023824564892168510">貼文</a></td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>@trq212</strong></td>
+<td>Thariq，Anthropic 開發者，專門負責 Claude Code 產品及其整合生態系統。</td>
+<td>展示了 Figma 整合的雙向性質，演示了 Figma MCP 插件如何允許將程式碼發回設計文件。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023797194017706290">貼文</a></td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>@mark_k</strong></td>
+<td>專注於基準測試代理工作流和專業工程任務的 AI 研究員和開發者。</td>
+<td>詳細介紹了 Sonnet 4.6 破紀錄的基準測試，特別是在 SWE-Bench Verified 上的 79.6% 分數及其在代理式財務分析中的主導地位。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023825881601302757">貼文</a></td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>@AGIGuardian</strong></td>
+<td>AI 行業分析師和透明度倡導者，以監測模型性能變化和後端 API 更改而聞名。</td>
+<td>報導了「降級醜聞」，指稱 GPT-5.3 請求由 GPT-5.2 履行，獲得了超過 668 個讚和 200 次轉發。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023383472816173315">貼文</a></td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>@kevinkern</strong></td>
+<td>軟體工程師，Codex CLI 工具集開發者，專注於多代理 AI 編排。</td>
+<td>宣布發布 Codex CLI v0.102，引入了專為 GPT-5.3-Spark 架構優化的實驗性多代理支持，支持多達 12 個並行線程。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023864261949399311">貼文</a></td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>@banteg</strong></td>
+<td>著名的 DeFi 開發者和安全研究員，專注於自動化系統和 AI 安全。</td>
+<td>批評該模型傾向於將合法的編程請求標記為「高風險網絡活動」，突顯了專業開發者的摩擦點。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023086815767609470">貼文</a></td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>@Zaddyzaddy</strong></td>
+<td>技術影響者，AI 編程工具的早期採用者，ClawNow 整合指南的創作者。</td>
+<td>演示了如何透過 ClawNow 介面使用 GPT-5.3-Codex-Spark，強調其與 Claude Opus 4.6 相比的成本效益。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023312507054776684">貼文</a></td>
+</tr>
+<tr>
+<td>10</td>
+<td><strong>@devpost</strong></td>
+<td>領先的黑客松和開發者競賽平台，經常與 Google 和 Meta 等大型科技公司合作推動 API 採用。</td>
+<td>宣布正式啟動 Gemini Live Agent 挑戰賽，詳細介紹了 8 萬美元的獎金池以及對即時代理 Multimodal Live API 的關注。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023843224306024803">貼文</a></td>
+</tr>
+<tr>
+<td>11</td>
+<td><strong>@getstream_io</strong></td>
+<td>可擴展聊天和活動流 API 供應商，專注於即時通信基礎設施。</td>
+<td>展示了語音驅動 AI 瑜伽教練的技術演示，該教練使用 Gemini Live API 進行反饋，並使用 YOLO 進行姿勢檢測。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023843426907943321">貼文</a></td>
+</tr>
+<tr>
+<td>12</td>
+<td><strong>@_kidrah_24</strong></td>
+<td>自稱非開發者和「氛圍編程者」，因使用 AI 輔助編程工具贏得 Google Gemini 黑客松而聲名大噪。</td>
+<td>分享了在 Gemini 活動中構建影片編輯器工具的成功故事，強調 Gemini 如何為編程知識有限的人彌合差距。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023025467423678649">貼文</a></td>
+</tr>
+<tr>
+<td>13</td>
+<td><strong>@yasuhito_morimo</strong></td>
+<td>AI 行業分析師和觀察員，專注於日本科技市場和企業 AI 採用。</td>
+<td>報導稱日本大型 IT 服務公司 SCSK 已開始使用 Gemini Live API 開發語音 AI 代理。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023608112805277951">貼文</a></td>
+</tr>
+<tr>
+<td>14</td>
+<td><strong>@boyuan_chen</strong></td>
+<td>代理式 AI 首席研究員，專注於軟體工程與自主代理的交匯。因在工具使用效率和配置標準方面的學術貢獻而聞名。</td>
+<td>主張「agents.md」正成為互操作性的標準。他將此與最近的一篇 arXiv 論文 (2602.14878) 聯繫起來，該論文討論了「工具異味」——代理與軟體環境交互中的低效——以及標準化配置如何減輕這些問題。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023881486185734634">貼文</a></td>
+</tr>
+<tr>
+<td>15</td>
+<td><strong>@arlogilbert</strong></td>
+<td>Osano 創始人，資深技術企業家。專注於數據隱私、開發者工具以及 AI 在企業環境中的實際應用。</td>
+<td>討論了代理配置的實用性，建議將符號連結作為不同工具需求之間的橋樑，並質疑如果簡單的文件系統技巧奏效，通用標準是否具有緊迫性。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023827030593466729">貼文</a></td>
+</tr>
+<tr>
+<td>16</td>
+<td><strong>@DailyDoseOfDS_</strong></td>
+<td>受歡迎的數據科學和 AI 教育家，以將複雜的架構模式分解為易於理解的內容而聞名。</td>
+<td>提供了多代理系統模式的概覽，為為什麼需要像「agents.md」這樣的標準來進行代理協調和委派提供了架構背景。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023691483526951310">貼文</a></td>
+</tr>
+<tr>
+<td>17</td>
+<td><strong>@chams_builds</strong></td>
+<td>獨立開發者和 SaaS 構建者，以分享實用的 AI 生產力工作流和自動化技巧而聞名。</td>
+<td>倡導同步設置，讓 Claude Code 和 Cursor 共享配置文件（.cursorrules 和 .md 指令），以確保代理在整個項目中保持一致。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023896425092861986">貼文</a></td>
+</tr>
+<tr>
+<td>18</td>
+<td><strong>@tacodevs</strong></td>
+<td>專注於高性能編程工具和 AI 整合基準測試的軟體開發集體。</td>
+<td>認為搭載 Opus 4.6 的 Claude Code 在處理複雜邏輯方面比 Cursor 更強大，並透過「AI 優先」與「編輯器優先」的哲學定義了這兩種工具。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2022948422756524407">貼文</a></td>
+</tr>
+<tr>
+<td>19</td>
+<td><strong>@humanin_theloop</strong></td>
+<td>Tim Green，首席工程師，倡導包括 Next.js、TypeScript 和 Tailwind 在內的代理式開發堆疊。</td>
+<td>推廣使用 Claude Code 進行規劃和 Cursor 進行執行的「混合堆疊」，經常就社群偏好的工具組合進行投票。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023898255365443968">貼文</a></td>
+</tr>
+<tr>
+<td>20</td>
+<td><strong>@levelsio</strong></td>
+<td>Pieter Levels，著名的獨立駭客，Nomad List 和 PhotoAI 創始人，以公開構建產品聞名。</td>
+<td>批評了 Claude Code 的高延遲，指出緩慢的回應時間破壞了開發者的流暢度，並迫使開發者在不同的 IDE 分頁中進行多任務處理。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023443556312969633">貼文</a></td>
+</tr>
+<tr>
+<td>21</td>
+<td><strong>@karthik_rangan</strong></td>
+<td>安全研究員和技術分析師，經常報導基於瀏覽器的漏洞和惡意軟體活動。</td>
+<td>發布了一個包含 12 部分的綜合推文串，詳細介紹了 LayerX 對影響 26 萬用戶的 30 多個惡意擴充功能的調查，解釋了用於竊取 Gmail 內容和 API 金鑰的 iframe 注入策略。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023271842903994677">貼文</a></td>
+</tr>
+<tr>
+<td>22</td>
+<td><strong>@gossy_84</strong></td>
+<td>網絡威脅情報專家，專門識別新興的網絡釣魚策略和惡意軟體傳遞向量。</td>
+<td>識別並分享了利用 Claude 的 Artifacts 功能託管虛假頁面的「ClickFix」活動詳情，旨在誘騙 macOS 用戶安裝資訊竊取程式。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023397045847949717">貼文</a></td>
+</tr>
+<tr>
+<td>23</td>
+<td><strong>@Anomali</strong></td>
+<td>領先的威脅情報平台，提供關於全球網絡威脅和漏洞的可操作見解。</td>
+<td>報導了 Claude Desktop 中的一個零點擊漏洞，該漏洞允許遠端程式碼執行，顯著擴大了 AI 用戶的潛在攻擊面。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023807672479330761">貼文</a></td>
+</tr>
+<tr>
+<td>24</td>
+<td><strong>@jroebuck</strong></td>
+<td>Jen，@tortillauk 共同創作者和技術企業家，積極監測數位安全風險。</td>
+<td>分享了針對毫無防備用戶的 Claude 主題網絡釣魚郵件的早期警告和截圖。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023521178695209462">貼文</a></td>
+</tr>
+<tr>
+<td>25</td>
+<td><strong>@KingBootoshi</strong></td>
+<td>代理工程師和 AI 創作者，以突破多模態 AI 工作流和即時生成的邊界而聞名。</td>
+<td>發布了一個病毒式演示（33.3 萬次觀看），展示了 Suno v5 生成高質量 Riddim Dubstep 的能力，並配合透過 Claude Code 生成的狂歡視覺效果，聲稱這讓任何人都能成為 AI DJ。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023534595980054554">貼文</a></td>
+</tr>
+<tr>
+<td>26</td>
+<td><strong>@MAYAmusicS</strong></td>
+<td>AI 音樂研究員和高級用戶，專注於提示技巧和模型基準測試。</td>
+<td>分析了 Suno v5 中新的「表演提示」，提供了關於如何放置 [airy] 和 [legato] 等標籤以在人聲生成中獲得最大效果的技術建議。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2022868964775473538">貼文</a></td>
+</tr>
+<tr>
+<td>27</td>
+<td><strong>@mikasayuu_x</strong></td>
+<td>數位藝術家和故事講述者，探索 LLM 生成歌詞與 AI 音樂作曲的交匯。</td>
+<td>演示了使用 Claude 4.6 進行歌詞「故事講述」和 Suno v5 進行音樂編排的工作流，質疑模型的情感能力。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023947162615451675">貼文</a></td>
+</tr>
+<tr>
+<td>28</td>
+<td><strong>@manishkumar_dev</strong></td>
+<td>開發者和 AI 評論員，經常對生成式音訊模型進行基準測試。</td>
+<td>認為儘管 Suno v5 炒作很大，但 Mureka V8 在人聲真實感和情感傳遞方面仍保持優勢，並引用了盲測結果。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023760856413360562">貼文</a></td>
+</tr>
+<tr>
+<td>29</td>
+<td><strong>@iliad_near</strong></td>
+<td>NEAR 協議 AI 驅動 IDE Iliad 的官方帳號。由 Shadowcorp 提供支持。</td>
+<td>宣布發布 Iliad IDE，強調純英文提示、Claude 4.6/4.5 整合以及無需 CLI 設置的 10 分鐘部署窗口等功能。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023483880381247788">貼文</a></td>
+</tr>
+<tr>
+<td>30</td>
+<td><strong>@shadowcorp_dev</strong></td>
+<td>Iliad 的開發者，前身為 The Order。專注於 NEAR 協議上 AI 與 Web3 的交匯。</td>
+<td>討論了 Iliad 背後的哲學，強調目標是使發布智能合約像口頭描述一樣簡單。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023484331780636675">貼文</a></td>
+</tr>
+<tr>
+<td>31</td>
+<td><strong>@NEARLegion</strong></td>
+<td>著名的 NEAR 協議社群帳號，專注於生態系統增長和項目推廣。</td>
+<td>向社群推廣 Iliad 的發布，重點關注「直接發布 (Just Ship)」口號和技術障礙的消除。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023600448058671177">貼文</a></td>
+</tr>
+<tr>
+<td>32</td>
+<td><strong>@jp_dawg</strong></td>
+<td>活躍於 NEAR 和 AI 領域的 Web3 開發者和評論員。</td>
+<td>將 Iliad 的效用與 IronClaw 安全 AI 基礎設施聯繫起來，認為其隱私保護方法優於本地 AI 推理。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023660446310408642">貼文</a></td>
+</tr>
+<tr>
+<td>33</td>
+<td><strong>@SherifDefi</strong></td>
+<td>對 Rust 和 AI 安全交匯感興趣的 DeFi 分析師和安全研究員。</td>
+<td>討論了在確保 AI 生成程式碼和提示詞安全的背景下，基於 Rust 的隔離和沙盒化 (IronClaw) 的重要性。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2022999800959135863">貼文</a></td>
+</tr>
+<tr>
+<td>34</td>
+<td><strong>@imaxichuhai</strong></td>
+<td>AI 工具評論員和影響者，專注於實用的 AI 應用和中國科技產品的「出海」策略。</td>
+<td>分享了一個病毒式推文串，詳細介紹了如何安裝和使用 Claude Code 的 Obsidian 技能，透過單個提示生成 Excalidraw 和 Mermaid 圖表。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2022941478872322517">貼文</a></td>
+</tr>
+<tr>
+<td>35</td>
+<td><strong>@internetvin</strong></td>
+<td>技術愛好者和生產力駭客，專注於視覺化思考和 AI 驅動的想法探索。</td>
+<td>討論了使用 Claude Code 將大量文本筆記轉換為視覺化的 Obsidian Canvas 結構，以發現想法之間的新聯繫。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023222533688861063">貼文</a></td>
+</tr>
+<tr>
+<td>36</td>
+<td><strong>@WellerVision</strong></td>
+<td>開發者和 AI 早期採用者，探索 LLM 與本地開發環境之間的深度整合。</td>
+<td>推廣將 Claude Code 整合到 Obsidian 側邊欄的 Claudian + Opus 插件，強調其 100 萬 token 上下文和即時庫交互。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023838938440585274">貼文</a></td>
+</tr>
+<tr>
+<td>37</td>
+<td><strong>@KacperTrzepiec1</strong></td>
+<td>AI 開發者和教育家，專注於使用 Markdown 和開放工具構建本地 AI 工作流和助手。</td>
+<td>演示了使用 Claude Code 和 Obsidian 將 YouTube 逐字稿自主處理為筆記、草稿和圖表的工作流。</td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://x.com/i/status/2023812207495250148">貼文</a></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>報告生成時間：2026-02-18 21:16:29</em></p>
+    </div>
+
+    <footer class="site-footer">
+        <p>生成時間：2026-02-18 21:18:11</p>
+    </footer>
+
+</div>
+</body>
+</html>
