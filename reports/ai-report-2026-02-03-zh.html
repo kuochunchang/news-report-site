@@ -464,5 +464,36 @@
     </footer>
 
 </div>
+<script>
+(function(){
+    var body = document.querySelector('.markdown-body');
+    if (!body) return;
+    var h3s = body.querySelectorAll('h3');
+    h3s.forEach(function(h3) {
+        var card = document.createElement('div');
+        card.className = 'topic-card';
+        var badge = h3.querySelector('.heat-high,.heat-medium,.heat-low');
+        if (badge) {
+            if (badge.classList.contains('heat-high')) card.dataset.heat = 'high';
+            else if (badge.classList.contains('heat-medium')) card.dataset.heat = 'medium';
+            else card.dataset.heat = 'low';
+        }
+        h3.parentNode.insertBefore(card, h3);
+        card.appendChild(h3);
+        while (card.nextSibling) {
+            var next = card.nextSibling;
+            if (next.nodeType === 1) {
+                var tag = next.tagName;
+                if (tag === 'HR' || tag === 'H2' || tag === 'H3') break;
+            }
+            card.appendChild(next);
+        }
+    });
+    body.querySelectorAll('hr').forEach(function(hr) {
+        var prev = hr.previousElementSibling;
+        if (prev && prev.classList.contains('topic-card')) hr.remove();
+    });
+})();
+</script>
 </body>
 </html>
