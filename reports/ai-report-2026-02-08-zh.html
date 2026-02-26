@@ -20,10 +20,10 @@
 <p>本報告由 Grok AI 自動生成，基於 X (Twitter) 平台當日熱門 AI 討論內容。</p>
 </blockquote>
 <hr />
-<h2 id="_1">📋 執行摘要</h2>
+<h2 id="_1">執行摘要</h2>
 <p>今日 X 平台上的 AI 領域主要由從輔助式的「氛圍編碼」(Vibe Coding) 向完全自主的「代理式工程」(Agentic Engineering) 的明確轉變所主導，這以 Andrej Karpathy 對該領域的重新命名為標誌。Cursor AI 的「自動駕駛程式碼庫」(Self-Driving Codebases) 研究預覽設定了生產力的新基準，展示了每小時能進行 1,000 次提交 (commits) 並能自主構建網頁瀏覽器等複雜軟體的多代理系統。各大巨頭正在鞏固這一基礎設施，Microsoft 發布了用於具狀態工作流的 .NET Agent Framework，而 Google 則推出了用於重度推理搜索的「代理式 RAG」(Agentic RAG) 工具。同時，「獨立開發者」(solo builder) 趨勢已達到白熱化，例如應用程式「Base Me」透過 AI 驅動開發吸引了 50,000 名用戶。然而，這種快速擴張也伴隨著成長的煩惱，包括領先 IDE 的性能退化，以及 OpenClaw 等開源代理註冊庫中惡意插件的激增。</p>
 <hr />
-<h2 id="_2">🔥 今日熱門議題</h2>
+<h2 id="_2">今日熱門議題</h2>
 <h3 id="1-cursor-cursors-self-driving-codebases-the-shift-to-massively-parallel-autonomous-engineering">1. Cursor 的「自動駕駛程式碼庫」：向大規模並行自主工程的轉變 (Cursor's 'Self-Driving Codebases': The Shift to Massively Parallel Autonomous Engineering)</h3>
 <p><strong>Category:</strong> 研究 (Research) <span class="heat-badge heat-high">高</span></p>
 <p><strong>概要：</strong> 2026 年 2 月 5 日，Cursor AI 發布了一項名為「自動駕駛程式碼庫」(Self-Driving Codebases) 的里程碑式研究預覽，展示了一個能夠以前所未有的規模進行自主軟體開發的多代理系統。該系統採用分層的「遞歸規劃器」(Recursive Planner) 架構，協調數百到數千個代理，在為期一週的自主運行中，峰值達到每小時超過 1,000 次提交，並生成了超過 1,000 萬次工具調用。為了證明系統的有效性，Cursor 的代理成功構建了一個功能齊全的網頁瀏覽器（超過 300 萬行程式碼）、一個 Windows 7 模擬器和一個 Excel 複製版，並對 Cursor 自身的生產程式碼庫進行了全面遷移。該研究強調了從單代理「對話」介面向自主集群的轉變，這些集群優先考慮吞吐量和抗脆弱設計而非即時的完美，有效地模擬了一個 100 多人工程團隊 24/7 全天候工作的產出。</p>
@@ -330,10 +330,10 @@
 </li>
 </ul>
 <hr />
-<h2 id="_3">📊 趨勢總結</h2>
+<h2 id="_3">趨勢總結</h2>
 <p>總體趨勢是從單代理「對話」介面向管理整個軟體生命週期的分層多代理「集群」轉變。我們正看到「代理技術棧」(Agentic Stack) 的出現，它優先考慮具狀態的、耐用的工作流 (Microsoft) 和規範驅動的執行 (Qoder)，而非簡單的自動補全。這種轉變正在使大規模工程民主化，允許獨立開發者超越傳統團隊，但同時也造成了「技術品味」瓶頸，人類的角色從編寫程式碼轉向架構監督。社區模式表明，受穩定性和性能問題驅動，開發者越來越偏好 Claude Code 等終端原生、專門化的代理，而非臃腫的基於 GUI 的編輯器。最後，「代理式 RAG」和「Agentic Tagger」的興起表明，行業正超越簡單的數據檢索，轉向將自主推理和數據結構化作為企業應用的預設配置。</p>
 <hr />
-<h2 id="kol">🎤 KOL 觀點追蹤</h2>
+<h2 id="kol">KOL 觀點追蹤</h2>
 <p>AI 開發者工具領域 KOL 的集體情緒正從對基礎程式碼生成的興奮轉向對「代理式」工作流和自主系統的嚴謹關注。一個主要主題是「驗證循環」(verification loops) 和「測試床工程」(harness engineering) 作為對抗「程式碼廢料」(code slop) 和模型不可靠性的必要組件而出現，正如 Karpathy 和 Kamradt 所指出的。雖然對 Opus 4.6 和 Codex 5.3 等新模型版本持樂觀態度，但對於高昂 Token 成本（每天 1,000 美元）的經濟可持續性，以及目前代理在沒有人類監督的情況下處理開放式、複雜優化的無能，仍存在重大擔憂。共識表明，雖然「軟體工廠」是目標，但近期未來屬於「人機協作」(human-in-the-loop) 的代理工具和更精密的基準測試。</p>
 <h3 id="karpathy-andrej-karpathy">@@karpathy — Andrej Karpathy</h3>
 <blockquote>
@@ -470,7 +470,7 @@
 <p><strong>討論主題：</strong> 驗證循環, AI 實習, ARC Prize, 技能演進, 多代理設置</p>
 <hr />
 <hr />
-<h2 id="_4">💬 重要引用</h2>
+<h2 id="_4">重要引用</h2>
 <blockquote>
 <p>「在高速公路上表現出色，但在交叉路口會變得怪異。」 (Works great on the highway, gets weird at intersections.)
 — <strong>@Voxyz_ai</strong> （將當前自主編碼代理的狀態與自動駕駛汽車進行對比，特別是關於處理並行文件編輯的難度。）</p>
@@ -490,7 +490,7 @@
 — <strong>@TheHackersNews</strong> （討論在惡意軟體增長背景下，保持開源代理生態系統可行性所需的關鍵安全更新。）</p>
 </blockquote>
 <hr />
-<h2 id="_5">🔗 參考來源</h2>
+<h2 id="_5">參考來源</h2>
 <table>
 <thead>
 <tr>
