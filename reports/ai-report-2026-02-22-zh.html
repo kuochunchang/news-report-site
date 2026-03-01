@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI 熱門議題日報 — 2026-02-22</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
@@ -12,6 +15,7 @@
     <nav class="report-nav">
         <a href="../index.html">&larr; 所有報告</a>
         <a href="ai-report-2026-02-22.html">English</a>
+        <a href="ai-report-2026-02-22-zh.md" download>Markdown</a>
     </nav>
 
     <div class="markdown-body">
@@ -20,10 +24,10 @@
 <p>本報告由 Grok AI 自動生成，基於 X (Twitter) 平台當日熱門 AI 討論內容。</p>
 </blockquote>
 <hr />
-<h2 id="_1">執行摘要</h2>
+<h2 id="_1">📋 執行摘要</h2>
 <p>今日的 AI 領域呈現出向自主代理（autonomous agent）基礎設施急劇轉向的趨勢，且中心化供應商與開源社群之間的緊張關係日益加劇。Anthropic 對 OpenCode 等第三方編排工具的法律打壓引發了「抽地毯」（rug pull）的指控，儘管該公司同時推出了原生的 git worktree 支援以實現並行代理群（parallel agent swarms）。與此同時，「代理原生」（agent-native）基礎設施的興起正在加速，here.now 推出了無摩擦託管服務，而 Composio 則開源了其編排器，該工具實現了 20 倍的人力槓桿。在全球舞台上，India 高達 3750 億美元的投資藍圖，以及在去中心化算力平台上發布的 744B 參數模型 GLM-5，標誌著向主權、可驗證 AI 的巨大轉變。總體而言，社群正從簡單的聊天介面過渡到複雜的機器對機器（machine-to-machine）經濟，代理在其中自主進行編碼、部署和交易。</p>
 <hr />
-<h2 id="_2">今日熱門議題</h2>
+<h2 id="_2">🔥 今日熱門議題</h2>
 <h3 id="1-anthropic">1. Anthropic 對第三方編排工具的法律打壓</h3>
 <p><strong>Category:</strong> Industry <span class="heat-badge heat-high">High</span></p>
 <p><strong>概要：</strong> Anthropic 已開始對第三方開發者工具發起法律打壓，包括向 OpenCode、OpenClaw 和 Conductor 發出停止並終止通知（cease-and-desist notices）。這些工具允許用戶利用 Claude Pro/Max 訂閱進行自動化編排和代理工作流，從而有效地規避了更昂貴的按 token 計費的 API 定價。Anthropic 目前正在嚴格執行其服務條款（Terms of Service），該條款規定任何非人工、自動化或第三方編排必須使用官方 API 金鑰，而非基於訂閱的 OAuth 令牌。此舉在開發者社群中引發了「抽地毯」的論調，因為許多人認為 Anthropic 在其 300 億美元的 G 輪融資完成之前，一直在鼓勵第三方生態系統的增長。此次執法已導致 OpenCode 等工具立即更新文件，並有報導稱用戶帳號因違反這些條款而被封禁。</p>
@@ -344,10 +348,10 @@
 </li>
 </ul>
 <hr />
-<h2 id="_3">趨勢總結</h2>
+<h2 id="_3">📊 趨勢總結</h2>
 <p>一個清晰的模式正在顯現：AI 開發正從順序輔助轉向並行、自主執行。Anthropic 的 worktree 整合和 Composio 的遞迴代理構建編排器證明了這一點，兩者都優先考慮環境隔離，以防止多代理工作流中的「合併地獄」。與此同時，我們看到代理活動的金融化，從對抗 AI 生成代碼噪音的「質押式」PR 審查，到透過 Aion World 在 Solana 上實現的首個機器對機器空投。此外，「推理層」市場也出現了日益增長的分歧，開發者轉向月之暗面的 Kimi K2.5 等高性價比替代方案，以規避西方前沿實驗室日益嚴格的「圍牆花園」。這一集體運動顯示，AI 的下一階段將由優先考慮主權而非中心化控制的「代理原生」作業系統和去中心化算力所定義。</p>
 <hr />
-<h2 id="kol">KOL 觀點追踪</h2>
+<h2 id="kol">🎤 KOL 觀點追踪</h2>
 <p>AI 開發者工具領域的 KOL 集體情緒壓倒性看漲，核心在於「Claws」的迅速崛起——這是一個處理編排和持久性的本地自主 AI 代理新層級。Andrej Karpathy、Simon Willison 和 swyx 正在引領關於這種「聊天 → 代碼 → 爪子（claw）」演進的討論，強調本地執行和極簡、安全的架構。同時，多代理編排也受到了極大推動，Composio 開源了一個由代理自身構建的系統便是明證。雖然 Gemini 3.1 Pro 等閉源模型因解決了圖像轉代碼等特定任務而受到稱讚，但 Bindu Reddy 等領導者提出了強有力的戰略論點，即開源模型因其巨大的性價比優勢正成為主要的競爭力量。總體而言，行業正從簡單的 LLM 整合轉向由專門硬體支持的複雜、本地、多代理系統。</p>
 <h3 id="karpathy-andrej-karpathy">@karpathy — Andrej Karpathy</h3>
 <blockquote>
@@ -460,7 +464,7 @@
 <p><strong>討論主題：</strong> LangChain, Agent Builder, Developer Experience, AI Design</p>
 <hr />
 <hr />
-<h2 id="_4">重要引用</h2>
+<h2 id="_4">💬 重要引用</h2>
 <blockquote>
 <p>「Anthropic 剛剛禁止了外部工具編排 Claude Code 以及任何 Claude 訂閱方案。這是控制與自由的較量。」 ("Anthropic just banned external tools from orchestrating Claude Code and any Claude subscription plan. Control vs freedom.")
 — <strong>@JorgeCastilloPr</strong> (針對 Anthropic 在其 300 億美元融資後向第三方工具維護者發出的法律通知所作的回應。)</p>
@@ -482,7 +486,7 @@
 — <strong>@LobsterVC</strong> (強調 here.now 等無摩擦部署工具對於自主代理工作流的必要性。)</p>
 </blockquote>
 <hr />
-<h2 id="_5">參考來源</h2>
+<h2 id="_5">🔗 參考來源</h2>
 <table>
 <thead>
 <tr>
@@ -774,11 +778,12 @@
     </div>
 
     <footer class="site-footer">
-        <p>生成時間：2026-02-22 21:27:02</p>
+        <p>生成時間：2026-03-01 09:00:31</p>
     </footer>
 
 </div>
 <script>
+/* Wrap h3 topic sections into .topic-card divs for consistent styling */
 (function(){
     var body = document.querySelector('.markdown-body');
     if (!body) return;
@@ -786,6 +791,7 @@
     h3s.forEach(function(h3) {
         var card = document.createElement('div');
         card.className = 'topic-card';
+        /* Propagate heat level to card */
         var badge = h3.querySelector('.heat-high,.heat-medium,.heat-low');
         if (badge) {
             if (badge.classList.contains('heat-high')) card.dataset.heat = 'high';
@@ -794,6 +800,7 @@
         }
         h3.parentNode.insertBefore(card, h3);
         card.appendChild(h3);
+        /* Collect siblings until next hr, h2, h3, or end */
         while (card.nextSibling) {
             var next = card.nextSibling;
             if (next.nodeType === 1) {
@@ -803,6 +810,7 @@
             card.appendChild(next);
         }
     });
+    /* Remove leftover <hr> between cards (now redundant) */
     body.querySelectorAll('hr').forEach(function(hr) {
         var prev = hr.previousElementSibling;
         if (prev && prev.classList.contains('topic-card')) hr.remove();

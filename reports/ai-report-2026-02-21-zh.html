@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI 熱門議題日報 — 2026-02-21</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
@@ -12,6 +15,7 @@
     <nav class="report-nav">
         <a href="../index.html">&larr; 所有報告</a>
         <a href="ai-report-2026-02-21.html">English</a>
+        <a href="ai-report-2026-02-21-zh.md" download>Markdown</a>
     </nav>
 
     <div class="markdown-body">
@@ -20,10 +24,10 @@
 <p>本報告由 Grok AI 自動生成，基於 X (Twitter) 平台當日熱門 AI 討論內容。</p>
 </blockquote>
 <hr />
-<h2 id="_1">執行摘要</h2>
+<h2 id="_1">📋 執行摘要</h2>
 <p>2026 年 2 月 21 日標誌著 AI 領域的轉型轉變，Anthropic 憑藉推出 Claude Code Security 以及將 Claude Code 重大演進為「開發作業系統」（Development Operating System）主導了對話。這些工具已經在擾亂市場，Claude 自主發現了 500 多個生產環境漏洞後，傳統網絡安全股票隨即出現了 150 億美元的拋售。同時，開發者生態系統正向「氛圍編碼」（vibe-coding）技術棧傾斜——將 Vercel 的 v0 與 Cursor 配對——而 Vercel 本身已透過單一 API 統一了影片生成。EthDenver 對去中心化群體（decentralized swarms）的關注以及 RentAIAgent 在 Solana 上的推出，進一步鞏固了代理編排（agentic orchestration）的崛起，為 AI 創造了一個無需許可的勞動力市場。總體而言，社群情緒正從將 AI 視為聊天機器人轉向將其視為具備自主安全、設計和經濟活動能力的高性能執行層。</p>
 <hr />
-<h2 id="_2">今日熱門議題</h2>
+<h2 id="_2">🔥 今日熱門議題</h2>
 <h3 id="1-anthropic-claude-code-security">1. Anthropic 推出 Claude Code Security 研究預覽版</h3>
 <p><strong>Category:</strong> 產品發佈 (Product Launch) <span class="heat-badge heat-high">高</span></p>
 <p><strong>概要：</strong> Anthropic 推出了 Claude Code Security，這是一款 AI 驅動的漏洞掃描器研究預覽版，旨在以類人的語義理解能力分析整個程式碼庫。該工具由 Claude Opus 4.6 模型驅動，超越了傳統的靜態應用程式安全測試 (SAST)，透過追蹤複雜的數據流和組件交互來識別深層缺陷。在初步測試中，該工具成功識別了生產級開源項目中的 500 多個漏洞，其中許多漏洞儘管經過人工審查，但多年來一直未被發現。除了識別之外，系統還會生成針對性的修補建議供人工審查，旨在自動化修復「安全債」（security debt）。此公告引起了顯著的市場反應，導致主要網絡安全公司的市值縮水 150 億美元，其中 CrowdStrike ($CRWD) 下跌了 8%。Anthropic 目前透過候補名單限制訪問，優先考慮「防禦者優先」的部署，以確保該技術在被惡意行為者利用之前加強安全態勢。</p>
@@ -305,10 +309,10 @@
 </li>
 </ul>
 <hr />
-<h2 id="_3">趨勢總結</h2>
+<h2 id="_3">📊 趨勢總結</h2>
 <p>一種清晰的「代理成熟化」（Agentic Maturation）模式正在顯現，行業正從順序聊天介面轉向並行、多代理編排和「任務控制」儀表板。這在 Anthropic 新的「代理團隊」架構和 EthDenver 的去中心化群體中清晰可見，它們優先考慮協作執行而非單模型提示。我們還看到向「輕量級 AI」的重大架構轉向，基於 C++ 和 Rust 的框架（如 GhostClaw）挑戰了資源密集型的 Node.js 現狀，以實現邊緣部署。安全性已成為生產級 AI 的主要戰場，這體現在 OpenClaw 的「加固」版本和 Claude 漏洞掃描器的「防禦者優先」部署中。最後，「氛圍編碼」運動正在模糊設計與工程之間的界限，AI 代理越來越多地承擔語法的繁重工作，讓人類能夠專注於高層級系統架構和「氛圍」編排。</p>
 <hr />
-<h2 id="kol">KOL 觀點追踪</h2>
+<h2 id="kol">🎤 KOL 觀點追踪</h2>
 <p>AI 開發工具領域的 KOL 們集體情緒壓倒性看好，核心在於「Claws」（本地、高能力的 AI 代理系統）的快速崛起。Andrej Karpathy 和 Simon Willison 正在定義這一新的技術層，它超越了簡單的程式碼補全，轉向自主編排和「最大化可分叉」（maximally forkable）的存儲庫。雖然人們對本地推理速度（Taalas ASICs）以及 Google 和 Anthropic 的新代理功能感到興奮，但一個重要的關注和討論領域是安全性，特別是對像 NanoClaw 這樣沙盒化、可審計程式碼庫的需求。同時，像 Guillermo Rauch 這樣的行業領袖正在證明，這些工具已經瓦解了設計與工程之間的障礙，信號著向代理驅動、短暫性軟體開發的轉變。</p>
 <h3 id="karpathy-andrej-karpathy">@karpathy — Andrej Karpathy</h3>
 <blockquote>
@@ -440,7 +444,7 @@
 <p><strong>討論主題：</strong> MagicPath, 圖像轉程式碼, 設計令牌, 前端開發</p>
 <hr />
 <hr />
-<h2 id="_4">重要引用</h2>
+<h2 id="_4">💬 重要引用</h2>
 <blockquote>
 <p>「這是安全債時代的終結。我們終於可以對那些在生產環境中存在多年的數千個漏洞進行分類和修復。」 ("This is the end of the security debt era. We can finally triage and patch the thousands of bugs that have been sitting in production for years.")
 — <strong>@MrComputerSci</strong> （討論 Anthropic 的 Claude Code Security 研究預覽版對長期程式碼庫漏洞的影響。）</p>
@@ -460,7 +464,7 @@
 — <strong>@manishkumar_dev</strong> （描述使用多模型編排從對話式 AI 向自動化執行層的轉變。）</p>
 </blockquote>
 <hr />
-<h2 id="_5">參考來源</h2>
+<h2 id="_5">🔗 參考來源</h2>
 <table>
 <thead>
 <tr>
@@ -724,11 +728,12 @@
     </div>
 
     <footer class="site-footer">
-        <p>生成時間：2026-02-21 21:15:58</p>
+        <p>生成時間：2026-03-01 09:00:31</p>
     </footer>
 
 </div>
 <script>
+/* Wrap h3 topic sections into .topic-card divs for consistent styling */
 (function(){
     var body = document.querySelector('.markdown-body');
     if (!body) return;
@@ -736,6 +741,7 @@
     h3s.forEach(function(h3) {
         var card = document.createElement('div');
         card.className = 'topic-card';
+        /* Propagate heat level to card */
         var badge = h3.querySelector('.heat-high,.heat-medium,.heat-low');
         if (badge) {
             if (badge.classList.contains('heat-high')) card.dataset.heat = 'high';
@@ -744,6 +750,7 @@
         }
         h3.parentNode.insertBefore(card, h3);
         card.appendChild(h3);
+        /* Collect siblings until next hr, h2, h3, or end */
         while (card.nextSibling) {
             var next = card.nextSibling;
             if (next.nodeType === 1) {
@@ -753,6 +760,7 @@
             card.appendChild(next);
         }
     });
+    /* Remove leftover <hr> between cards (now redundant) */
     body.querySelectorAll('hr').forEach(function(hr) {
         var prev = hr.previousElementSibling;
         if (prev && prev.classList.contains('topic-card')) hr.remove();
